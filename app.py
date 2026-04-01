@@ -101,7 +101,7 @@ setup_app_logging()
 MAX_UPLOAD_MB = int(os.getenv("MAX_UPLOAD_MB", 15))
 MAX_EXTRACT_CHARS = int(os.getenv("MAX_EXTRACT_CHARS", 20000))
 ALLOWED_UPLOAD_EXTS = {".txt", ".md", ".pdf", ".docx", ".csv"}
-ELEMENT_PARSER_MODEL = os.getenv("ELEMENT_PARSER_MODEL", "deepseek-ai/DeepSeek-V3")
+ELEMENT_PARSER_MODEL = os.getenv("ELEMENT_PARSER_MODEL", "deepseek-chat")
 ELEMENT_PROMPT_LAWYER_OPINION = """你是具备证券与诉讼法律文书专业解析能力的智能助手，仅处理诉讼/仲裁相关法律意见书PDF文档，严格遵循以下规则执行解析任务，最终仅输出标准JSON格式内容，无任何前置说明、后置解释、备注话术，输出结果可直接填入Excel法律意见书对应字段。
 
 固定提取字段与规则（严格按以下顺序执行，不得增减、调整字段）
@@ -276,7 +276,7 @@ def _parse_document_elements_with_llm(document_text: str, prompt_template: str):
 
     client = OpenAI(
         api_key=api_key,
-        base_url="https://api.siliconflow.cn/v1",
+        base_url="https://api.deepseek.com/v1",
     )
 
     safe_text = _truncate_text(document_text or "")
@@ -978,7 +978,7 @@ def upload():
 
             client = OpenAI(
                 api_key=api_key,
-                base_url="https://api.siliconflow.cn/v1",
+                base_url="https://api.deepseek.com/v1",
             )
 
             safe_text = _truncate_text(text or "")
@@ -1342,7 +1342,7 @@ def upload():
 
         client = OpenAI(
             api_key=api_key,
-            base_url="https://api.siliconflow.cn/v1",
+            base_url="https://api.deepseek.com/v1",
         )
 
         print("正在生成输出报告。。。")

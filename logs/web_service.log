@@ -1248,3 +1248,36 @@ Traceback (most recent call last):
     if isinstance(getattr(db_record, column.name), (datetime.datetime, datetime.date))
                                                     ^^^^^^^^^^^^^^^^^
 AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+2026-04-01 14:43:55,046 [ERROR] [app] - [d2d9199805276b77] 文档要素解析失败: Error code: 404
+Traceback (most recent call last):
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\app.py", line 988, in upload
+    response = client.chat.completions.create(
+        model=ELEMENT_PARSER_MODEL,
+    ...<6 lines>...
+        max_tokens=3000,
+    )
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\openai\_utils\_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1211, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<47 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\openai\_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\openai\_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.NotFoundError: Error code: 404
+
+2026-04-01 14:54:06,781 [INFO] [app] - [302c66b92daced14] 启动深度评估：第三条是什么...
+2026-04-01 14:54:17,395 [INFO] [app] - [302c66b92daced14] 评估完成，耗时: 10.61s
+2026-04-01 14:56:52,291 [INFO] [app] - [043eed5d1c00e640] 启动深度评估：第三条是什么？...
+2026-04-01 14:57:26,457 [INFO] [app] - [043eed5d1c00e640] 评估完成，耗时: 34.17s
+2026-04-01 14:57:46,496 [INFO] [app] - [31784e28b665d6a3] 启动深度评估：董事会是做什么的？...
+2026-04-01 14:58:08,217 [INFO] [app] - [31784e28b665d6a3] 评估完成，耗时: 21.72s

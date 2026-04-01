@@ -117,7 +117,7 @@ class VectorKBRetriever:
 
         self.client = (
             OpenAI(
-                api_key=self.api_key,
+                api_key="sk-dzniguzacgbipgsjjunqbbnbrwfmnodxlyvsswjcyrnbmdfl",
                 base_url="https://api.siliconflow.cn/v1",
             )
             if self.api_key

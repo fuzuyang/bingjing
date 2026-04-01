@@ -171,12 +171,12 @@ class IntentRecognizer:
         self.client = (
             OpenAI(
                 api_key=self.api_key,
-                base_url="https://api.siliconflow.cn/v1",
+                base_url="https://api.deepseek.com/v1",
             )
             if self.api_key
             else None
         )
-        self.model = "deepseek-ai/DeepSeek-V3"
+        self.model = "deepseek-chat"
 
     def _get_system_prompt(self) -> str:
         return """

@@ -39,11 +39,11 @@ class GroundedAnswerGenerator:
     def __init__(self):
         self.api_key = os.getenv("SILICONFLOW_API_KEY")
         self.enable_llm = str(os.getenv("ENABLE_LLM_ANSWER", "1")).strip() == "1" and bool(self.api_key)
-        self.model = os.getenv("ANSWER_LLM_MODEL", "deepseek-ai/DeepSeek-V3")
+        self.model = os.getenv("ANSWER_LLM_MODEL", "deepseek-chat")
         self.client = (
             OpenAI(
                 api_key=self.api_key,
-                base_url="https://api.siliconflow.cn/v1",
+                base_url="https://api.deepseek.com/v1",
             )
             if self.enable_llm
             else None
