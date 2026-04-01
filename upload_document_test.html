@@ -117,6 +117,21 @@
       max-height: 55vh;
     }
 
+    .section-title {
+      margin: 18px 0 8px;
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .generated-wrap { display: none; }
+
+    .generated-wrap pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      max-height: 45vh;
+    }
+
     @media (max-width: 760px) {
       .row { grid-template-columns: 1fr; }
       body { padding: 12px; }
@@ -158,6 +173,11 @@
       </form>
 
       <div id="status" class="status"></div>
+      <div id="generated-wrap" class="generated-wrap">
+        <div class="section-title">generated_answer</div>
+        <pre id="generated-answer">等待请求...</pre>
+      </div>
+      <div class="section-title">完整响应 JSON</div>
       <pre id="output">等待请求...</pre>
     </div>
   </div>
@@ -167,12 +187,16 @@
     const output = document.getElementById("output");
     const statusEl = document.getElementById("status");
     const submitBtn = document.getElementById("submit-btn");
+    const generatedWrap = document.getElementById("generated-wrap");
+    const generatedAnswerEl = document.getElementById("generated-answer");
 
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
       statusEl.className = "status";
       statusEl.textContent = "请求中...";
       output.textContent = "";
+      generatedWrap.style.display = "none";
+      generatedAnswerEl.textContent = "";
       submitBtn.disabled = true;
 
       try {
@@ -182,6 +206,13 @@
           body: fd
         });
         const data = await response.json().catch(() => ({}));
+        const generatedAnswer =
+          (data &&
+            data.data &&
+            typeof data.data.generated_answer === "string" &&
+            data.data.generated_answer) ||
+          (data && typeof data.generated_answer === "string" && data.generated_answer) ||
+          "";
 
         output.textContent = JSON.stringify(
           {
@@ -195,13 +226,24 @@
         if (response.ok && data && data.status !== false) {
           statusEl.className = "status ok";
           statusEl.textContent = "请求成功";
+          generatedWrap.style.display = "block";
+          generatedAnswerEl.textContent = generatedAnswer || "未返回 generated_answer";
         } else {
           statusEl.className = "status bad";
           statusEl.textContent = "请求失败（见下方响应）";
+          if (generatedAnswer) {
+            generatedWrap.style.display = "block";
+            generatedAnswerEl.textContent = generatedAnswer;
+          } else {
+            generatedWrap.style.display = "none";
+            generatedAnswerEl.textContent = "";
+          }
         }
       } catch (error) {
         statusEl.className = "status bad";
         statusEl.textContent = "请求异常";
+        generatedWrap.style.display = "none";
+        generatedAnswerEl.textContent = "";
         output.textContent = JSON.stringify(
           { error: String(error) },
           null,

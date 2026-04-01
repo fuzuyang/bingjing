@@ -1370,7 +1370,7 @@ def upload():
             "message": f"文档模板生成失败: {str(e)}",
         }
 
-        print("模型已生成报告")
+    print("模型已生成报告")
 
     return {
         "status": True,
