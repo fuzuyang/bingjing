@@ -720,13 +720,13 @@ def upload():
                     normalized[db_key] = raw_data.get(cn_key)
                 return normalized
 
-            def safe_str(value, max_length=255):
+            def safe_str(value):
                 if value is None:
                     return None
                 value = str(value).strip()
                 if not value:
                     return None
-                return value[:max_length]
+                return value
 
             def build_legal_opinion_record(content: str, parsed_elements: dict):
                 return LegalOpinion(
@@ -814,13 +814,13 @@ def upload():
                     normalized[db_key] = raw_data.get(cn_key)
                 return normalized
 
-            def safe_str(value, max_length=255):
+            def safe_str(value):
                 if value is None:
                     return None
                 value = str(value).strip()
                 if not value:
                     return None
-                return value[:max_length]
+                return value
 
             def build_complaint_record(content: str, parsed_elements: dict):
                 return Complaint(
