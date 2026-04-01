@@ -1,0 +1,1369 @@
+2026-02-04 16:36:13,382 - INFO - 开始建表流程，读取Excel文件: "D:\这里有法_资料\澳洲\Result_anli_part_1.xlsx"
+2026-02-04 16:36:13,382 - ERROR - 建表过程中出错: [Errno 22] Invalid argument: '"D:\\这里有法_资料\\澳洲\\Result_anli_part_1.xlsx"'
+Traceback (most recent call last):
+  File "c:\users\29944\desktop\spyder\law_relevant\外国法\澳洲.py", line 143, in create_table_from_excel
+    df = pd.read_excel(excel_file_path, dtype=str)
+  File "C:\Users\29944\anaconda3\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "C:\Users\29944\anaconda3\lib\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+  File "C:\Users\29944\anaconda3\lib\site-packages\pandas\io\excel\_base.py", line 1402, in inspect_excel_format
+    with get_handle(
+  File "C:\Users\29944\anaconda3\lib\site-packages\pandas\io\common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+OSError: [Errno 22] Invalid argument: '"D:\\这里有法_资料\\澳洲\\Result_anli_part_1.xlsx"'
+2026-02-04 16:42:23,070 - INFO - 开始建表流程，读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_1.xlsx
+2026-02-04 16:42:30,701 - INFO - Excel文件读取成功，共19590行，40列
+2026-02-04 16:42:30,701 - INFO - 
+数据预览（前3行）:
+2026-02-04 16:42:30,717 - INFO -   Original_Row_Index      Case_Class                                             case name                    court               jurisdiction Decision Date Primary Parties-Plaintiff     Primary Parties-Defendant Primary Parties-Prosecutor Primary Parties-Accused / Defendant (Criminal) Appellate Parties-Appellant                                Appellate Parties-Respondent (on appeal)                                                                                                                                                                                                          Cause of Action / Charge                                                                                                                                                                                                                                  Grounds of Appeal                                                                                                                                                                                                                                                                                                                                                                                                                           Final Orders (Trial)                                                                             Outcome of Appeal Processing_Status                                                                                                                                                                                                                                                                                        Reason                                    Judges                                                                                                                   Counsel / Representation (if present)                                                      Other Parties (if any)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Material Facts                                                                                                  Legislation Considered                                Key Cases Cited Appellate Parties-Cross-Appellant Appellate Parties-Interveners                                                                                                                                                                      Lower Court History                                                                                                                                                                              Appellant’s Submissions                                                                                                                                                                                                                    Respondent’s Submissions                                                                                                                                                                                                                                                                                                                                                                                                                                                                    Appellate Court Reasoning Primary Parties-Applicant    Primary Parties-Respondent                                                                                                                                                                                                                                                                 Plaintiff/Prosecutor Submissions                                                                                                                                                                                                                                        Defendant/Accused Submissions                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Primary Judge’s Reasoning Appellant's Submissions Respondent's Submissions Final Orders (Trial): Primary Judge's Reasoning Original_Text
+0                  8          Appeal  McLaughlin v Daily Telegraph Newspaper Co Ltd (No 1)  High Court of Australia  Commonwealth of Australia    1904-03-14         N/A (Appeal Case)             N/A (Appeal Case)          N/A (Appeal Case)                              N/A (Appeal Case)                  McLaughlin  Daily Telegraph Newspaper Co Ltd and Vale of Clwydd Coal Mining Co Ltd                                                                                                                                                                                                                 N/A (Appeal Case)  The text does not explicitly state the grounds of appeal. The appeal appears to concern applications by the defendants regarding security for costs, with the defendants arguing the plaintiff should provide more than the minimum £50 security.                                                                                                                                                                                                                                                                                                                                                                                                                              N/A (Appeal Case)  Dismissed (the defendants' applications were dismissed with costs, but limited as specified)         PROCESSED                                                      The document includes terms like 'Appellant' and 'Respondent', references an appeal process with security and applications, and involves a judge dismissing applications related to an appeal, indicating it is an appellate proceeding.                            Griffith, C.J.  Lingen for the Daily Telegraph Company, Limited; Sheppard for the Vale of Clwydd Coal Mining Company; Ralston and Watt for the plaintiff in both cases  Vale of Clwydd Coal Mining Co. Ltd. (as additional defendants/respondents)                                                                                                                                                                                                                                                          The plaintiff (McLaughlin) appealed against two defendants (Daily Telegraph Newspaper Co. Ltd. and Vale of Clwydd Coal Mining Co. Ltd.). The defendants applied for security for costs after receiving notice of the plaintiff's intention to appeal on February 4th, but delayed making their applications until March. The court considered whether these applications were made with sufficient expedition.                                                                                   High Court Procedure Act 1903, Sec. 8  Not explicitly mentioned in the provided text                               NaN                           NaN  The text does not specify the primary judge or outcome in the lower court. It appears to be an appeal regarding procedural matters (security for costs) in the High Court of Australia.  The text does not detail the appellant's submissions. The appellant (McLaughlin) is the plaintiff appealing, but the judgment focuses on the defendants' applications regarding security for costs.  The defendants (Daily Telegraph Newspaper Co Ltd and Vale of Clwydd Coal Mining Co Ltd) applied to compel the plaintiff to provide more than the minimum £50 security for costs, arguing the applications should be allowed despite delay.  Chief Justice Griffith held the defendants' applications were too late because they had notice of the plaintiff's intention to appeal on February 4th but waited until March to apply. He cited Section 8 of the High Court Procedure Act 1903, stating a summons could have been taken out promptly and dealt with almost immediately. Following English practice, he dismissed the applications as tardy, allowing costs but limiting them (no affidavit costs, only one counsel's fees).         N/A (Appeal Case)             N/A (Appeal Case)                                                                                                                                                                                                                                                                                N/A (Appeal Case)                                                                                                                                                                                                                                                    N/A (Appeal Case)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       N/A (Appeal Case)                     NaN                      NaN                   NaN                       NaN           NaN
+1                  7  First Instance                                     Hirsch v Phillips  High Court of Australia  Commonwealth of Australia    1904-03-12         Maximilian Hirsch               Pharez Phillips                        NaN                                            NaN            N/A (Trial Case)                                                        N/A (Trial Case)                                                                            Election petition regarding the interpretation of who may vote on an adjourned polling day under the Electoral Act, specifically sections 153 and 139.                                                                                                                                                                                                                                   N/A (Trial Case)  The court answered the questions accordingly, indicating that electors in classes (a) and (b) (those who attended the original polling day while enrolled elsewhere and those absent from their enrolled polling place) were entitled to vote. If denial of this right affected the election outcome, the petitioner could have the election set aside. Costs of the reference were left to the discretion of the judge hearing the petition.                                                                              N/A (Trial Case)         PROCESSED                                The document refers to 'Petitioner' and 'Respondent' in an election petition context, involves initial determination of voting rights under electoral law, and contains no appeal indicators like 'Appellant', 'On Appeal from', or appellate court structure.  Griffith, C.J., Barton and O'Connor, JJ.                                                                                                  Mitchell for the petitioner; MacCay for the respondent                                                                         NaN  The case involved a disputed election petition concerning the Wimmera election, referred from the Court of Disputed Returns. The central issue was determining who may vote on an adjourned polling day under the Electoral Act. The petitioner argued that any elector on the roll could vote at the adjourned poll, while the respondent contended that only electors enrolled for the specific polling place or those who attended on the original polling day but were deprived of voting could vote. The dispute arose from the interpretation of sections 153 and 139 of the Electoral Act, with practical implications for election integrity and voter rights.                                                                                     Electoral Act, sections 153 and 139                                            NaN                  N/A (Trial Case)              N/A (Trial Case)                                                                                                                                                                         N/A (Trial Case)                                                                                                                                                                                     N/A (Trial Case)                                                                                                                                                                                                                            N/A (Trial Case)                                                                                                                                                                                                                                                                                                                                                                                                                                                                             N/A (Trial Case)         Maximilian Hirsch               Pharez Phillips                                                    The petitioner (Hirsch) contends that on an adjourned polling day, any elector whose name is on the roll may vote, including those enrolled for the particular polling place and other electors on the roll who make a declaration in Form Q.                   The respondent (Phillips) contends that on an adjourned polling day, only electors on the roll for that particular polling place, or at most electors who attended there on the original polling day and were deprived of the franchise, may vote.  The court reasoned that Section 139 of the Electoral Act applies to the original polling day, allowing two classes of voters: those present at their enrolled polling place and those absent from it who may vote elsewhere with a Form Q declaration. Section 153, providing for adjourned polling, does not confer new voting rights or deprive existing ones. Therefore, on an adjourned polling day, electors entitled to vote are those who would have been entitled on the original polling day, including those absent from their enrolled polling place (who may vote with Form Q) and all electors enrolled for the adjourned polling place. The court emphasized that this interpretation avoids impractical inquiries into actual deprivation and aligns with legislative intent for uniform election days.                     NaN                      NaN                   NaN                       NaN           NaN
+2                  6  First Instance                                   Maloney v McEacharn  High Court of Australia  Commonwealth of Australia    1904-03-10           William Maloney  Sir Malcolm Donald McEacharn                        NaN                                            NaN            N/A (Trial Case)                                                        N/A (Trial Case)  Election petition regarding the validity of postal votes in a Melbourne election, specifically whether attestation of applications for postal vote certificates is an imperative condition under the Commonwealth Electoral Act.                                                                                                                                                                                                                                   N/A (Trial Case)                                                                                       The Court held that attestation of applications for postal vote certificates by one of the specified persons is an imperative condition, and votes given under certificates issued without such attestation are invalid. Additionally, ballot-papers without squares for marking a cross and not marked as required by the regulations must be rejected.                                                                              N/A (Trial Case)         PROCESSED  The document is a reference from the Court of Disputed Returns to the High Court for an opinion on specific legal questions regarding electoral law, involving a petitioner and respondent, with no indication of an appeal process or appellate terms like 'Appellant' or 'On Appeal from'.  Griffith, C.J., Barton and O'Connor, JJ.                                                                               Gaunson for the petitioner; Mitchell for the respondent; Gaunson in reply                                                                         NaN                                                                      The case involved a reference from the Court of Disputed Returns regarding the Melbourne election petition. Two questions were referred: (1) whether attestation of applications for postal vote certificates under Form K of the Commonwealth Electoral Act was an imperative condition, rendering votes invalid if not attested; and (2) whether ballot-papers for absent electors, which lacked squares for marking crosses and only had candidate names written, should be rejected. The petitioner challenged votes cast in the election, arguing non-compliance with statutory requirements.  Commonwealth Electoral Act (specifically Part X, sections 109, 112, 114, 115, 122, 124, 139, 209, and Schedule Form K)            McIntosh v Simpkins (1901) 1 KB 487                  N/A (Trial Case)              N/A (Trial Case)                                                                                                                                                                         N/A (Trial Case)                                                                                                                                                                                     N/A (Trial Case)                                                                                                                                                                                                                            N/A (Trial Case)                                                                                                                                                                                                                                                                                                                                                                                                                                                                             N/A (Trial Case)           William Maloney  Sir Malcolm Donald McEacharn  The petitioner argued that attestation of applications for postal vote certificates by specified persons (Returning Officer, Electoral Registrar, Justice of the Peace, School Teacher, or Postmaster) is an imperative condition under the Act, making votes without such attestation invalid.  The respondent contended that the attestation requirement, introduced by "N.B." in Form K of the Schedule, is merely directory and not an essential condition, as it is not explicitly stated in the body of the Act and differs from other attestation provisions.                                                                                                                                                                                                                               The Court reasoned that attestation is an imperative condition because: (1) voting by post is a privilege granted subject to conditions under sec. 109; (2) the scope and object of the Act require safeguards against personation, and attestation by identifiable persons provides a substantial, though imperfect, safeguard; (3) analogous cases, such as McIntosh v. Simpkins, support a rigorous construction of such conditions; and (4) the form must be followed substantially, and the attestation requirement, despite being in a note, is essential to the scheme of the Act.                     NaN                      NaN                   NaN                       NaN           NaN
+2026-02-04 16:42:30,717 - INFO - 需要处理的Excel列数: 39
+2026-02-04 16:42:30,717 - INFO - Excel原始列名: ['Case_Class', 'case name', 'court', 'jurisdiction', 'Decision Date', 'Primary Parties-Plaintiff', 'Primary Parties-Defendant', 'Primary Parties-Prosecutor', 'Primary Parties-Accused / Defendant (Criminal)', 'Appellate Parties-Appellant', 'Appellate Parties-Respondent (on appeal)', 'Cause of Action / Charge', 'Grounds of Appeal', 'Final Orders (Trial)', 'Outcome of Appeal', 'Processing_Status', 'Reason', 'Judges', 'Counsel / Representation (if present)', 'Other Parties (if any)', 'Material Facts', 'Legislation Considered', 'Key Cases Cited', 'Appellate Parties-Cross-Appellant', 'Appellate Parties-Interveners', 'Lower Court History', 'Appellant’s Submissions', 'Respondent’s Submissions', 'Appellate Court Reasoning', 'Primary Parties-Applicant', 'Primary Parties-Respondent', 'Plaintiff/Prosecutor Submissions', 'Defendant/Accused Submissions', 'Primary Judge’s Reasoning', "Appellant's Submissions", "Respondent's Submissions", 'Final Orders (Trial):', "Primary Judge's Reasoning", 'Original_Text']
+2026-02-04 16:42:30,721 - INFO - Excel列 1: 'Case_Class' -> MySQL字段 'case_class'
+2026-02-04 16:42:30,721 - INFO - Excel列 2: 'case name' -> MySQL字段 'case_name'
+2026-02-04 16:42:30,721 - INFO - Excel列 3: 'court' -> MySQL字段 'court'
+2026-02-04 16:42:30,721 - INFO - Excel列 4: 'jurisdiction' -> MySQL字段 'jurisdiction'
+2026-02-04 16:42:30,721 - INFO - Excel列 5: 'Decision Date' -> MySQL字段 'decision_date'
+2026-02-04 16:42:30,721 - INFO - Excel列 6: 'Primary Parties-Plaintiff' -> MySQL字段 'primary_parties_plaintiff'
+2026-02-04 16:42:30,721 - INFO - Excel列 7: 'Primary Parties-Defendant' -> MySQL字段 'primary_parties_defendant'
+2026-02-04 16:42:30,721 - INFO - Excel列 8: 'Primary Parties-Prosecutor' -> MySQL字段 'primary_parties_prosecutor'
+2026-02-04 16:42:30,721 - INFO - Excel列 9: 'Primary Parties-Accused / Defendant (Criminal)' -> MySQL字段 'primary_parties_accused'
+2026-02-04 16:42:30,721 - INFO - Excel列 10: 'Appellate Parties-Appellant' -> MySQL字段 'appellate_parties_appellant'
+2026-02-04 16:42:30,728 - INFO - Excel列 11: 'Appellate Parties-Respondent (on appeal)' -> MySQL字段 'appellate_parties_respondent_on_appeal'
+2026-02-04 16:42:30,728 - INFO - Excel列 12: 'Cause of Action / Charge' -> MySQL字段 'cause_of_action'
+2026-02-04 16:42:30,728 - INFO - Excel列 13: 'Grounds of Appeal' -> MySQL字段 'grounds_of_appeal'
+2026-02-04 16:42:30,730 - INFO - Excel列 14: 'Final Orders (Trial)' -> MySQL字段 'final_orders_trial'
+2026-02-04 16:42:30,730 - INFO - Excel列 15: 'Outcome of Appeal' -> MySQL字段 'outcome_of_appeal'
+2026-02-04 16:42:30,730 - INFO - Excel列 16: 'Processing_Status' -> MySQL字段 'processing_status'
+2026-02-04 16:42:30,733 - INFO - Excel列 17: 'Reason' -> MySQL字段 'reason'
+2026-02-04 16:42:30,733 - INFO - Excel列 18: 'Judges' -> MySQL字段 'judges'
+2026-02-04 16:42:30,733 - INFO - Excel列 19: 'Counsel / Representation (if present)' -> MySQL字段 'counsel'
+2026-02-04 16:42:30,733 - INFO - Excel列 20: 'Other Parties (if any)' -> MySQL字段 'other_parties_if_any'
+2026-02-04 16:42:30,733 - INFO - Excel列 21: 'Material Facts' -> MySQL字段 'material_facts'
+2026-02-04 16:42:30,733 - INFO - Excel列 22: 'Legislation Considered' -> MySQL字段 'legislation_considered'
+2026-02-04 16:42:30,733 - INFO - Excel列 23: 'Key Cases Cited' -> MySQL字段 'key_cases_cited'
+2026-02-04 16:42:30,733 - INFO - Excel列 24: 'Appellate Parties-Cross-Appellant' -> MySQL字段 'appellate_parties_cross_appellant'
+2026-02-04 16:42:30,733 - INFO - Excel列 25: 'Appellate Parties-Interveners' -> MySQL字段 'appellate_parties_interveners'
+2026-02-04 16:42:30,733 - INFO - Excel列 26: 'Lower Court History' -> MySQL字段 'lower_court_history'
+2026-02-04 16:42:30,733 - INFO - Excel列 27: 'Appellant’s Submissions' -> MySQL字段 'appellant_s_submissions'
+2026-02-04 16:42:30,733 - INFO - Excel列 28: 'Respondent’s Submissions' -> MySQL字段 'respondent_s_submissions'
+2026-02-04 16:42:30,733 - INFO - Excel列 29: 'Appellate Court Reasoning' -> MySQL字段 'appellate_court_reasoning'
+2026-02-04 16:42:30,733 - INFO - Excel列 30: 'Primary Parties-Applicant' -> MySQL字段 'primary_parties_applicant'
+2026-02-04 16:42:30,733 - INFO - Excel列 31: 'Primary Parties-Respondent' -> MySQL字段 'primary_parties_respondent'
+2026-02-04 16:42:30,733 - INFO - Excel列 32: 'Plaintiff/Prosecutor Submissions' -> MySQL字段 'plaintiff'
+2026-02-04 16:42:30,733 - INFO - Excel列 33: 'Defendant/Accused Submissions' -> MySQL字段 'defendant'
+2026-02-04 16:42:30,733 - INFO - Excel列 34: 'Primary Judge’s Reasoning' -> MySQL字段 'primary_judge_s_reasoning'
+2026-02-04 16:42:30,733 - INFO - Excel列 35: 'Appellant's Submissions' -> MySQL字段 'appellant_s_submissions_1'
+2026-02-04 16:42:30,733 - INFO - Excel列 36: 'Respondent's Submissions' -> MySQL字段 'respondent_s_submissions_1'
+2026-02-04 16:42:30,733 - INFO - Excel列 37: 'Final Orders (Trial):' -> MySQL字段 'final_orders_trial_1'
+2026-02-04 16:42:30,733 - INFO - Excel列 38: 'Primary Judge's Reasoning' -> MySQL字段 'primary_judge_s_reasoning_1'
+2026-02-04 16:42:30,733 - INFO - Excel列 39: 'Original_Text' -> MySQL字段 'original_text'
+2026-02-04 16:42:30,749 - INFO - 字段 'case_class' 最大长度: 14
+2026-02-04 16:42:30,765 - INFO - 字段 'case_name' 最大长度: 398
+2026-02-04 16:42:30,788 - INFO - 字段 'court' 最大长度: 97
+2026-02-04 16:42:30,802 - INFO - 字段 'jurisdiction' 最大长度: 38
+2026-02-04 16:42:30,818 - INFO - 字段 'decision_date' 最大长度: 10
+2026-02-04 16:42:30,828 - INFO - 字段 'primary_parties_plaintiff' 最大长度: 208
+2026-02-04 16:42:30,839 - INFO - 字段 'primary_parties_defendant' 最大长度: 240
+2026-02-04 16:42:30,844 - INFO - 字段 'primary_parties_prosecutor' 最大长度: 103
+2026-02-04 16:42:30,860 - INFO - 字段 'primary_parties_accused' 最大长度: 159
+2026-02-04 16:42:30,876 - INFO - 字段 'appellate_parties_appellant' 最大长度: 249
+2026-02-04 16:42:30,892 - INFO - 字段 'appellate_parties_respondent_on_appeal' 最大长度: 386
+2026-02-04 16:42:30,907 - INFO - 字段 'cause_of_action' 最大长度: 617
+2026-02-04 16:42:30,923 - INFO - 字段 'grounds_of_appeal' 最大长度: 1446
+2026-02-04 16:42:30,939 - INFO - 字段 'final_orders_trial' 最大长度: 1869
+2026-02-04 16:42:30,939 - INFO - 字段 'outcome_of_appeal' 最大长度: 540
+2026-02-04 16:42:30,955 - INFO - 字段 'processing_status' 最大长度: 17
+2026-02-04 16:42:30,971 - INFO - 字段 'reason' 最大长度: 634
+2026-02-04 16:42:30,991 - INFO - 字段 'judges' 最大长度: 140
+2026-02-04 16:42:31,003 - INFO - 字段 'counsel' 最大长度: 1247
+2026-02-04 16:42:31,003 - INFO - 字段 'other_parties_if_any' 最大长度: 1078
+2026-02-04 16:42:31,021 - INFO - 字段 'material_facts' 最大长度: 1994
+2026-02-04 16:42:31,041 - INFO - 字段 'legislation_considered' 最大长度: 696
+2026-02-04 16:42:31,050 - INFO - 字段 'key_cases_cited' 最大长度: 3017
+2026-02-04 16:42:31,050 - INFO - 字段 'appellate_parties_cross_appellant' 最大长度: 140
+2026-02-04 16:42:31,066 - INFO - 字段 'appellate_parties_interveners' 最大长度: 295
+2026-02-04 16:42:31,085 - INFO - 字段 'lower_court_history' 最大长度: 1148
+2026-02-04 16:42:31,098 - INFO - 字段 'appellant_s_submissions' 最大长度: 951
+2026-02-04 16:42:31,098 - INFO - 字段 'respondent_s_submissions' 最大长度: 884
+2026-02-04 16:42:31,124 - INFO - 字段 'appellate_court_reasoning' 最大长度: 1273
+2026-02-04 16:42:31,137 - INFO - 字段 'primary_parties_applicant' 最大长度: 305
+2026-02-04 16:42:31,145 - INFO - 字段 'primary_parties_respondent' 最大长度: 877
+2026-02-04 16:42:31,162 - INFO - 字段 'plaintiff' 最大长度: 1013
+2026-02-04 16:42:31,162 - INFO - 字段 'defendant' 最大长度: 944
+2026-02-04 16:42:31,189 - INFO - 字段 'primary_judge_s_reasoning' 最大长度: 1240
+2026-02-04 16:42:31,192 - INFO - 字段 'appellant_s_submissions_1' 最大长度: 614
+2026-02-04 16:42:31,192 - INFO - 字段 'respondent_s_submissions_1' 最大长度: 455
+2026-02-04 16:42:31,208 - INFO - 字段 'final_orders_trial_1' 最大长度: 115
+2026-02-04 16:42:31,208 - INFO - 字段 'primary_judge_s_reasoning_1' 最大长度: 834
+2026-02-04 16:42:31,224 - INFO - 字段 'original_text' 最大长度: 33
+2026-02-04 16:42:31,224 - INFO - 连接MySQL数据库...
+2026-02-04 16:42:31,624 - INFO - 创建MySQL表...
+2026-02-04 16:42:31,624 - INFO - 建表SQL:
+CREATE TABLE Australia (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    case_class varchar(50),
+    case_name varchar(597),
+    court varchar(200),
+    jurisdiction varchar(200),
+    decision_date varchar(50),
+    primary_parties_plaintiff varchar(312),
+    primary_parties_defendant varchar(360),
+    primary_parties_prosecutor varchar(155),
+    primary_parties_accused varchar(239),
+    appellate_parties_appellant varchar(374),
+    appellate_parties_respondent_on_appeal varchar(579),
+    cause_of_action varchar(926),
+    grounds_of_appeal varchar(2169),
+    final_orders_trial varchar(2804),
+    outcome_of_appeal varchar(810),
+    processing_status varchar(50),
+    reason varchar(951),
+    judges varchar(210),
+    counsel varchar(1871),
+    other_parties_if_any varchar(1617),
+    material_facts varchar(2991),
+    legislation_considered varchar(1044),
+    key_cases_cited varchar(4526),
+    appellate_parties_cross_appellant varchar(210),
+    appellate_parties_interveners varchar(443),
+    lower_court_history varchar(1722),
+    appellant_s_submissions varchar(1427),
+    respondent_s_submissions varchar(1326),
+    appellate_court_reasoning varchar(1910),
+    primary_parties_applicant varchar(458),
+    primary_parties_respondent varchar(1316),
+    plaintiff varchar(1520),
+    defendant varchar(1416),
+    primary_judge_s_reasoning varchar(1860),
+    appellant_s_submissions_1 varchar(921),
+    respondent_s_submissions_1 varchar(683),
+    final_orders_trial_1 varchar(173),
+    primary_judge_s_reasoning_1 varchar(1251),
+    original_text varchar(200)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+2026-02-04 16:42:31,688 - ERROR - 建表过程中出错: (1118, 'Row size too large. The maximum row size for the used table type, not counting BLOBs, is 65535. This includes storage overhead, check the manual. You have to change some columns to TEXT or BLOBs')
+Traceback (most recent call last):
+  File "c:\users\29944\desktop\spyder\law_relevant\外国法\澳洲.py", line 283, in create_table_from_excel
+    cursor.execute(create_table_sql)
+  File "C:\Users\29944\anaconda3\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\29944\anaconda3\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\29944\anaconda3\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\29944\anaconda3\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\29944\anaconda3\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\29944\anaconda3\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\29944\anaconda3\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\29944\anaconda3\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1118, 'Row size too large. The maximum row size for the used table type, not counting BLOBs, is 65535. This includes storage overhead, check the manual. You have to change some columns to TEXT or BLOBs')
+2026-02-04 16:58:09,645 - INFO - 开始建表流程，读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_1.xlsx
+2026-02-04 16:58:17,242 - INFO - Excel文件读取成功，共19590行，40列
+2026-02-04 16:58:17,242 - INFO - 需要处理的Excel列数: 39
+2026-02-04 16:58:17,259 - INFO - 字段 'case_class' 最大长度: 14
+2026-02-04 16:58:17,274 - INFO - 字段 'case_name' 最大长度: 398
+2026-02-04 16:58:17,279 - INFO - 字段 'court' 最大长度: 97
+2026-02-04 16:58:17,298 - INFO - 字段 'jurisdiction' 最大长度: 38
+2026-02-04 16:58:17,306 - INFO - 字段 'decision_date' 最大长度: 10
+2026-02-04 16:58:17,306 - INFO - 字段 'primary_parties_plaintiff' 最大长度: 208
+2026-02-04 16:58:17,324 - INFO - 字段 'primary_parties_defendant' 最大长度: 240
+2026-02-04 16:58:17,338 - INFO - 字段 'primary_parties_prosecutor' 最大长度: 103
+2026-02-04 16:58:17,346 - INFO - 字段 'primary_parties_accused' 最大长度: 159
+2026-02-04 16:58:17,360 - INFO - 字段 'appellate_parties_appellant' 最大长度: 249
+2026-02-04 16:58:17,370 - INFO - 字段 'appellate_parties_respondent_on_appeal' 最大长度: 386
+2026-02-04 16:58:17,385 - INFO - 字段 'cause_of_action' 最大长度: 617
+2026-02-04 16:58:17,386 - INFO - 字段 'grounds_of_appeal' 最大长度: 1446
+2026-02-04 16:58:17,402 - INFO - 字段 'final_orders_trial' 最大长度: 1869
+2026-02-04 16:58:17,417 - INFO - 字段 'outcome_of_appeal' 最大长度: 540
+2026-02-04 16:58:17,434 - INFO - 字段 'processing_status' 最大长度: 17
+2026-02-04 16:58:17,448 - INFO - 字段 'reason' 最大长度: 634
+2026-02-04 16:58:17,460 - INFO - 字段 'judges' 最大长度: 140
+2026-02-04 16:58:17,464 - INFO - 字段 'counsel' 最大长度: 1247
+2026-02-04 16:58:17,480 - INFO - 字段 'other_parties_if_any' 最大长度: 1078
+2026-02-04 16:58:17,496 - INFO - 字段 'material_facts' 最大长度: 1994
+2026-02-04 16:58:17,512 - INFO - 字段 'legislation_considered' 最大长度: 696
+2026-02-04 16:58:17,517 - INFO - 字段 'key_cases_cited' 最大长度: 3017
+2026-02-04 16:58:17,536 - INFO - 字段 'appellate_parties_cross_appellant' 最大长度: 140
+2026-02-04 16:58:17,547 - INFO - 字段 'appellate_parties_interveners' 最大长度: 295
+2026-02-04 16:58:17,560 - INFO - 字段 'lower_court_history' 最大长度: 1148
+2026-02-04 16:58:17,576 - INFO - 字段 'appellant_s_submissions' 最大长度: 951
+2026-02-04 16:58:17,588 - INFO - 字段 'respondent_s_submissions' 最大长度: 884
+2026-02-04 16:58:17,592 - INFO - 字段 'appellate_court_reasoning' 最大长度: 1273
+2026-02-04 16:58:17,608 - INFO - 字段 'primary_parties_applicant' 最大长度: 305
+2026-02-04 16:58:17,624 - INFO - 字段 'primary_parties_respondent' 最大长度: 877
+2026-02-04 16:58:17,642 - INFO - 字段 'plaintiff' 最大长度: 1013
+2026-02-04 16:58:17,656 - INFO - 字段 'defendant' 最大长度: 944
+2026-02-04 16:58:17,672 - INFO - 字段 'primary_judge_s_reasoning' 最大长度: 1240
+2026-02-04 16:58:17,672 - INFO - 字段 'appellant_s_submissions_1' 最大长度: 614
+2026-02-04 16:58:17,688 - INFO - 字段 'respondent_s_submissions_1' 最大长度: 455
+2026-02-04 16:58:17,688 - INFO - 字段 'final_orders_trial_1' 最大长度: 115
+2026-02-04 16:58:17,704 - INFO - 字段 'primary_judge_s_reasoning_1' 最大长度: 834
+2026-02-04 16:58:17,719 - INFO - 字段 'original_text' 最大长度: 33
+2026-02-04 16:58:17,719 - INFO - 连接MySQL数据库...
+2026-02-04 16:58:18,039 - INFO - 创建MySQL表...
+2026-02-04 16:58:18,039 - INFO - 建表SQL:
+CREATE TABLE Australia (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    case_class varchar(50),
+    case_name varchar(597),
+    court varchar(200),
+    jurisdiction varchar(200),
+    decision_date varchar(50),
+    primary_parties_plaintiff varchar(312),
+    primary_parties_defendant varchar(360),
+    primary_parties_prosecutor varchar(155),
+    primary_parties_accused varchar(239),
+    appellate_parties_appellant varchar(374),
+    appellate_parties_respondent_on_appeal varchar(579),
+    cause_of_action varchar(926),
+    grounds_of_appeal varchar(2169),
+    final_orders_trial varchar(2804),
+    outcome_of_appeal varchar(810),
+    processing_status varchar(50),
+    reason varchar(951),
+    judges varchar(210),
+    counsel varchar(1871),
+    other_parties_if_any varchar(1617),
+    material_facts varchar(2991),
+    legislation_considered varchar(1044),
+    key_cases_cited varchar(4526),
+    appellate_parties_cross_appellant varchar(210),
+    appellate_parties_interveners varchar(443),
+    lower_court_history varchar(1722),
+    appellant_s_submissions varchar(1427),
+    respondent_s_submissions varchar(1326),
+    appellate_court_reasoning varchar(1910),
+    primary_parties_applicant varchar(458),
+    primary_parties_respondent varchar(1316),
+    plaintiff varchar(1520),
+    defendant varchar(1416),
+    primary_judge_s_reasoning varchar(1860),
+    appellant_s_submissions_1 varchar(921),
+    respondent_s_submissions_1 varchar(683),
+    final_orders_trial_1 varchar(173),
+    primary_judge_s_reasoning_1 varchar(1251),
+    original_text varchar(200)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+2026-02-04 16:58:18,085 - ERROR - 建表过程中出错: (1118, 'Row size too large. The maximum row size for the used table type, not counting BLOBs, is 65535. This includes storage overhead, check the manual. You have to change some columns to TEXT or BLOBs')
+Traceback (most recent call last):
+  File "c:\users\29944\desktop\spyder\law_relevant\外国法\澳洲.py", line 257, in create_table_from_excel
+    cursor.execute(create_table_sql)
+  File "C:\Users\29944\anaconda3\lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "C:\Users\29944\anaconda3\lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+  File "C:\Users\29944\anaconda3\lib\site-packages\pymysql\connections.py", line 563, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "C:\Users\29944\anaconda3\lib\site-packages\pymysql\connections.py", line 825, in _read_query_result
+    result.read()
+  File "C:\Users\29944\anaconda3\lib\site-packages\pymysql\connections.py", line 1199, in read
+    first_packet = self.connection._read_packet()
+  File "C:\Users\29944\anaconda3\lib\site-packages\pymysql\connections.py", line 775, in _read_packet
+    packet.raise_for_error()
+  File "C:\Users\29944\anaconda3\lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "C:\Users\29944\anaconda3\lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1118, 'Row size too large. The maximum row size for the used table type, not counting BLOBs, is 65535. This includes storage overhead, check the manual. You have to change some columns to TEXT or BLOBs')
+2026-02-04 17:13:22,969 - INFO - 开始建表流程，读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_1.xlsx
+2026-02-04 17:13:30,686 - INFO - Excel文件读取成功，共19590行，40列
+2026-02-04 17:13:30,686 - INFO - 需要处理的Excel列数: 39
+2026-02-04 17:13:30,686 - INFO - Excel列 1: 'Case_Class' -> MySQL字段 'case_class'
+2026-02-04 17:13:30,686 - INFO - Excel列 2: 'case name' -> MySQL字段 'case_name'
+2026-02-04 17:13:30,688 - INFO - Excel列 3: 'court' -> MySQL字段 'court'
+2026-02-04 17:13:30,688 - INFO - Excel列 4: 'jurisdiction' -> MySQL字段 'jurisdiction'
+2026-02-04 17:13:30,690 - INFO - Excel列 5: 'Decision Date' -> MySQL字段 'decision_date'
+2026-02-04 17:13:30,690 - INFO - Excel列 6: 'Primary Parties-Plaintiff' -> MySQL字段 'primary_parties_plaintiff'
+2026-02-04 17:13:30,690 - INFO - Excel列 7: 'Primary Parties-Defendant' -> MySQL字段 'primary_parties_defendant'
+2026-02-04 17:13:30,690 - INFO - Excel列 8: 'Primary Parties-Prosecutor' -> MySQL字段 'primary_parties_prosecutor'
+2026-02-04 17:13:30,690 - INFO - Excel列 9: 'Primary Parties-Accused / Defendant (Criminal)' -> MySQL字段 'primary_parties_accused'
+2026-02-04 17:13:30,690 - INFO - Excel列 10: 'Appellate Parties-Appellant' -> MySQL字段 'appellate_parties_appellant'
+2026-02-04 17:13:30,690 - INFO - Excel列 11: 'Appellate Parties-Respondent (on appeal)' -> MySQL字段 'appellate_parties_respondent_on_appeal'
+2026-02-04 17:13:30,690 - INFO - Excel列 12: 'Cause of Action / Charge' -> MySQL字段 'cause_of_action'
+2026-02-04 17:13:30,690 - INFO - Excel列 13: 'Grounds of Appeal' -> MySQL字段 'grounds_of_appeal'
+2026-02-04 17:13:30,690 - INFO - Excel列 14: 'Final Orders (Trial)' -> MySQL字段 'final_orders_trial'
+2026-02-04 17:13:30,690 - INFO - Excel列 15: 'Outcome of Appeal' -> MySQL字段 'outcome_of_appeal'
+2026-02-04 17:13:30,690 - INFO - Excel列 16: 'Processing_Status' -> MySQL字段 'processing_status'
+2026-02-04 17:13:30,690 - INFO - Excel列 17: 'Reason' -> MySQL字段 'reason'
+2026-02-04 17:13:30,690 - INFO - Excel列 18: 'Judges' -> MySQL字段 'judges'
+2026-02-04 17:13:30,690 - INFO - Excel列 19: 'Counsel / Representation (if present)' -> MySQL字段 'counsel'
+2026-02-04 17:13:30,690 - INFO - Excel列 20: 'Other Parties (if any)' -> MySQL字段 'other_parties_if_any'
+2026-02-04 17:13:30,690 - INFO - Excel列 21: 'Material Facts' -> MySQL字段 'material_facts'
+2026-02-04 17:13:30,690 - INFO - Excel列 22: 'Legislation Considered' -> MySQL字段 'legislation_considered'
+2026-02-04 17:13:30,690 - INFO - Excel列 23: 'Key Cases Cited' -> MySQL字段 'key_cases_cited'
+2026-02-04 17:13:30,690 - INFO - Excel列 24: 'Appellate Parties-Cross-Appellant' -> MySQL字段 'appellate_parties_cross_appellant'
+2026-02-04 17:13:30,690 - INFO - Excel列 25: 'Appellate Parties-Interveners' -> MySQL字段 'appellate_parties_interveners'
+2026-02-04 17:13:30,704 - INFO - Excel列 26: 'Lower Court History' -> MySQL字段 'lower_court_history'
+2026-02-04 17:13:30,704 - INFO - Excel列 27: 'Appellant’s Submissions' -> MySQL字段 'appellant_s_submissions'
+2026-02-04 17:13:30,704 - INFO - Excel列 28: 'Respondent’s Submissions' -> MySQL字段 'respondent_s_submissions'
+2026-02-04 17:13:30,704 - INFO - Excel列 29: 'Appellate Court Reasoning' -> MySQL字段 'appellate_court_reasoning'
+2026-02-04 17:13:30,706 - INFO - Excel列 30: 'Primary Parties-Applicant' -> MySQL字段 'primary_parties_applicant'
+2026-02-04 17:13:30,706 - INFO - Excel列 31: 'Primary Parties-Respondent' -> MySQL字段 'primary_parties_respondent'
+2026-02-04 17:13:30,706 - INFO - Excel列 32: 'Plaintiff/Prosecutor Submissions' -> MySQL字段 'plaintiff'
+2026-02-04 17:13:30,708 - INFO - Excel列 33: 'Defendant/Accused Submissions' -> MySQL字段 'defendant'
+2026-02-04 17:13:30,708 - INFO - Excel列 34: 'Primary Judge’s Reasoning' -> MySQL字段 'primary_judge_s_reasoning'
+2026-02-04 17:13:30,708 - INFO - Excel列 35: 'Appellant's Submissions' -> MySQL字段 'appellant_s_submissions_1'
+2026-02-04 17:13:30,708 - INFO - Excel列 36: 'Respondent's Submissions' -> MySQL字段 'respondent_s_submissions_1'
+2026-02-04 17:13:30,708 - INFO - Excel列 37: 'Final Orders (Trial):' -> MySQL字段 'final_orders_trial_1'
+2026-02-04 17:13:30,708 - INFO - Excel列 38: 'Primary Judge's Reasoning' -> MySQL字段 'primary_judge_s_reasoning_1'
+2026-02-04 17:13:30,708 - INFO - Excel列 39: 'Original_Text' -> MySQL字段 'original_text'
+2026-02-04 17:13:30,725 - INFO - 字段 'case_class' 最大长度: 14
+2026-02-04 17:13:30,742 - INFO - 字段 'case_name' 最大长度: 398
+2026-02-04 17:13:30,755 - INFO - 字段 'court' 最大长度: 97
+2026-02-04 17:13:30,766 - INFO - 字段 'jurisdiction' 最大长度: 38
+2026-02-04 17:13:30,780 - INFO - 字段 'decision_date' 最大长度: 10
+2026-02-04 17:13:30,790 - INFO - 字段 'primary_parties_plaintiff' 最大长度: 208
+2026-02-04 17:13:30,800 - INFO - 字段 'primary_parties_defendant' 最大长度: 240
+2026-02-04 17:13:30,810 - INFO - 字段 'primary_parties_prosecutor' 最大长度: 103
+2026-02-04 17:13:30,819 - INFO - 字段 'primary_parties_accused' 最大长度: 159
+2026-02-04 17:13:30,832 - INFO - 字段 'appellate_parties_appellant' 最大长度: 249
+2026-02-04 17:13:30,846 - INFO - 字段 'appellate_parties_respondent_on_appeal' 最大长度: 386
+2026-02-04 17:13:30,860 - INFO - 字段 'cause_of_action' 最大长度: 617
+2026-02-04 17:13:30,874 - INFO - 字段 'grounds_of_appeal' 最大长度: 1446
+2026-02-04 17:13:30,878 - INFO - 字段 'final_orders_trial' 最大长度: 1869
+2026-02-04 17:13:30,902 - INFO - 字段 'outcome_of_appeal' 最大长度: 540
+2026-02-04 17:13:30,914 - INFO - 字段 'processing_status' 最大长度: 17
+2026-02-04 17:13:30,923 - INFO - 字段 'reason' 最大长度: 634
+2026-02-04 17:13:30,941 - INFO - 字段 'judges' 最大长度: 140
+2026-02-04 17:13:30,955 - INFO - 字段 'counsel' 最大长度: 1247
+2026-02-04 17:13:30,966 - INFO - 字段 'other_parties_if_any' 最大长度: 1078
+2026-02-04 17:13:30,982 - INFO - 字段 'material_facts' 最大长度: 1994
+2026-02-04 17:13:30,986 - INFO - 字段 'legislation_considered' 最大长度: 696
+2026-02-04 17:13:31,002 - INFO - 字段 'key_cases_cited' 最大长度: 3017
+2026-02-04 17:13:31,018 - INFO - 字段 'appellate_parties_cross_appellant' 最大长度: 140
+2026-02-04 17:13:31,034 - INFO - 字段 'appellate_parties_interveners' 最大长度: 295
+2026-02-04 17:13:31,034 - INFO - 字段 'lower_court_history' 最大长度: 1148
+2026-02-04 17:13:31,050 - INFO - 字段 'appellant_s_submissions' 最大长度: 951
+2026-02-04 17:13:31,074 - INFO - 字段 'respondent_s_submissions' 最大长度: 884
+2026-02-04 17:13:31,082 - INFO - 字段 'appellate_court_reasoning' 最大长度: 1273
+2026-02-04 17:13:31,100 - INFO - 字段 'primary_parties_applicant' 最大长度: 305
+2026-02-04 17:13:31,102 - INFO - 字段 'primary_parties_respondent' 最大长度: 877
+2026-02-04 17:13:31,114 - INFO - 字段 'plaintiff' 最大长度: 1013
+2026-02-04 17:13:31,129 - INFO - 字段 'defendant' 最大长度: 944
+2026-02-04 17:13:31,156 - INFO - 字段 'primary_judge_s_reasoning' 最大长度: 1240
+2026-02-04 17:13:31,164 - INFO - 字段 'appellant_s_submissions_1' 最大长度: 614
+2026-02-04 17:13:31,174 - INFO - 字段 'respondent_s_submissions_1' 最大长度: 455
+2026-02-04 17:13:31,176 - INFO - 字段 'final_orders_trial_1' 最大长度: 115
+2026-02-04 17:13:31,197 - INFO - 字段 'primary_judge_s_reasoning_1' 最大长度: 834
+2026-02-04 17:13:31,207 - INFO - 字段 'original_text' 最大长度: 33
+2026-02-04 17:13:31,207 - INFO - 连接MySQL数据库...
+2026-02-04 17:13:31,464 - INFO - 创建MySQL表...
+2026-02-04 17:13:31,464 - INFO - 建表SQL:
+CREATE TABLE Australia (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    case_class varchar(50),
+    case_name varchar(597),
+    court varchar(200),
+    jurisdiction varchar(200),
+    decision_date varchar(50),
+    primary_parties_plaintiff varchar(312),
+    primary_parties_defendant varchar(360),
+    primary_parties_prosecutor varchar(155),
+    primary_parties_accused varchar(239),
+    appellate_parties_appellant varchar(374),
+    appellate_parties_respondent_on_appeal varchar(579),
+    cause_of_action varchar(926),
+    grounds_of_appeal longtext,
+    final_orders_trial longtext,
+    outcome_of_appeal varchar(810),
+    processing_status varchar(50),
+    reason varchar(951),
+    judges varchar(210),
+    counsel longtext,
+    other_parties_if_any longtext,
+    material_facts longtext,
+    legislation_considered longtext,
+    key_cases_cited longtext,
+    appellate_parties_cross_appellant varchar(210),
+    appellate_parties_interveners varchar(443),
+    lower_court_history longtext,
+    appellant_s_submissions longtext,
+    respondent_s_submissions longtext,
+    appellate_court_reasoning longtext,
+    primary_parties_applicant varchar(458),
+    primary_parties_respondent longtext,
+    plaintiff longtext,
+    defendant longtext,
+    primary_judge_s_reasoning longtext,
+    appellant_s_submissions_1 varchar(921),
+    respondent_s_submissions_1 varchar(683),
+    final_orders_trial_1 varchar(173),
+    primary_judge_s_reasoning_1 longtext,
+    original_text varchar(200)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+2026-02-04 17:13:31,720 - INFO - 在字段 'case_class' 上创建索引
+2026-02-04 17:13:31,776 - INFO - 表 'Australia' 创建成功！
+2026-02-04 17:13:31,784 - INFO - 列映射信息已保存到 column_mapping.json
+2026-02-04 17:13:31,831 - INFO - 
+表结构:
+2026-02-04 17:13:31,831 - INFO - ==========================================================================================
+2026-02-04 17:13:31,831 - INFO - 字段名                            类型                        允许空       
+2026-02-04 17:13:31,831 - INFO - ==========================================================================================
+2026-02-04 17:13:31,831 - INFO - id                             int                       NO        
+2026-02-04 17:13:31,831 - INFO - case_class                     varchar(50)               YES       
+2026-02-04 17:13:31,831 - INFO - case_name                      varchar(597)              YES       
+2026-02-04 17:13:31,831 - INFO - court                          varchar(200)              YES       
+2026-02-04 17:13:31,831 - INFO - jurisdiction                   varchar(200)              YES       
+2026-02-04 17:13:31,831 - INFO - decision_date                  varchar(50)               YES       
+2026-02-04 17:13:31,831 - INFO - primary_parties_plaintiff      varchar(312)              YES       
+2026-02-04 17:13:31,831 - INFO - primary_parties_defendant      varchar(360)              YES       
+2026-02-04 17:13:31,831 - INFO - primary_parties_prosecutor     varchar(155)              YES       
+2026-02-04 17:13:31,831 - INFO - primary_parties_accused        varchar(239)              YES       
+2026-02-04 17:13:31,831 - INFO - appellate_parties_appellant    varchar(374)              YES       
+2026-02-04 17:13:31,831 - INFO - appellate_parties_respondent_on_appeal varchar(579)              YES       
+2026-02-04 17:13:31,831 - INFO - cause_of_action                varchar(926)              YES       
+2026-02-04 17:13:31,831 - INFO - grounds_of_appeal              longtext                  YES       
+2026-02-04 17:13:31,831 - INFO - final_orders_trial             longtext                  YES       
+2026-02-04 17:13:31,831 - INFO - outcome_of_appeal              varchar(810)              YES       
+2026-02-04 17:13:31,831 - INFO - processing_status              varchar(50)               YES       
+2026-02-04 17:13:31,831 - INFO - reason                         varchar(951)              YES       
+2026-02-04 17:13:31,831 - INFO - judges                         varchar(210)              YES       
+2026-02-04 17:13:31,831 - INFO - counsel                        longtext                  YES       
+2026-02-04 17:13:31,831 - INFO - other_parties_if_any           longtext                  YES       
+2026-02-04 17:13:31,831 - INFO - material_facts                 longtext                  YES       
+2026-02-04 17:13:31,847 - INFO - legislation_considered         longtext                  YES       
+2026-02-04 17:13:31,847 - INFO - key_cases_cited                longtext                  YES       
+2026-02-04 17:13:31,847 - INFO - appellate_parties_cross_appellant varchar(210)              YES       
+2026-02-04 17:13:31,847 - INFO - appellate_parties_interveners  varchar(443)              YES       
+2026-02-04 17:13:31,847 - INFO - lower_court_history            longtext                  YES       
+2026-02-04 17:13:31,847 - INFO - appellant_s_submissions        longtext                  YES       
+2026-02-04 17:13:31,847 - INFO - respondent_s_submissions       longtext                  YES       
+2026-02-04 17:13:31,847 - INFO - appellate_court_reasoning      longtext                  YES       
+2026-02-04 17:13:31,847 - INFO - primary_parties_applicant      varchar(458)              YES       
+2026-02-04 17:13:31,847 - INFO - primary_parties_respondent     longtext                  YES       
+2026-02-04 17:13:31,847 - INFO - plaintiff                      longtext                  YES       
+2026-02-04 17:13:31,847 - INFO - defendant                      longtext                  YES       
+2026-02-04 17:13:31,847 - INFO - primary_judge_s_reasoning      longtext                  YES       
+2026-02-04 17:13:31,847 - INFO - appellant_s_submissions_1      varchar(921)              YES       
+2026-02-04 17:13:31,847 - INFO - respondent_s_submissions_1     varchar(683)              YES       
+2026-02-04 17:13:31,847 - INFO - final_orders_trial_1           varchar(173)              YES       
+2026-02-04 17:13:31,847 - INFO - primary_judge_s_reasoning_1    longtext                  YES       
+2026-02-04 17:13:31,847 - INFO - original_text                  varchar(200)              YES       
+2026-02-04 17:13:31,847 - INFO - 
+字段统计:
+2026-02-04 17:13:31,847 - INFO - ======================================================================
+2026-02-04 17:13:31,847 - INFO - 字段名                            最大长度       字段类型           
+2026-02-04 17:13:31,847 - INFO - ======================================================================
+2026-02-04 17:13:31,847 - INFO - case_class                     14         varchar        
+2026-02-04 17:13:31,847 - INFO - case_name                      398        varchar        
+2026-02-04 17:13:31,847 - INFO - court                          97         varchar        
+2026-02-04 17:13:31,847 - INFO - jurisdiction                   38         varchar        
+2026-02-04 17:13:31,847 - INFO - decision_date                  10         varchar        
+2026-02-04 17:13:31,847 - INFO - primary_parties_plaintiff      208        varchar        
+2026-02-04 17:13:31,847 - INFO - primary_parties_defendant      240        varchar        
+2026-02-04 17:13:31,847 - INFO - primary_parties_prosecutor     103        varchar        
+2026-02-04 17:13:31,862 - INFO - primary_parties_accused        159        varchar        
+2026-02-04 17:13:31,862 - INFO - appellate_parties_appellant    249        varchar        
+2026-02-04 17:13:31,862 - INFO - appellate_parties_respondent_on_appeal 386        varchar        
+2026-02-04 17:13:31,862 - INFO - cause_of_action                617        varchar        
+2026-02-04 17:13:31,862 - INFO - grounds_of_appeal              1446       longtext       
+2026-02-04 17:13:31,862 - INFO - final_orders_trial             1869       longtext       
+2026-02-04 17:13:31,862 - INFO - outcome_of_appeal              540        varchar        
+2026-02-04 17:13:31,862 - INFO - processing_status              17         varchar        
+2026-02-04 17:13:31,862 - INFO - reason                         634        varchar        
+2026-02-04 17:13:31,862 - INFO - judges                         140        varchar        
+2026-02-04 17:13:31,862 - INFO - counsel                        1247       longtext       
+2026-02-04 17:13:31,862 - INFO - other_parties_if_any           1078       longtext       
+2026-02-04 17:13:31,862 - INFO - material_facts                 1994       longtext       
+2026-02-04 17:13:31,862 - INFO - legislation_considered         696        longtext       
+2026-02-04 17:13:31,862 - INFO - key_cases_cited                3017       longtext       
+2026-02-04 17:13:31,862 - INFO - appellate_parties_cross_appellant 140        varchar        
+2026-02-04 17:13:31,862 - INFO - appellate_parties_interveners  295        varchar        
+2026-02-04 17:13:31,862 - INFO - lower_court_history            1148       longtext       
+2026-02-04 17:13:31,862 - INFO - appellant_s_submissions        951        longtext       
+2026-02-04 17:13:31,862 - INFO - respondent_s_submissions       884        longtext       
+2026-02-04 17:13:31,862 - INFO - appellate_court_reasoning      1273       longtext       
+2026-02-04 17:13:31,862 - INFO - primary_parties_applicant      305        varchar        
+2026-02-04 17:13:31,862 - INFO - primary_parties_respondent     877        longtext       
+2026-02-04 17:13:31,862 - INFO - plaintiff                      1013       longtext       
+2026-02-04 17:13:31,862 - INFO - defendant                      944        longtext       
+2026-02-04 17:13:31,862 - INFO - primary_judge_s_reasoning      1240       longtext       
+2026-02-04 17:13:31,876 - INFO - appellant_s_submissions_1      614        varchar        
+2026-02-04 17:13:31,877 - INFO - respondent_s_submissions_1     455        varchar        
+2026-02-04 17:13:31,877 - INFO - final_orders_trial_1           115        varchar        
+2026-02-04 17:13:31,878 - INFO - primary_judge_s_reasoning_1    834        longtext       
+2026-02-04 17:13:31,879 - INFO - original_text                  33         varchar        
+2026-02-04 17:13:31,879 - INFO - 
+字段类型统计: varchar=23, longtext=16
+2026-02-04 17:14:08,117 - INFO - 开始数据录入流程，读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_1.xlsx
+2026-02-04 17:14:08,117 - INFO - 使用已有的列映射信息，共39个字段
+2026-02-04 17:14:08,117 - INFO - 连接MySQL数据库...
+2026-02-04 17:14:08,550 - INFO - 开始分批次读取Excel文件...
+2026-02-04 17:14:08,566 - ERROR - 数据录入过程中出错: read_excel() got an unexpected keyword argument 'chunksize'
+Traceback (most recent call last):
+  File "c:\users\29944\desktop\spyder\law_relevant\外国法\澳洲.py", line 315, in insert_data_from_excel
+    chunk_iter = pd.read_excel(cleaned_path, dtype=str, chunksize=BATCH_SIZE)
+TypeError: read_excel() got an unexpected keyword argument 'chunksize'
+2026-02-04 17:18:55,584 - INFO - 开始数据录入流程，读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_1.xlsx
+2026-02-04 17:18:55,584 - INFO - 使用已有的列映射信息，共39个字段
+2026-02-04 17:18:55,584 - INFO - 连接MySQL数据库...
+2026-02-04 17:18:55,958 - INFO - 开始分批次读取Excel文件...
+2026-02-04 17:18:55,958 - INFO - 读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_1.xlsx
+2026-02-04 17:19:03,813 - INFO - Excel文件总行数: 19590
+2026-02-04 17:19:03,813 - INFO - 读取第 1 到 19590 行，共 19590 行
+2026-02-04 17:19:03,813 - INFO - 处理第 1 批数据，共 19590 行
+2026-02-04 17:19:31,588 - INFO - 数据录入完成，成功插入 19585 行，跳过 5 行
+2026-02-04 17:19:31,637 - INFO - 表 'Australia' 现在共有 19585 行数据
+2026-02-04 17:34:23,874 - INFO - 开始建表流程，读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_1.xlsx
+2026-02-04 17:34:31,810 - INFO - Excel文件读取成功，共19590行，40列
+2026-02-04 17:34:31,810 - INFO - 需要处理的Excel列数: 39
+2026-02-04 17:34:31,811 - INFO - Excel列 1: 'Case_Class' -> MySQL字段 'case_class'
+2026-02-04 17:34:31,812 - INFO - Excel列 2: 'case name' -> MySQL字段 'case_name'
+2026-02-04 17:34:31,812 - INFO - Excel列 3: 'court' -> MySQL字段 'court'
+2026-02-04 17:34:31,813 - INFO - Excel列 4: 'jurisdiction' -> MySQL字段 'jurisdiction'
+2026-02-04 17:34:31,814 - INFO - Excel列 5: 'Decision Date' -> MySQL字段 'decision_date'
+2026-02-04 17:34:31,814 - INFO - Excel列 6: 'Primary Parties-Plaintiff' -> MySQL字段 'primary_parties_plaintiff'
+2026-02-04 17:34:31,815 - INFO - Excel列 7: 'Primary Parties-Defendant' -> MySQL字段 'primary_parties_defendant'
+2026-02-04 17:34:31,815 - INFO - Excel列 8: 'Primary Parties-Prosecutor' -> MySQL字段 'primary_parties_prosecutor'
+2026-02-04 17:34:31,816 - INFO - Excel列 9: 'Primary Parties-Accused / Defendant (Criminal)' -> MySQL字段 'primary_parties_accused'
+2026-02-04 17:34:31,816 - INFO - Excel列 10: 'Appellate Parties-Appellant' -> MySQL字段 'appellate_parties_appellant'
+2026-02-04 17:34:31,817 - INFO - Excel列 11: 'Appellate Parties-Respondent (on appeal)' -> MySQL字段 'appellate_parties_respondent_on_appeal'
+2026-02-04 17:34:31,817 - INFO - Excel列 12: 'Cause of Action / Charge' -> MySQL字段 'cause_of_action'
+2026-02-04 17:34:31,818 - INFO - Excel列 13: 'Grounds of Appeal' -> MySQL字段 'grounds_of_appeal'
+2026-02-04 17:34:31,818 - INFO - Excel列 14: 'Final Orders (Trial)' -> MySQL字段 'final_orders_trial'
+2026-02-04 17:34:31,819 - INFO - Excel列 15: 'Outcome of Appeal' -> MySQL字段 'outcome_of_appeal'
+2026-02-04 17:34:31,819 - INFO - Excel列 16: 'Processing_Status' -> MySQL字段 'processing_status'
+2026-02-04 17:34:31,819 - INFO - Excel列 17: 'Reason' -> MySQL字段 'reason'
+2026-02-04 17:34:31,821 - INFO - Excel列 18: 'Judges' -> MySQL字段 'judges'
+2026-02-04 17:34:31,822 - INFO - Excel列 19: 'Counsel / Representation (if present)' -> MySQL字段 'counsel'
+2026-02-04 17:34:31,822 - INFO - Excel列 20: 'Other Parties (if any)' -> MySQL字段 'other_parties_if_any'
+2026-02-04 17:34:31,823 - INFO - Excel列 21: 'Material Facts' -> MySQL字段 'material_facts'
+2026-02-04 17:34:31,824 - INFO - Excel列 22: 'Legislation Considered' -> MySQL字段 'legislation_considered'
+2026-02-04 17:34:31,824 - INFO - Excel列 23: 'Key Cases Cited' -> MySQL字段 'key_cases_cited'
+2026-02-04 17:34:31,825 - INFO - Excel列 24: 'Appellate Parties-Cross-Appellant' -> MySQL字段 'appellate_parties_cross_appellant'
+2026-02-04 17:34:31,825 - INFO - Excel列 25: 'Appellate Parties-Interveners' -> MySQL字段 'appellate_parties_interveners'
+2026-02-04 17:34:31,826 - INFO - Excel列 26: 'Lower Court History' -> MySQL字段 'lower_court_history'
+2026-02-04 17:34:31,827 - INFO - Excel列 27: 'Appellant’s Submissions' -> MySQL字段 'appellant_s_submissions'
+2026-02-04 17:34:31,827 - INFO - Excel列 28: 'Respondent’s Submissions' -> MySQL字段 'respondent_s_submissions'
+2026-02-04 17:34:31,828 - INFO - Excel列 29: 'Appellate Court Reasoning' -> MySQL字段 'appellate_court_reasoning'
+2026-02-04 17:34:31,829 - INFO - Excel列 30: 'Primary Parties-Applicant' -> MySQL字段 'primary_parties_applicant'
+2026-02-04 17:34:31,829 - INFO - Excel列 31: 'Primary Parties-Respondent' -> MySQL字段 'primary_parties_respondent'
+2026-02-04 17:34:31,829 - INFO - Excel列 32: 'Plaintiff/Prosecutor Submissions' -> MySQL字段 'plaintiff'
+2026-02-04 17:34:31,830 - INFO - Excel列 33: 'Defendant/Accused Submissions' -> MySQL字段 'defendant'
+2026-02-04 17:34:31,830 - INFO - Excel列 34: 'Primary Judge’s Reasoning' -> MySQL字段 'primary_judge_s_reasoning'
+2026-02-04 17:34:31,831 - INFO - Excel列 35: 'Appellant's Submissions' -> MySQL字段 'appellant_s_submissions_1'
+2026-02-04 17:34:31,831 - INFO - Excel列 36: 'Respondent's Submissions' -> MySQL字段 'respondent_s_submissions_1'
+2026-02-04 17:34:31,832 - INFO - Excel列 37: 'Final Orders (Trial):' -> MySQL字段 'final_orders_trial_1'
+2026-02-04 17:34:31,832 - INFO - Excel列 38: 'Primary Judge's Reasoning' -> MySQL字段 'primary_judge_s_reasoning_1'
+2026-02-04 17:34:31,833 - INFO - Excel列 39: 'Original_Text' -> MySQL字段 'original_text'
+2026-02-04 17:34:31,880 - INFO - 字段 'case_class' 最大长度（清理后）: 14
+2026-02-04 17:34:31,936 - INFO - 字段 'case_name' 最大长度（清理后）: 398
+2026-02-04 17:34:31,984 - INFO - 字段 'court' 最大长度（清理后）: 97
+2026-02-04 17:34:32,032 - INFO - 字段 'jurisdiction' 最大长度（清理后）: 38
+2026-02-04 17:34:32,077 - INFO - 字段 'decision_date' 最大长度（清理后）: 10
+2026-02-04 17:34:32,103 - INFO - 字段 'primary_parties_plaintiff' 最大长度（清理后）: 208
+2026-02-04 17:34:32,130 - INFO - 字段 'primary_parties_defendant' 最大长度（清理后）: 240
+2026-02-04 17:34:32,151 - INFO - 字段 'primary_parties_prosecutor' 最大长度（清理后）: 103
+2026-02-04 17:34:32,172 - INFO - 字段 'primary_parties_accused' 最大长度（清理后）: 159
+2026-02-04 17:34:32,217 - INFO - 字段 'appellate_parties_appellant' 最大长度（清理后）: 249
+2026-02-04 17:34:32,264 - INFO - 字段 'appellate_parties_respondent_on_appeal' 最大长度（清理后）: 386
+2026-02-04 17:34:32,359 - INFO - 字段 'cause_of_action' 最大长度（清理后）: 617
+2026-02-04 17:34:32,438 - INFO - 字段 'grounds_of_appeal' 最大长度（清理后）: 1446
+2026-02-04 17:34:32,590 - INFO - 字段 'final_orders_trial' 最大长度（清理后）: 1869
+2026-02-04 17:34:32,638 - INFO - 字段 'outcome_of_appeal' 最大长度（清理后）: 540
+2026-02-04 17:34:32,679 - INFO - 字段 'processing_status' 最大长度（清理后）: 17
+2026-02-04 17:34:32,836 - INFO - 字段 'reason' 最大长度（清理后）: 634
+2026-02-04 17:34:32,883 - INFO - 字段 'judges' 最大长度（清理后）: 140
+2026-02-04 17:34:32,972 - INFO - 字段 'counsel' 最大长度（清理后）: 1247
+2026-02-04 17:34:33,014 - INFO - 字段 'other_parties_if_any' 最大长度（清理后）: 1078
+2026-02-04 17:34:33,334 - INFO - 字段 'material_facts' 最大长度（清理后）: 1994
+2026-02-04 17:34:33,404 - INFO - 字段 'legislation_considered' 最大长度（清理后）: 696
+2026-02-04 17:34:33,488 - INFO - 字段 'key_cases_cited' 最大长度（清理后）: 3017
+2026-02-04 17:34:33,523 - INFO - 字段 'appellate_parties_cross_appellant' 最大长度（清理后）: 140
+2026-02-04 17:34:33,559 - INFO - 字段 'appellate_parties_interveners' 最大长度（清理后）: 295
+2026-02-04 17:34:33,633 - INFO - 字段 'lower_court_history' 最大长度（清理后）: 1148
+2026-02-04 17:34:33,715 - INFO - 字段 'appellant_s_submissions' 最大长度（清理后）: 951
+2026-02-04 17:34:33,792 - INFO - 字段 'respondent_s_submissions' 最大长度（清理后）: 884
+2026-02-04 17:34:33,898 - INFO - 字段 'appellate_court_reasoning' 最大长度（清理后）: 1273
+2026-02-04 17:34:33,941 - INFO - 字段 'primary_parties_applicant' 最大长度（清理后）: 305
+2026-02-04 17:34:33,983 - INFO - 字段 'primary_parties_respondent' 最大长度（清理后）: 877
+2026-02-04 17:34:34,115 - INFO - 字段 'plaintiff' 最大长度（清理后）: 1013
+2026-02-04 17:34:34,229 - INFO - 字段 'defendant' 最大长度（清理后）: 944
+2026-02-04 17:34:34,405 - INFO - 字段 'primary_judge_s_reasoning' 最大长度（清理后）: 1240
+2026-02-04 17:34:34,413 - INFO - 字段 'appellant_s_submissions_1' 最大长度（清理后）: 614
+2026-02-04 17:34:34,421 - INFO - 字段 'respondent_s_submissions_1' 最大长度（清理后）: 455
+2026-02-04 17:34:34,430 - INFO - 字段 'final_orders_trial_1' 最大长度（清理后）: 115
+2026-02-04 17:34:34,438 - INFO - 字段 'primary_judge_s_reasoning_1' 最大长度（清理后）: 834
+2026-02-04 17:34:34,446 - INFO - 字段 'original_text' 最大长度（清理后）: 33
+2026-02-04 17:34:34,447 - INFO - 连接MySQL数据库...
+2026-02-04 17:34:34,761 - INFO - 创建MySQL表...
+2026-02-04 17:34:34,763 - INFO - 建表SQL:
+CREATE TABLE Australia (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    case_class varchar(50),
+    case_name varchar(597),
+    court varchar(200),
+    jurisdiction varchar(200),
+    decision_date varchar(50),
+    primary_parties_plaintiff varchar(312),
+    primary_parties_defendant varchar(360),
+    primary_parties_prosecutor varchar(155),
+    primary_parties_accused varchar(239),
+    appellate_parties_appellant varchar(374),
+    appellate_parties_respondent_on_appeal varchar(579),
+    cause_of_action varchar(926),
+    grounds_of_appeal longtext,
+    final_orders_trial longtext,
+    outcome_of_appeal varchar(810),
+    processing_status varchar(50),
+    reason varchar(951),
+    judges varchar(210),
+    counsel longtext,
+    other_parties_if_any longtext,
+    material_facts longtext,
+    legislation_considered longtext,
+    key_cases_cited longtext,
+    appellate_parties_cross_appellant varchar(210),
+    appellate_parties_interveners varchar(443),
+    lower_court_history longtext,
+    appellant_s_submissions longtext,
+    respondent_s_submissions longtext,
+    appellate_court_reasoning longtext,
+    primary_parties_applicant varchar(458),
+    primary_parties_respondent longtext,
+    plaintiff longtext,
+    defendant longtext,
+    primary_judge_s_reasoning longtext,
+    appellant_s_submissions_1 varchar(921),
+    respondent_s_submissions_1 varchar(683),
+    final_orders_trial_1 varchar(173),
+    primary_judge_s_reasoning_1 longtext,
+    original_text varchar(200)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+2026-02-04 17:34:35,001 - INFO - 在字段 'case_class' 上创建索引
+2026-02-04 17:34:35,055 - INFO - 表 'Australia' 创建成功！
+2026-02-04 17:34:35,058 - INFO - 列映射信息已保存到 column_mapping.json
+2026-02-04 17:34:35,115 - INFO - 
+表结构:
+2026-02-04 17:34:35,116 - INFO - ==========================================================================================
+2026-02-04 17:34:35,117 - INFO - 字段名                            类型                        允许空       
+2026-02-04 17:34:35,118 - INFO - ==========================================================================================
+2026-02-04 17:34:35,118 - INFO - id                             int                       NO        
+2026-02-04 17:34:35,119 - INFO - case_class                     varchar(50)               YES       
+2026-02-04 17:34:35,120 - INFO - case_name                      varchar(597)              YES       
+2026-02-04 17:34:35,120 - INFO - court                          varchar(200)              YES       
+2026-02-04 17:34:35,121 - INFO - jurisdiction                   varchar(200)              YES       
+2026-02-04 17:34:35,122 - INFO - decision_date                  varchar(50)               YES       
+2026-02-04 17:34:35,122 - INFO - primary_parties_plaintiff      varchar(312)              YES       
+2026-02-04 17:34:35,123 - INFO - primary_parties_defendant      varchar(360)              YES       
+2026-02-04 17:34:35,123 - INFO - primary_parties_prosecutor     varchar(155)              YES       
+2026-02-04 17:34:35,125 - INFO - primary_parties_accused        varchar(239)              YES       
+2026-02-04 17:34:35,125 - INFO - appellate_parties_appellant    varchar(374)              YES       
+2026-02-04 17:34:35,125 - INFO - appellate_parties_respondent_on_appeal varchar(579)              YES       
+2026-02-04 17:34:35,126 - INFO - cause_of_action                varchar(926)              YES       
+2026-02-04 17:34:35,126 - INFO - grounds_of_appeal              longtext                  YES       
+2026-02-04 17:34:35,127 - INFO - final_orders_trial             longtext                  YES       
+2026-02-04 17:34:35,127 - INFO - outcome_of_appeal              varchar(810)              YES       
+2026-02-04 17:34:35,128 - INFO - processing_status              varchar(50)               YES       
+2026-02-04 17:34:35,129 - INFO - reason                         varchar(951)              YES       
+2026-02-04 17:34:35,129 - INFO - judges                         varchar(210)              YES       
+2026-02-04 17:34:35,130 - INFO - counsel                        longtext                  YES       
+2026-02-04 17:34:35,130 - INFO - other_parties_if_any           longtext                  YES       
+2026-02-04 17:34:35,131 - INFO - material_facts                 longtext                  YES       
+2026-02-04 17:34:35,131 - INFO - legislation_considered         longtext                  YES       
+2026-02-04 17:34:35,132 - INFO - key_cases_cited                longtext                  YES       
+2026-02-04 17:34:35,132 - INFO - appellate_parties_cross_appellant varchar(210)              YES       
+2026-02-04 17:34:35,132 - INFO - appellate_parties_interveners  varchar(443)              YES       
+2026-02-04 17:34:35,133 - INFO - lower_court_history            longtext                  YES       
+2026-02-04 17:34:35,133 - INFO - appellant_s_submissions        longtext                  YES       
+2026-02-04 17:34:35,134 - INFO - respondent_s_submissions       longtext                  YES       
+2026-02-04 17:34:35,134 - INFO - appellate_court_reasoning      longtext                  YES       
+2026-02-04 17:34:35,135 - INFO - primary_parties_applicant      varchar(458)              YES       
+2026-02-04 17:34:35,135 - INFO - primary_parties_respondent     longtext                  YES       
+2026-02-04 17:34:35,136 - INFO - plaintiff                      longtext                  YES       
+2026-02-04 17:34:35,136 - INFO - defendant                      longtext                  YES       
+2026-02-04 17:34:35,137 - INFO - primary_judge_s_reasoning      longtext                  YES       
+2026-02-04 17:34:35,137 - INFO - appellant_s_submissions_1      varchar(921)              YES       
+2026-02-04 17:34:35,138 - INFO - respondent_s_submissions_1     varchar(683)              YES       
+2026-02-04 17:34:35,138 - INFO - final_orders_trial_1           varchar(173)              YES       
+2026-02-04 17:34:35,139 - INFO - primary_judge_s_reasoning_1    longtext                  YES       
+2026-02-04 17:34:35,139 - INFO - original_text                  varchar(200)              YES       
+2026-02-04 17:34:35,140 - INFO - 
+字段统计:
+2026-02-04 17:34:35,140 - INFO - ======================================================================
+2026-02-04 17:34:35,140 - INFO - 字段名                            最大长度       字段类型           
+2026-02-04 17:34:35,141 - INFO - ======================================================================
+2026-02-04 17:34:35,142 - INFO - case_class                     14         varchar        
+2026-02-04 17:34:35,142 - INFO - case_name                      398        varchar        
+2026-02-04 17:34:35,143 - INFO - court                          97         varchar        
+2026-02-04 17:34:35,143 - INFO - jurisdiction                   38         varchar        
+2026-02-04 17:34:35,143 - INFO - decision_date                  10         varchar        
+2026-02-04 17:34:35,144 - INFO - primary_parties_plaintiff      208        varchar        
+2026-02-04 17:34:35,144 - INFO - primary_parties_defendant      240        varchar        
+2026-02-04 17:34:35,146 - INFO - primary_parties_prosecutor     103        varchar        
+2026-02-04 17:34:35,146 - INFO - primary_parties_accused        159        varchar        
+2026-02-04 17:34:35,147 - INFO - appellate_parties_appellant    249        varchar        
+2026-02-04 17:34:35,148 - INFO - appellate_parties_respondent_on_appeal 386        varchar        
+2026-02-04 17:34:35,148 - INFO - cause_of_action                617        varchar        
+2026-02-04 17:34:35,149 - INFO - grounds_of_appeal              1446       longtext       
+2026-02-04 17:34:35,149 - INFO - final_orders_trial             1869       longtext       
+2026-02-04 17:34:35,150 - INFO - outcome_of_appeal              540        varchar        
+2026-02-04 17:34:35,150 - INFO - processing_status              17         varchar        
+2026-02-04 17:34:35,151 - INFO - reason                         634        varchar        
+2026-02-04 17:34:35,152 - INFO - judges                         140        varchar        
+2026-02-04 17:34:35,152 - INFO - counsel                        1247       longtext       
+2026-02-04 17:34:35,153 - INFO - other_parties_if_any           1078       longtext       
+2026-02-04 17:34:35,153 - INFO - material_facts                 1994       longtext       
+2026-02-04 17:34:35,154 - INFO - legislation_considered         696        longtext       
+2026-02-04 17:34:35,154 - INFO - key_cases_cited                3017       longtext       
+2026-02-04 17:34:35,155 - INFO - appellate_parties_cross_appellant 140        varchar        
+2026-02-04 17:34:35,155 - INFO - appellate_parties_interveners  295        varchar        
+2026-02-04 17:34:35,155 - INFO - lower_court_history            1148       longtext       
+2026-02-04 17:34:35,156 - INFO - appellant_s_submissions        951        longtext       
+2026-02-04 17:34:35,157 - INFO - respondent_s_submissions       884        longtext       
+2026-02-04 17:34:35,157 - INFO - appellate_court_reasoning      1273       longtext       
+2026-02-04 17:34:35,157 - INFO - primary_parties_applicant      305        varchar        
+2026-02-04 17:34:35,158 - INFO - primary_parties_respondent     877        longtext       
+2026-02-04 17:34:35,158 - INFO - plaintiff                      1013       longtext       
+2026-02-04 17:34:35,159 - INFO - defendant                      944        longtext       
+2026-02-04 17:34:35,159 - INFO - primary_judge_s_reasoning      1240       longtext       
+2026-02-04 17:34:35,160 - INFO - appellant_s_submissions_1      614        varchar        
+2026-02-04 17:34:35,161 - INFO - respondent_s_submissions_1     455        varchar        
+2026-02-04 17:34:35,161 - INFO - final_orders_trial_1           115        varchar        
+2026-02-04 17:34:35,162 - INFO - primary_judge_s_reasoning_1    834        longtext       
+2026-02-04 17:34:35,162 - INFO - original_text                  33         varchar        
+2026-02-04 17:34:35,163 - INFO - 
+字段类型统计: varchar=23, longtext=16
+2026-02-04 17:35:11,680 - INFO - 开始数据录入流程，读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_1.xlsx
+2026-02-04 17:35:11,683 - INFO - 使用已有的列映射信息，共39个字段
+2026-02-04 17:35:11,684 - INFO - 连接MySQL数据库...
+2026-02-04 17:35:12,007 - INFO - 开始分批次读取Excel文件...
+2026-02-04 17:35:12,009 - INFO - 读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_1.xlsx
+2026-02-04 17:35:19,500 - INFO - Excel文件总行数: 19590
+2026-02-04 17:35:19,507 - INFO - 读取第 1 到 19590 行，共 19590 行
+2026-02-04 17:35:19,508 - INFO - 处理第 1 批数据，共 19590 行
+2026-02-04 17:35:47,804 - INFO - 数据录入完成，成功插入 19585 行，跳过 5 行
+2026-02-04 17:35:47,856 - INFO - 表 'Australia' 现在共有 19585 行数据
+2026-02-13 12:35:24,485 - INFO - 开始建表流程，读取Excel文件: C:\Users\29944\Desktop\Result_V3_vietnam_law_part_1.xlsx
+2026-02-13 12:35:27,366 - INFO - Excel文件读取成功，共13610行，27列
+2026-02-13 12:35:27,366 - INFO - 需要处理的Excel列数: 26
+2026-02-13 12:35:27,366 - INFO - Excel列 1: 'Tiêu đề bản án' -> MySQL字段 'Tiêu_đề_bản_án'
+2026-02-13 12:35:27,366 - INFO - Excel列 2: 'Số hiệu bản án' -> MySQL字段 'Số_hiệu_bản_án'
+2026-02-13 12:35:27,366 - INFO - Excel列 3: 'Loại vụ án' -> MySQL字段 'Loại_vụ_án'
+2026-02-13 12:35:27,366 - INFO - Excel列 4: 'Cấp xét xử' -> MySQL字段 'Cấp_xét_xử'
+2026-02-13 12:35:27,366 - INFO - Excel列 5: 'Ngày xét xử' -> MySQL字段 'Ngày_xét_xử'
+2026-02-13 12:35:27,366 - INFO - Excel列 6: 'Tòa án xét xử' -> MySQL字段 'Tòa_án_xét_xử'
+2026-02-13 12:35:27,366 - INFO - Excel列 7: 'Nguyên đơn' -> MySQL字段 'Nguyên_đơn'
+2026-02-13 12:35:27,366 - INFO - Excel列 8: 'Bị đơn' -> MySQL字段 'Bị_đơn'
+2026-02-13 12:35:27,366 - INFO - Excel列 9: 'Người kháng cáo' -> MySQL字段 'Người_kháng_cáo'
+2026-02-13 12:35:27,366 - INFO - Excel列 10: 'Người bị kháng cáo' -> MySQL字段 'Người_bị_kháng_cáo'
+2026-02-13 12:35:27,382 - INFO - Excel列 11: 'Thẩm phán' -> MySQL字段 'Thẩm_phán'
+2026-02-13 12:35:27,382 - INFO - Excel列 12: 'Tình tiết vụ án（facts）' -> MySQL字段 'Tình_tiết_vụ_án_facts'
+2026-02-13 12:35:27,382 - INFO - Excel列 13: 'Yêu cầu của nguyên đơn' -> MySQL字段 'Yêu_cầu_của_nguyên_đơn'
+2026-02-13 12:35:27,382 - INFO - Excel列 14: 'Yêu cầu của bị đơn' -> MySQL字段 'Yêu_cầu_của_bị_đơn'
+2026-02-13 12:35:27,382 - INFO - Excel列 15: 'Vấn đề pháp lý cần giải quyết（issue）' -> MySQL字段 'Vấn_đề_pháp_lý_cần_giải_quyết_issue'
+2026-02-13 12:35:27,382 - INFO - Excel列 16: 'Lập luận của Tòa án（reasoning）' -> MySQL字段 'Lập_luận_của_Tòa_án_reasoning'
+2026-02-13 12:35:27,382 - INFO - Excel列 17: 'Đánh giá chứng cứ' -> MySQL字段 'Đánh_giá_chứng_cứ'
+2026-02-13 12:35:27,382 - INFO - Excel列 18: 'Áp dụng pháp luật' -> MySQL字段 'Áp_dụng_pháp_luật'
+2026-02-13 12:35:27,382 - INFO - Excel列 19: 'Phán quyết sơ thẩm' -> MySQL字段 'Phán_quyết_sơ_thẩm'
+2026-02-13 12:35:27,382 - INFO - Excel列 20: 'Nội dung kháng cáo' -> MySQL字段 'Nội_dung_kháng_cáo'
+2026-02-13 12:35:27,382 - INFO - Excel列 21: 'Nhận định của phúc thẩm' -> MySQL字段 'Nhận_định_của_phúc_thẩm'
+2026-02-13 12:35:27,382 - INFO - Excel列 22: 'Quyết định phúc thẩm' -> MySQL字段 'Quyết_định_phúc_thẩm'
+2026-02-13 12:35:27,382 - INFO - Excel列 23: 'Status' -> MySQL字段 'Status'
+2026-02-13 12:35:27,382 - INFO - Excel列 24: 'Quyết định giám đốc thẩm' -> MySQL字段 'Quyết_định_giám_đốc_thẩm'
+2026-02-13 12:35:27,382 - INFO - Excel列 25: 'Nhận định của giám đốc thẩm' -> MySQL字段 'Nhận_định_của_giám_đốc_thẩm'
+2026-02-13 12:35:27,382 - INFO - Excel列 26: 'Đòi tài sản' -> MySQL字段 'Đòi_tài_sản'
+2026-02-13 12:35:27,398 - INFO - 字段 'Tiêu_đề_bản_án' 最大长度（清理后）: 266
+2026-02-13 12:35:27,414 - INFO - 字段 'Số_hiệu_bản_án' 最大长度（清理后）: 17
+2026-02-13 12:35:27,433 - INFO - 字段 'Loại_vụ_án' 最大长度（清理后）: 51
+2026-02-13 12:35:27,445 - INFO - 字段 'Cấp_xét_xử' 最大长度（清理后）: 13
+2026-02-13 12:35:27,445 - INFO - 字段 'Ngày_xét_xử' 最大长度（清理后）: 10
+2026-02-13 12:35:27,461 - INFO - 字段 'Tòa_án_xét_xử' 最大长度（清理后）: 110
+2026-02-13 12:35:27,477 - INFO - 字段 'Nguyên_đơn' 最大长度（清理后）: 675
+2026-02-13 12:35:27,477 - INFO - 字段 'Bị_đơn' 最大长度（清理后）: 268
+2026-02-13 12:35:27,493 - INFO - 字段 'Người_kháng_cáo' 最大长度（清理后）: 349
+2026-02-13 12:35:27,509 - INFO - 字段 'Người_bị_kháng_cáo' 最大长度（清理后）: 675
+2026-02-13 12:35:27,509 - INFO - 字段 'Thẩm_phán' 最大长度（清理后）: 50
+2026-02-13 12:35:27,556 - INFO - 字段 'Tình_tiết_vụ_án_facts' 最大长度（清理后）: 2730
+2026-02-13 12:35:27,572 - INFO - 字段 'Yêu_cầu_của_nguyên_đơn' 最大长度（清理后）: 1542
+2026-02-13 12:35:27,588 - INFO - 字段 'Yêu_cầu_của_bị_đơn' 最大长度（清理后）: 884
+2026-02-13 12:35:27,604 - INFO - 字段 'Vấn_đề_pháp_lý_cần_giải_quyết_issue' 最大长度（清理后）: 412
+2026-02-13 12:35:27,636 - INFO - 字段 'Lập_luận_của_Tòa_án_reasoning' 最大长度（清理后）: 1289
+2026-02-13 12:35:27,667 - INFO - 字段 'Đánh_giá_chứng_cứ' 最大长度（清理后）: 725
+2026-02-13 12:35:27,683 - INFO - 字段 'Áp_dụng_pháp_luật' 最大长度（清理后）: 1415
+2026-02-13 12:35:27,715 - INFO - 字段 'Phán_quyết_sơ_thẩm' 最大长度（清理后）: 1977
+2026-02-13 12:35:27,734 - INFO - 字段 'Nội_dung_kháng_cáo' 最大长度（清理后）: 873
+2026-02-13 12:35:27,747 - INFO - 字段 'Nhận_định_của_phúc_thẩm' 最大长度（清理后）: 1969
+2026-02-13 12:35:27,778 - INFO - 字段 'Quyết_định_phúc_thẩm' 最大长度（清理后）: 2314
+2026-02-13 12:35:27,810 - INFO - 字段 'Status' 最大长度（清理后）: 9
+2026-02-13 12:35:27,810 - INFO - 字段 'Quyết_định_giám_đốc_thẩm' 最大长度（清理后）: 478
+2026-02-13 12:35:27,810 - INFO - 字段 'Nhận_định_của_giám_đốc_thẩm' 最大长度（清理后）: 253
+2026-02-13 12:35:27,826 - INFO - 字段 'Đòi_tài_sản' 最大长度（清理后）: 185
+2026-02-13 12:35:27,826 - INFO - 连接MySQL数据库...
+2026-02-13 12:35:28,142 - INFO - 创建MySQL表...
+2026-02-13 12:35:28,142 - INFO - 建表SQL:
+CREATE TABLE Vietnam_document (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    Tiêu_đề_bản_án varchar(399),
+    Số_hiệu_bản_án varchar(50),
+    Loại_vụ_án varchar(200),
+    Cấp_xét_xử varchar(50),
+    Ngày_xét_xử varchar(50),
+    Tòa_án_xét_xử varchar(165),
+    Nguyên_đơn longtext,
+    Bị_đơn varchar(402),
+    Người_kháng_cáo varchar(524),
+    Người_bị_kháng_cáo longtext,
+    Thẩm_phán varchar(200),
+    Tình_tiết_vụ_án_facts longtext,
+    Yêu_cầu_của_nguyên_đơn longtext,
+    Yêu_cầu_của_bị_đơn longtext,
+    Vấn_đề_pháp_lý_cần_giải_quyết_issue varchar(618),
+    Lập_luận_của_Tòa_án_reasoning longtext,
+    Đánh_giá_chứng_cứ longtext,
+    Áp_dụng_pháp_luật longtext,
+    Phán_quyết_sơ_thẩm longtext,
+    Nội_dung_kháng_cáo longtext,
+    Nhận_định_của_phúc_thẩm longtext,
+    Quyết_định_phúc_thẩm longtext,
+    Status varchar(50),
+    Quyết_định_giám_đốc_thẩm varchar(717),
+    Nhận_định_của_giám_đốc_thẩm varchar(380),
+    Đòi_tài_sản varchar(278)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+2026-02-13 12:35:28,459 - INFO - 在字段 'Tiêu_đề_bản_án' 上创建索引
+2026-02-13 12:35:28,491 - INFO - 表 'Vietnam_document' 创建成功！
+2026-02-13 12:35:28,507 - INFO - 列映射信息已保存到 column_mapping.json
+2026-02-13 12:35:28,570 - INFO - 
+表结构:
+2026-02-13 12:35:28,570 - INFO - ==========================================================================================
+2026-02-13 12:35:28,570 - INFO - 字段名                            类型                        允许空       
+2026-02-13 12:35:28,570 - INFO - ==========================================================================================
+2026-02-13 12:35:28,570 - INFO - id                             int                       NO        
+2026-02-13 12:35:28,570 - INFO - Tiêu_đề_bản_án                 varchar(399)              YES       
+2026-02-13 12:35:28,570 - INFO - Số_hiệu_bản_án                 varchar(50)               YES       
+2026-02-13 12:35:28,570 - INFO - Loại_vụ_án                     varchar(200)              YES       
+2026-02-13 12:35:28,570 - INFO - Cấp_xét_xử                     varchar(50)               YES       
+2026-02-13 12:35:28,570 - INFO - Ngày_xét_xử                    varchar(50)               YES       
+2026-02-13 12:35:28,570 - INFO - Tòa_án_xét_xử                  varchar(165)              YES       
+2026-02-13 12:35:28,570 - INFO - Nguyên_đơn                     longtext                  YES       
+2026-02-13 12:35:28,586 - INFO - Bị_đơn                         varchar(402)              YES       
+2026-02-13 12:35:28,586 - INFO - Người_kháng_cáo                varchar(524)              YES       
+2026-02-13 12:35:28,586 - INFO - Người_bị_kháng_cáo             longtext                  YES       
+2026-02-13 12:35:28,586 - INFO - Thẩm_phán                      varchar(200)              YES       
+2026-02-13 12:35:28,586 - INFO - Tình_tiết_vụ_án_facts          longtext                  YES       
+2026-02-13 12:35:28,586 - INFO - Yêu_cầu_của_nguyên_đơn         longtext                  YES       
+2026-02-13 12:35:28,586 - INFO - Yêu_cầu_của_bị_đơn             longtext                  YES       
+2026-02-13 12:35:28,586 - INFO - Vấn_đề_pháp_lý_cần_giải_quyết_issue varchar(618)              YES       
+2026-02-13 12:35:28,586 - INFO - Lập_luận_của_Tòa_án_reasoning  longtext                  YES       
+2026-02-13 12:35:28,586 - INFO - Đánh_giá_chứng_cứ              longtext                  YES       
+2026-02-13 12:35:28,586 - INFO - Áp_dụng_pháp_luật              longtext                  YES       
+2026-02-13 12:35:28,586 - INFO - Phán_quyết_sơ_thẩm             longtext                  YES       
+2026-02-13 12:35:28,586 - INFO - Nội_dung_kháng_cáo             longtext                  YES       
+2026-02-13 12:35:28,586 - INFO - Nhận_định_của_phúc_thẩm        longtext                  YES       
+2026-02-13 12:35:28,586 - INFO - Quyết_định_phúc_thẩm           longtext                  YES       
+2026-02-13 12:35:28,586 - INFO - Status                         varchar(50)               YES       
+2026-02-13 12:35:28,586 - INFO - Quyết_định_giám_đốc_thẩm       varchar(717)              YES       
+2026-02-13 12:35:28,586 - INFO - Nhận_định_của_giám_đốc_thẩm    varchar(380)              YES       
+2026-02-13 12:35:28,586 - INFO - Đòi_tài_sản                    varchar(278)              YES       
+2026-02-13 12:35:28,586 - INFO - 
+字段统计:
+2026-02-13 12:35:28,586 - INFO - ======================================================================
+2026-02-13 12:35:28,586 - INFO - 字段名                            最大长度       字段类型           
+2026-02-13 12:35:28,586 - INFO - ======================================================================
+2026-02-13 12:35:28,586 - INFO - Tiêu_đề_bản_án                 266        varchar        
+2026-02-13 12:35:28,586 - INFO - Số_hiệu_bản_án                 17         varchar        
+2026-02-13 12:35:28,586 - INFO - Loại_vụ_án                     51         varchar        
+2026-02-13 12:35:28,586 - INFO - Cấp_xét_xử                     13         varchar        
+2026-02-13 12:35:28,586 - INFO - Ngày_xét_xử                    10         varchar        
+2026-02-13 12:35:28,586 - INFO - Tòa_án_xét_xử                  110        varchar        
+2026-02-13 12:35:28,602 - INFO - Nguyên_đơn                     675        longtext       
+2026-02-13 12:35:28,602 - INFO - Bị_đơn                         268        varchar        
+2026-02-13 12:35:28,602 - INFO - Người_kháng_cáo                349        varchar        
+2026-02-13 12:35:28,602 - INFO - Người_bị_kháng_cáo             675        longtext       
+2026-02-13 12:35:28,602 - INFO - Thẩm_phán                      50         varchar        
+2026-02-13 12:35:28,602 - INFO - Tình_tiết_vụ_án_facts          2730       longtext       
+2026-02-13 12:35:28,602 - INFO - Yêu_cầu_của_nguyên_đơn         1542       longtext       
+2026-02-13 12:35:28,602 - INFO - Yêu_cầu_của_bị_đơn             884        longtext       
+2026-02-13 12:35:28,602 - INFO - Vấn_đề_pháp_lý_cần_giải_quyết_issue 412        varchar        
+2026-02-13 12:35:28,602 - INFO - Lập_luận_của_Tòa_án_reasoning  1289       longtext       
+2026-02-13 12:35:28,602 - INFO - Đánh_giá_chứng_cứ              725        longtext       
+2026-02-13 12:35:28,602 - INFO - Áp_dụng_pháp_luật              1415       longtext       
+2026-02-13 12:35:28,602 - INFO - Phán_quyết_sơ_thẩm             1977       longtext       
+2026-02-13 12:35:28,602 - INFO - Nội_dung_kháng_cáo             873        longtext       
+2026-02-13 12:35:28,602 - INFO - Nhận_định_của_phúc_thẩm        1969       longtext       
+2026-02-13 12:35:28,602 - INFO - Quyết_định_phúc_thẩm           2314       longtext       
+2026-02-13 12:35:28,602 - INFO - Status                         9          varchar        
+2026-02-13 12:35:28,602 - INFO - Quyết_định_giám_đốc_thẩm       478        varchar        
+2026-02-13 12:35:28,602 - INFO - Nhận_định_của_giám_đốc_thẩm    253        varchar        
+2026-02-13 12:35:28,602 - INFO - Đòi_tài_sản                    185        varchar        
+2026-02-13 12:35:28,602 - INFO - 
+字段类型统计: varchar=14, longtext=12
+2026-02-13 12:35:44,740 - INFO - 开始数据录入流程，读取Excel文件: C:\Users\29944\Desktop\Result_V3_vietnam_law_part_1.xlsx
+2026-02-13 12:35:44,756 - INFO - 使用已有的列映射信息，共26个字段
+2026-02-13 12:35:44,756 - INFO - 连接MySQL数据库...
+2026-02-13 12:35:45,096 - INFO - 开始分批次读取Excel文件...
+2026-02-13 12:35:45,098 - INFO - 读取Excel文件: C:\Users\29944\Desktop\Result_V3_vietnam_law_part_1.xlsx
+2026-02-13 12:35:47,301 - INFO - Excel文件总行数: 13610
+2026-02-13 12:35:47,304 - INFO - 读取第 1 到 13610 行，共 13610 行
+2026-02-13 12:35:47,305 - INFO - 处理第 1 批数据，共 13610 行
+2026-02-13 12:35:52,964 - INFO - 数据录入完成，成功插入 2865 行，跳过 10745 行
+2026-02-13 12:35:53,008 - INFO - 表 'Vietnam_document' 现在共有 2865 行数据
+2026-02-13 12:38:52,504 - INFO - 开始建表流程，读取Excel文件: file:\\\C:\Users\29944\Desktop\spyder\Law_relevant\外国法\澳洲\越南(建表,数据录入).py
+2026-02-13 12:38:52,520 - ERROR - 文件不存在: file:\\\C:\Users\29944\Desktop\spyder\Law_relevant\外国法\澳洲\越南(建表,数据录入).py
+2026-02-13 12:39:34,261 - INFO - 开始建表流程，读取Excel文件: C:\Users\29944\Desktop\Result_V3_vietnam_law_part_1.xlsx
+2026-02-13 12:39:36,332 - INFO - Excel文件读取成功，共13610行，27列
+2026-02-13 12:39:36,332 - INFO - 需要处理的Excel列数: 26
+2026-02-13 12:39:36,332 - INFO - Excel列 1: 'Tiêu đề bản án' -> MySQL字段 'Tiêu_đề_bản_án'
+2026-02-13 12:39:36,332 - INFO - Excel列 2: 'Số hiệu bản án' -> MySQL字段 'Số_hiệu_bản_án'
+2026-02-13 12:39:36,332 - INFO - Excel列 3: 'Loại vụ án' -> MySQL字段 'Loại_vụ_án'
+2026-02-13 12:39:36,332 - INFO - Excel列 4: 'Cấp xét xử' -> MySQL字段 'Cấp_xét_xử'
+2026-02-13 12:39:36,332 - INFO - Excel列 5: 'Ngày xét xử' -> MySQL字段 'Ngày_xét_xử'
+2026-02-13 12:39:36,332 - INFO - Excel列 6: 'Tòa án xét xử' -> MySQL字段 'Tòa_án_xét_xử'
+2026-02-13 12:39:36,332 - INFO - Excel列 7: 'Nguyên đơn' -> MySQL字段 'Nguyên_đơn'
+2026-02-13 12:39:36,332 - INFO - Excel列 8: 'Bị đơn' -> MySQL字段 'Bị_đơn'
+2026-02-13 12:39:36,332 - INFO - Excel列 9: 'Người kháng cáo' -> MySQL字段 'Người_kháng_cáo'
+2026-02-13 12:39:36,332 - INFO - Excel列 10: 'Người bị kháng cáo' -> MySQL字段 'Người_bị_kháng_cáo'
+2026-02-13 12:39:36,332 - INFO - Excel列 11: 'Thẩm phán' -> MySQL字段 'Thẩm_phán'
+2026-02-13 12:39:36,332 - INFO - Excel列 12: 'Tình tiết vụ án（facts）' -> MySQL字段 'Tình_tiết_vụ_án_facts'
+2026-02-13 12:39:36,332 - INFO - Excel列 13: 'Yêu cầu của nguyên đơn' -> MySQL字段 'Yêu_cầu_của_nguyên_đơn'
+2026-02-13 12:39:36,332 - INFO - Excel列 14: 'Yêu cầu của bị đơn' -> MySQL字段 'Yêu_cầu_của_bị_đơn'
+2026-02-13 12:39:36,332 - INFO - Excel列 15: 'Vấn đề pháp lý cần giải quyết（issue）' -> MySQL字段 'Vấn_đề_pháp_lý_cần_giải_quyết_issue'
+2026-02-13 12:39:36,332 - INFO - Excel列 16: 'Lập luận của Tòa án（reasoning）' -> MySQL字段 'Lập_luận_của_Tòa_án_reasoning'
+2026-02-13 12:39:36,332 - INFO - Excel列 17: 'Đánh giá chứng cứ' -> MySQL字段 'Đánh_giá_chứng_cứ'
+2026-02-13 12:39:36,332 - INFO - Excel列 18: 'Áp dụng pháp luật' -> MySQL字段 'Áp_dụng_pháp_luật'
+2026-02-13 12:39:36,346 - INFO - Excel列 19: 'Phán quyết sơ thẩm' -> MySQL字段 'Phán_quyết_sơ_thẩm'
+2026-02-13 12:39:36,346 - INFO - Excel列 20: 'Nội dung kháng cáo' -> MySQL字段 'Nội_dung_kháng_cáo'
+2026-02-13 12:39:36,346 - INFO - Excel列 21: 'Nhận định của phúc thẩm' -> MySQL字段 'Nhận_định_của_phúc_thẩm'
+2026-02-13 12:39:36,346 - INFO - Excel列 22: 'Quyết định phúc thẩm' -> MySQL字段 'Quyết_định_phúc_thẩm'
+2026-02-13 12:39:36,346 - INFO - Excel列 23: 'Status' -> MySQL字段 'Status'
+2026-02-13 12:39:36,346 - INFO - Excel列 24: 'Quyết định giám đốc thẩm' -> MySQL字段 'Quyết_định_giám_đốc_thẩm'
+2026-02-13 12:39:36,346 - INFO - Excel列 25: 'Nhận định của giám đốc thẩm' -> MySQL字段 'Nhận_định_của_giám_đốc_thẩm'
+2026-02-13 12:39:36,346 - INFO - Excel列 26: 'Đòi tài sản' -> MySQL字段 'Đòi_tài_sản'
+2026-02-13 12:39:36,367 - INFO - 字段 'Tiêu_đề_bản_án' 最大长度（清理后）: 266
+2026-02-13 12:39:36,377 - INFO - 字段 'Số_hiệu_bản_án' 最大长度（清理后）: 17
+2026-02-13 12:39:36,377 - INFO - 字段 'Loại_vụ_án' 最大长度（清理后）: 51
+2026-02-13 12:39:36,396 - INFO - 字段 'Cấp_xét_xử' 最大长度（清理后）: 13
+2026-02-13 12:39:36,409 - INFO - 字段 'Ngày_xét_xử' 最大长度（清理后）: 10
+2026-02-13 12:39:36,409 - INFO - 字段 'Tòa_án_xét_xử' 最大长度（清理后）: 110
+2026-02-13 12:39:36,425 - INFO - 字段 'Nguyên_đơn' 最大长度（清理后）: 675
+2026-02-13 12:39:36,441 - INFO - 字段 'Bị_đơn' 最大长度（清理后）: 268
+2026-02-13 12:39:36,441 - INFO - 字段 'Người_kháng_cáo' 最大长度（清理后）: 349
+2026-02-13 12:39:36,457 - INFO - 字段 'Người_bị_kháng_cáo' 最大长度（清理后）: 675
+2026-02-13 12:39:36,457 - INFO - 字段 'Thẩm_phán' 最大长度（清理后）: 50
+2026-02-13 12:39:36,505 - INFO - 字段 'Tình_tiết_vụ_án_facts' 最大长度（清理后）: 2730
+2026-02-13 12:39:36,522 - INFO - 字段 'Yêu_cầu_của_nguyên_đơn' 最大长度（清理后）: 1542
+2026-02-13 12:39:36,536 - INFO - 字段 'Yêu_cầu_của_bị_đơn' 最大长度（清理后）: 884
+2026-02-13 12:39:36,558 - INFO - 字段 'Vấn_đề_pháp_lý_cần_giải_quyết_issue' 最大长度（清理后）: 412
+2026-02-13 12:39:36,585 - INFO - 字段 'Lập_luận_của_Tòa_án_reasoning' 最大长度（清理后）: 1289
+2026-02-13 12:39:36,601 - INFO - 字段 'Đánh_giá_chứng_cứ' 最大长度（清理后）: 725
+2026-02-13 12:39:36,617 - INFO - 字段 'Áp_dụng_pháp_luật' 最大长度（清理后）: 1415
+2026-02-13 12:39:36,649 - INFO - 字段 'Phán_quyết_sơ_thẩm' 最大长度（清理后）: 1977
+2026-02-13 12:39:36,667 - INFO - 字段 'Nội_dung_kháng_cáo' 最大长度（清理后）: 873
+2026-02-13 12:39:36,680 - INFO - 字段 'Nhận_định_của_phúc_thẩm' 最大长度（清理后）: 1969
+2026-02-13 12:39:36,712 - INFO - 字段 'Quyết_định_phúc_thẩm' 最大长度（清理后）: 2314
+2026-02-13 12:39:36,728 - INFO - 字段 'Status' 最大长度（清理后）: 9
+2026-02-13 12:39:36,746 - INFO - 字段 'Quyết_định_giám_đốc_thẩm' 最大长度（清理后）: 478
+2026-02-13 12:39:36,746 - INFO - 字段 'Nhận_định_của_giám_đốc_thẩm' 最大长度（清理后）: 253
+2026-02-13 12:39:36,746 - INFO - 字段 'Đòi_tài_sản' 最大长度（清理后）: 185
+2026-02-13 12:39:36,746 - INFO - 连接MySQL数据库...
+2026-02-13 12:39:37,064 - WARNING - 表 'Vietnam_document' 已存在
+2026-02-13 12:39:38,804 - INFO - 取消建表操作
+2026-02-13 12:39:54,138 - INFO - 开始建表流程，读取Excel文件: C:\Users\29944\Desktop\Result_V3_vietnam_law_part_1.xlsx
+2026-02-13 12:39:56,342 - INFO - Excel文件读取成功，共13610行，27列
+2026-02-13 12:39:56,342 - INFO - 需要处理的Excel列数: 26
+2026-02-13 12:39:56,342 - INFO - Excel列 1: 'Tiêu đề bản án' -> MySQL字段 'Tiêu_đề_bản_án'
+2026-02-13 12:39:56,342 - INFO - Excel列 2: 'Số hiệu bản án' -> MySQL字段 'Số_hiệu_bản_án'
+2026-02-13 12:39:56,342 - INFO - Excel列 3: 'Loại vụ án' -> MySQL字段 'Loại_vụ_án'
+2026-02-13 12:39:56,342 - INFO - Excel列 4: 'Cấp xét xử' -> MySQL字段 'Cấp_xét_xử'
+2026-02-13 12:39:56,342 - INFO - Excel列 5: 'Ngày xét xử' -> MySQL字段 'Ngày_xét_xử'
+2026-02-13 12:39:56,342 - INFO - Excel列 6: 'Tòa án xét xử' -> MySQL字段 'Tòa_án_xét_xử'
+2026-02-13 12:39:56,342 - INFO - Excel列 7: 'Nguyên đơn' -> MySQL字段 'Nguyên_đơn'
+2026-02-13 12:39:56,351 - INFO - Excel列 8: 'Bị đơn' -> MySQL字段 'Bị_đơn'
+2026-02-13 12:39:56,351 - INFO - Excel列 9: 'Người kháng cáo' -> MySQL字段 'Người_kháng_cáo'
+2026-02-13 12:39:56,351 - INFO - Excel列 10: 'Người bị kháng cáo' -> MySQL字段 'Người_bị_kháng_cáo'
+2026-02-13 12:39:56,351 - INFO - Excel列 11: 'Thẩm phán' -> MySQL字段 'Thẩm_phán'
+2026-02-13 12:39:56,351 - INFO - Excel列 12: 'Tình tiết vụ án（facts）' -> MySQL字段 'Tình_tiết_vụ_án_facts'
+2026-02-13 12:39:56,351 - INFO - Excel列 13: 'Yêu cầu của nguyên đơn' -> MySQL字段 'Yêu_cầu_của_nguyên_đơn'
+2026-02-13 12:39:56,351 - INFO - Excel列 14: 'Yêu cầu của bị đơn' -> MySQL字段 'Yêu_cầu_của_bị_đơn'
+2026-02-13 12:39:56,351 - INFO - Excel列 15: 'Vấn đề pháp lý cần giải quyết（issue）' -> MySQL字段 'Vấn_đề_pháp_lý_cần_giải_quyết_issue'
+2026-02-13 12:39:56,351 - INFO - Excel列 16: 'Lập luận của Tòa án（reasoning）' -> MySQL字段 'Lập_luận_của_Tòa_án_reasoning'
+2026-02-13 12:39:56,351 - INFO - Excel列 17: 'Đánh giá chứng cứ' -> MySQL字段 'Đánh_giá_chứng_cứ'
+2026-02-13 12:39:56,351 - INFO - Excel列 18: 'Áp dụng pháp luật' -> MySQL字段 'Áp_dụng_pháp_luật'
+2026-02-13 12:39:56,351 - INFO - Excel列 19: 'Phán quyết sơ thẩm' -> MySQL字段 'Phán_quyết_sơ_thẩm'
+2026-02-13 12:39:56,351 - INFO - Excel列 20: 'Nội dung kháng cáo' -> MySQL字段 'Nội_dung_kháng_cáo'
+2026-02-13 12:39:56,351 - INFO - Excel列 21: 'Nhận định của phúc thẩm' -> MySQL字段 'Nhận_định_của_phúc_thẩm'
+2026-02-13 12:39:56,351 - INFO - Excel列 22: 'Quyết định phúc thẩm' -> MySQL字段 'Quyết_định_phúc_thẩm'
+2026-02-13 12:39:56,351 - INFO - Excel列 23: 'Status' -> MySQL字段 'Status'
+2026-02-13 12:39:56,351 - INFO - Excel列 24: 'Quyết định giám đốc thẩm' -> MySQL字段 'Quyết_định_giám_đốc_thẩm'
+2026-02-13 12:39:56,351 - INFO - Excel列 25: 'Nhận định của giám đốc thẩm' -> MySQL字段 'Nhận_định_của_giám_đốc_thẩm'
+2026-02-13 12:39:56,351 - INFO - Excel列 26: 'Đòi tài sản' -> MySQL字段 'Đòi_tài_sản'
+2026-02-13 12:39:56,367 - INFO - 字段 'Tiêu_đề_bản_án' 最大长度（清理后）: 266
+2026-02-13 12:39:56,383 - INFO - 字段 'Số_hiệu_bản_án' 最大长度（清理后）: 17
+2026-02-13 12:39:56,399 - INFO - 字段 'Loại_vụ_án' 最大长度（清理后）: 51
+2026-02-13 12:39:56,414 - INFO - 字段 'Cấp_xét_xử' 最大长度（清理后）: 13
+2026-02-13 12:39:56,430 - INFO - 字段 'Ngày_xét_xử' 最大长度（清理后）: 10
+2026-02-13 12:39:56,442 - INFO - 字段 'Tòa_án_xét_xử' 最大长度（清理后）: 110
+2026-02-13 12:39:56,446 - INFO - 字段 'Nguyên_đơn' 最大长度（清理后）: 675
+2026-02-13 12:39:56,462 - INFO - 字段 'Bị_đơn' 最大长度（清理后）: 268
+2026-02-13 12:39:56,462 - INFO - 字段 'Người_kháng_cáo' 最大长度（清理后）: 349
+2026-02-13 12:39:56,478 - INFO - 字段 'Người_bị_kháng_cáo' 最大长度（清理后）: 675
+2026-02-13 12:39:56,478 - INFO - 字段 'Thẩm_phán' 最大长度（清理后）: 50
+2026-02-13 12:39:56,542 - INFO - 字段 'Tình_tiết_vụ_án_facts' 最大长度（清理后）: 2730
+2026-02-13 12:39:56,557 - INFO - 字段 'Yêu_cầu_của_nguyên_đơn' 最大长度（清理后）: 1542
+2026-02-13 12:39:56,572 - INFO - 字段 'Yêu_cầu_của_bị_đơn' 最大长度（清理后）: 884
+2026-02-13 12:39:56,588 - INFO - 字段 'Vấn_đề_pháp_lý_cần_giải_quyết_issue' 最大长度（清理后）: 412
+2026-02-13 12:39:56,635 - INFO - 字段 'Lập_luận_của_Tòa_án_reasoning' 最大长度（清理后）: 1289
+2026-02-13 12:39:56,651 - INFO - 字段 'Đánh_giá_chứng_cứ' 最大长度（清理后）: 725
+2026-02-13 12:39:56,683 - INFO - 字段 'Áp_dụng_pháp_luật' 最大长度（清理后）: 1415
+2026-02-13 12:39:56,714 - INFO - 字段 'Phán_quyết_sơ_thẩm' 最大长度（清理后）: 1977
+2026-02-13 12:39:56,730 - INFO - 字段 'Nội_dung_kháng_cáo' 最大长度（清理后）: 873
+2026-02-13 12:39:56,746 - INFO - 字段 'Nhận_định_của_phúc_thẩm' 最大长度（清理后）: 1969
+2026-02-13 12:39:56,762 - INFO - 字段 'Quyết_định_phúc_thẩm' 最大长度（清理后）: 2314
+2026-02-13 12:39:56,793 - INFO - 字段 'Status' 最大长度（清理后）: 9
+2026-02-13 12:39:56,809 - INFO - 字段 'Quyết_định_giám_đốc_thẩm' 最大长度（清理后）: 478
+2026-02-13 12:39:56,809 - INFO - 字段 'Nhận_định_của_giám_đốc_thẩm' 最大长度（清理后）: 253
+2026-02-13 12:39:56,825 - INFO - 字段 'Đòi_tài_sản' 最大长度（清理后）: 185
+2026-02-13 12:39:56,825 - INFO - 连接MySQL数据库...
+2026-02-13 12:39:57,078 - WARNING - 表 'Vietnam_document' 已存在
+2026-02-13 12:40:01,261 - INFO - 表 'Vietnam_document' 已删除
+2026-02-13 12:40:01,261 - INFO - 创建MySQL表...
+2026-02-13 12:40:01,261 - INFO - 建表SQL:
+CREATE TABLE Vietnam_document (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    Tiêu_đề_bản_án varchar(399),
+    Số_hiệu_bản_án varchar(50),
+    Loại_vụ_án varchar(200),
+    Cấp_xét_xử varchar(50),
+    Ngày_xét_xử varchar(50),
+    Tòa_án_xét_xử varchar(165),
+    Nguyên_đơn longtext,
+    Bị_đơn varchar(402),
+    Người_kháng_cáo varchar(524),
+    Người_bị_kháng_cáo longtext,
+    Thẩm_phán varchar(200),
+    Tình_tiết_vụ_án_facts longtext,
+    Yêu_cầu_của_nguyên_đơn longtext,
+    Yêu_cầu_của_bị_đơn longtext,
+    Vấn_đề_pháp_lý_cần_giải_quyết_issue varchar(618),
+    Lập_luận_của_Tòa_án_reasoning longtext,
+    Đánh_giá_chứng_cứ longtext,
+    Áp_dụng_pháp_luật longtext,
+    Phán_quyết_sơ_thẩm longtext,
+    Nội_dung_kháng_cáo longtext,
+    Nhận_định_của_phúc_thẩm longtext,
+    Quyết_định_phúc_thẩm longtext,
+    Status varchar(50),
+    Quyết_định_giám_đốc_thẩm varchar(717),
+    Nhận_định_của_giám_đốc_thẩm varchar(380),
+    Đòi_tài_sản varchar(278)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+2026-02-13 12:40:01,483 - INFO - 在字段 'Tiêu_đề_bản_án' 上创建索引
+2026-02-13 12:40:01,530 - INFO - 表 'Vietnam_document' 创建成功！
+2026-02-13 12:40:01,530 - INFO - 列映射信息已保存到 column_mapping.json
+2026-02-13 12:40:01,577 - INFO - 
+表结构:
+2026-02-13 12:40:01,577 - INFO - ==========================================================================================
+2026-02-13 12:40:01,577 - INFO - 字段名                            类型                        允许空       
+2026-02-13 12:40:01,577 - INFO - ==========================================================================================
+2026-02-13 12:40:01,577 - INFO - id                             int                       NO        
+2026-02-13 12:40:01,577 - INFO - Tiêu_đề_bản_án                 varchar(399)              YES       
+2026-02-13 12:40:01,577 - INFO - Số_hiệu_bản_án                 varchar(50)               YES       
+2026-02-13 12:40:01,577 - INFO - Loại_vụ_án                     varchar(200)              YES       
+2026-02-13 12:40:01,577 - INFO - Cấp_xét_xử                     varchar(50)               YES       
+2026-02-13 12:40:01,577 - INFO - Ngày_xét_xử                    varchar(50)               YES       
+2026-02-13 12:40:01,577 - INFO - Tòa_án_xét_xử                  varchar(165)              YES       
+2026-02-13 12:40:01,577 - INFO - Nguyên_đơn                     longtext                  YES       
+2026-02-13 12:40:01,593 - INFO - Bị_đơn                         varchar(402)              YES       
+2026-02-13 12:40:01,593 - INFO - Người_kháng_cáo                varchar(524)              YES       
+2026-02-13 12:40:01,593 - INFO - Người_bị_kháng_cáo             longtext                  YES       
+2026-02-13 12:40:01,593 - INFO - Thẩm_phán                      varchar(200)              YES       
+2026-02-13 12:40:01,593 - INFO - Tình_tiết_vụ_án_facts          longtext                  YES       
+2026-02-13 12:40:01,593 - INFO - Yêu_cầu_của_nguyên_đơn         longtext                  YES       
+2026-02-13 12:40:01,593 - INFO - Yêu_cầu_của_bị_đơn             longtext                  YES       
+2026-02-13 12:40:01,593 - INFO - Vấn_đề_pháp_lý_cần_giải_quyết_issue varchar(618)              YES       
+2026-02-13 12:40:01,593 - INFO - Lập_luận_của_Tòa_án_reasoning  longtext                  YES       
+2026-02-13 12:40:01,593 - INFO - Đánh_giá_chứng_cứ              longtext                  YES       
+2026-02-13 12:40:01,593 - INFO - Áp_dụng_pháp_luật              longtext                  YES       
+2026-02-13 12:40:01,593 - INFO - Phán_quyết_sơ_thẩm             longtext                  YES       
+2026-02-13 12:40:01,593 - INFO - Nội_dung_kháng_cáo             longtext                  YES       
+2026-02-13 12:40:01,593 - INFO - Nhận_định_của_phúc_thẩm        longtext                  YES       
+2026-02-13 12:40:01,593 - INFO - Quyết_định_phúc_thẩm           longtext                  YES       
+2026-02-13 12:40:01,593 - INFO - Status                         varchar(50)               YES       
+2026-02-13 12:40:01,593 - INFO - Quyết_định_giám_đốc_thẩm       varchar(717)              YES       
+2026-02-13 12:40:01,593 - INFO - Nhận_định_của_giám_đốc_thẩm    varchar(380)              YES       
+2026-02-13 12:40:01,593 - INFO - Đòi_tài_sản                    varchar(278)              YES       
+2026-02-13 12:40:01,593 - INFO - 
+字段统计:
+2026-02-13 12:40:01,593 - INFO - ======================================================================
+2026-02-13 12:40:01,593 - INFO - 字段名                            最大长度       字段类型           
+2026-02-13 12:40:01,593 - INFO - ======================================================================
+2026-02-13 12:40:01,593 - INFO - Tiêu_đề_bản_án                 266        varchar        
+2026-02-13 12:40:01,609 - INFO - Số_hiệu_bản_án                 17         varchar        
+2026-02-13 12:40:01,609 - INFO - Loại_vụ_án                     51         varchar        
+2026-02-13 12:40:01,609 - INFO - Cấp_xét_xử                     13         varchar        
+2026-02-13 12:40:01,609 - INFO - Ngày_xét_xử                    10         varchar        
+2026-02-13 12:40:01,609 - INFO - Tòa_án_xét_xử                  110        varchar        
+2026-02-13 12:40:01,609 - INFO - Nguyên_đơn                     675        longtext       
+2026-02-13 12:40:01,609 - INFO - Bị_đơn                         268        varchar        
+2026-02-13 12:40:01,609 - INFO - Người_kháng_cáo                349        varchar        
+2026-02-13 12:40:01,609 - INFO - Người_bị_kháng_cáo             675        longtext       
+2026-02-13 12:40:01,609 - INFO - Thẩm_phán                      50         varchar        
+2026-02-13 12:40:01,609 - INFO - Tình_tiết_vụ_án_facts          2730       longtext       
+2026-02-13 12:40:01,609 - INFO - Yêu_cầu_của_nguyên_đơn         1542       longtext       
+2026-02-13 12:40:01,609 - INFO - Yêu_cầu_của_bị_đơn             884        longtext       
+2026-02-13 12:40:01,609 - INFO - Vấn_đề_pháp_lý_cần_giải_quyết_issue 412        varchar        
+2026-02-13 12:40:01,609 - INFO - Lập_luận_của_Tòa_án_reasoning  1289       longtext       
+2026-02-13 12:40:01,609 - INFO - Đánh_giá_chứng_cứ              725        longtext       
+2026-02-13 12:40:01,609 - INFO - Áp_dụng_pháp_luật              1415       longtext       
+2026-02-13 12:40:01,609 - INFO - Phán_quyết_sơ_thẩm             1977       longtext       
+2026-02-13 12:40:01,609 - INFO - Nội_dung_kháng_cáo             873        longtext       
+2026-02-13 12:40:01,609 - INFO - Nhận_định_của_phúc_thẩm        1969       longtext       
+2026-02-13 12:40:01,609 - INFO - Quyết_định_phúc_thẩm           2314       longtext       
+2026-02-13 12:40:01,609 - INFO - Status                         9          varchar        
+2026-02-13 12:40:01,609 - INFO - Quyết_định_giám_đốc_thẩm       478        varchar        
+2026-02-13 12:40:01,609 - INFO - Nhận_định_của_giám_đốc_thẩm    253        varchar        
+2026-02-13 12:40:01,609 - INFO - Đòi_tài_sản                    185        varchar        
+2026-02-13 12:40:01,609 - INFO - 
+字段类型统计: varchar=14, longtext=12
+2026-02-13 12:40:10,852 - INFO - 开始数据录入流程，读取Excel文件: C:\Users\29944\Desktop\Result_V3_vietnam_law_part_1.xlsx
+2026-02-13 12:40:10,868 - INFO - 使用已有的列映射信息，共26个字段
+2026-02-13 12:40:10,868 - INFO - 连接MySQL数据库...
+2026-02-13 12:40:11,174 - INFO - 开始分批次读取Excel文件...
+2026-02-13 12:40:11,174 - INFO - 读取Excel文件: C:\Users\29944\Desktop\Result_V3_vietnam_law_part_1.xlsx
+2026-02-13 12:40:13,432 - INFO - Excel文件总行数: 13610
+2026-02-13 12:40:13,432 - INFO - 读取第 1 到 13610 行，共 13610 行
+2026-02-13 12:40:13,432 - INFO - 处理第 1 批数据，共 13610 行
+2026-02-13 12:40:17,931 - INFO - 数据录入完成，成功插入 2865 行，跳过 10745 行
+2026-02-13 12:40:17,963 - INFO - 表 'Vietnam_document' 现在共有 2865 行数据
+2026-02-13 12:42:13,555 - INFO - 开始建表流程，读取Excel文件: D:\这里有法_资料\澳洲\已完成\Result_anli_part_1.xlsx
+2026-02-13 12:42:21,905 - INFO - Excel文件读取成功，共19590行，40列
+2026-02-13 12:42:21,905 - INFO - 需要处理的Excel列数: 39
+2026-02-13 12:42:21,905 - INFO - Excel列 1: 'Case_Class' -> MySQL字段 'case_class'
+2026-02-13 12:42:21,905 - INFO - Excel列 2: 'case name' -> MySQL字段 'case_name'
+2026-02-13 12:42:21,905 - INFO - Excel列 3: 'court' -> MySQL字段 'court'
+2026-02-13 12:42:21,905 - INFO - Excel列 4: 'jurisdiction' -> MySQL字段 'jurisdiction'
+2026-02-13 12:42:21,905 - INFO - Excel列 5: 'Decision Date' -> MySQL字段 'decision_date'
+2026-02-13 12:42:21,905 - INFO - Excel列 6: 'Primary Parties-Plaintiff' -> MySQL字段 'primary_parties_plaintiff'
+2026-02-13 12:42:21,917 - INFO - Excel列 7: 'Primary Parties-Defendant' -> MySQL字段 'primary_parties_defendant'
+2026-02-13 12:42:21,917 - INFO - Excel列 8: 'Primary Parties-Prosecutor' -> MySQL字段 'primary_parties_prosecutor'
+2026-02-13 12:42:21,917 - INFO - Excel列 9: 'Primary Parties-Accused / Defendant (Criminal)' -> MySQL字段 'primary_parties_accused'
+2026-02-13 12:42:21,917 - INFO - Excel列 10: 'Appellate Parties-Appellant' -> MySQL字段 'appellate_parties_appellant'
+2026-02-13 12:42:21,917 - INFO - Excel列 11: 'Appellate Parties-Respondent (on appeal)' -> MySQL字段 'appellate_parties_respondent_on_appeal'
+2026-02-13 12:42:21,917 - INFO - Excel列 12: 'Cause of Action / Charge' -> MySQL字段 'cause_of_action'
+2026-02-13 12:42:21,917 - INFO - Excel列 13: 'Grounds of Appeal' -> MySQL字段 'grounds_of_appeal'
+2026-02-13 12:42:21,917 - INFO - Excel列 14: 'Final Orders (Trial)' -> MySQL字段 'final_orders_trial'
+2026-02-13 12:42:21,917 - INFO - Excel列 15: 'Outcome of Appeal' -> MySQL字段 'outcome_of_appeal'
+2026-02-13 12:42:21,917 - INFO - Excel列 16: 'Processing_Status' -> MySQL字段 'processing_status'
+2026-02-13 12:42:21,917 - INFO - Excel列 17: 'Reason' -> MySQL字段 'reason'
+2026-02-13 12:42:21,917 - INFO - Excel列 18: 'Judges' -> MySQL字段 'judges'
+2026-02-13 12:42:21,917 - INFO - Excel列 19: 'Counsel / Representation (if present)' -> MySQL字段 'counsel'
+2026-02-13 12:42:21,917 - INFO - Excel列 20: 'Other Parties (if any)' -> MySQL字段 'other_parties_if_any'
+2026-02-13 12:42:21,917 - INFO - Excel列 21: 'Material Facts' -> MySQL字段 'material_facts'
+2026-02-13 12:42:21,917 - INFO - Excel列 22: 'Legislation Considered' -> MySQL字段 'legislation_considered'
+2026-02-13 12:42:21,917 - INFO - Excel列 23: 'Key Cases Cited' -> MySQL字段 'key_cases_cited'
+2026-02-13 12:42:21,917 - INFO - Excel列 24: 'Appellate Parties-Cross-Appellant' -> MySQL字段 'appellate_parties_cross_appellant'
+2026-02-13 12:42:21,917 - INFO - Excel列 25: 'Appellate Parties-Interveners' -> MySQL字段 'appellate_parties_interveners'
+2026-02-13 12:42:21,917 - INFO - Excel列 26: 'Lower Court History' -> MySQL字段 'lower_court_history'
+2026-02-13 12:42:21,917 - INFO - Excel列 27: 'Appellant’s Submissions' -> MySQL字段 'appellant_s_submissions'
+2026-02-13 12:42:21,917 - INFO - Excel列 28: 'Respondent’s Submissions' -> MySQL字段 'respondent_s_submissions'
+2026-02-13 12:42:21,917 - INFO - Excel列 29: 'Appellate Court Reasoning' -> MySQL字段 'appellate_court_reasoning'
+2026-02-13 12:42:21,917 - INFO - Excel列 30: 'Primary Parties-Applicant' -> MySQL字段 'primary_parties_applicant'
+2026-02-13 12:42:21,917 - INFO - Excel列 31: 'Primary Parties-Respondent' -> MySQL字段 'primary_parties_respondent'
+2026-02-13 12:42:21,932 - INFO - Excel列 32: 'Plaintiff/Prosecutor Submissions' -> MySQL字段 'plaintiff'
+2026-02-13 12:42:21,932 - INFO - Excel列 33: 'Defendant/Accused Submissions' -> MySQL字段 'defendant'
+2026-02-13 12:42:21,932 - INFO - Excel列 34: 'Primary Judge’s Reasoning' -> MySQL字段 'primary_judge_s_reasoning'
+2026-02-13 12:42:21,932 - INFO - Excel列 35: 'Appellant's Submissions' -> MySQL字段 'appellant_s_submissions_1'
+2026-02-13 12:42:21,932 - INFO - Excel列 36: 'Respondent's Submissions' -> MySQL字段 'respondent_s_submissions_1'
+2026-02-13 12:42:21,932 - INFO - Excel列 37: 'Final Orders (Trial):' -> MySQL字段 'final_orders_trial_1'
+2026-02-13 12:42:21,932 - INFO - Excel列 38: 'Primary Judge's Reasoning' -> MySQL字段 'primary_judge_s_reasoning_1'
+2026-02-13 12:42:21,936 - INFO - Excel列 39: 'Original_Text' -> MySQL字段 'original_text'
+2026-02-13 12:42:21,988 - INFO - 字段 'case_class' 最大长度（清理后）: 14
+2026-02-13 12:42:22,055 - INFO - 字段 'case_name' 最大长度（清理后）: 398
+2026-02-13 12:42:22,107 - INFO - 字段 'court' 最大长度（清理后）: 97
+2026-02-13 12:42:22,155 - INFO - 字段 'jurisdiction' 最大长度（清理后）: 38
+2026-02-13 12:42:22,216 - INFO - 字段 'decision_date' 最大长度（清理后）: 10
+2026-02-13 12:42:22,237 - INFO - 字段 'primary_parties_plaintiff' 最大长度（清理后）: 208
+2026-02-13 12:42:22,274 - INFO - 字段 'primary_parties_defendant' 最大长度（清理后）: 240
+2026-02-13 12:42:22,300 - INFO - 字段 'primary_parties_prosecutor' 最大长度（清理后）: 103
+2026-02-13 12:42:22,314 - INFO - 字段 'primary_parties_accused' 最大长度（清理后）: 159
+2026-02-13 12:42:22,362 - INFO - 字段 'appellate_parties_appellant' 最大长度（清理后）: 249
+2026-02-13 12:42:22,426 - INFO - 字段 'appellate_parties_respondent_on_appeal' 最大长度（清理后）: 386
+2026-02-13 12:42:22,522 - INFO - 字段 'cause_of_action' 最大长度（清理后）: 617
+2026-02-13 12:42:22,617 - INFO - 字段 'grounds_of_appeal' 最大长度（清理后）: 1446
+2026-02-13 12:42:22,807 - INFO - 字段 'final_orders_trial' 最大长度（清理后）: 1869
+2026-02-13 12:42:22,855 - INFO - 字段 'outcome_of_appeal' 最大长度（清理后）: 540
+2026-02-13 12:42:22,902 - INFO - 字段 'processing_status' 最大长度（清理后）: 17
+2026-02-13 12:42:23,093 - INFO - 字段 'reason' 最大长度（清理后）: 634
+2026-02-13 12:42:23,156 - INFO - 字段 'judges' 最大长度（清理后）: 140
+2026-02-13 12:42:23,252 - INFO - 字段 'counsel' 最大长度（清理后）: 1247
+2026-02-13 12:42:23,314 - INFO - 字段 'other_parties_if_any' 最大长度（清理后）: 1078
+2026-02-13 12:42:23,681 - INFO - 字段 'material_facts' 最大长度（清理后）: 1994
+2026-02-13 12:42:23,777 - INFO - 字段 'legislation_considered' 最大长度（清理后）: 696
+2026-02-13 12:42:23,872 - INFO - 字段 'key_cases_cited' 最大长度（清理后）: 3017
+2026-02-13 12:42:23,920 - INFO - 字段 'appellate_parties_cross_appellant' 最大长度（清理后）: 140
+2026-02-13 12:42:23,952 - INFO - 字段 'appellate_parties_interveners' 最大长度（清理后）: 295
+2026-02-13 12:42:24,048 - INFO - 字段 'lower_court_history' 最大长度（清理后）: 1148
+2026-02-13 12:42:24,158 - INFO - 字段 'appellant_s_submissions' 最大长度（清理后）: 951
+2026-02-13 12:42:24,253 - INFO - 字段 'respondent_s_submissions' 最大长度（清理后）: 884
+2026-02-13 12:42:24,397 - INFO - 字段 'appellate_court_reasoning' 最大长度（清理后）: 1273
+2026-02-13 12:42:24,443 - INFO - 字段 'primary_parties_applicant' 最大长度（清理后）: 305
+2026-02-13 12:42:24,491 - INFO - 字段 'primary_parties_respondent' 最大长度（清理后）: 877
+2026-02-13 12:42:24,649 - INFO - 字段 'plaintiff' 最大长度（清理后）: 1013
+2026-02-13 12:42:24,789 - INFO - 字段 'defendant' 最大长度（清理后）: 944
+2026-02-13 12:42:24,996 - INFO - 字段 'primary_judge_s_reasoning' 最大长度（清理后）: 1240
+2026-02-13 12:42:25,012 - INFO - 字段 'appellant_s_submissions_1' 最大长度（清理后）: 614
+2026-02-13 12:42:25,012 - INFO - 字段 'respondent_s_submissions_1' 最大长度（清理后）: 455
+2026-02-13 12:42:25,028 - INFO - 字段 'final_orders_trial_1' 最大长度（清理后）: 115
+2026-02-13 12:42:25,028 - INFO - 字段 'primary_judge_s_reasoning_1' 最大长度（清理后）: 834
+2026-02-13 12:42:25,044 - INFO - 字段 'original_text' 最大长度（清理后）: 33
+2026-02-13 12:42:25,044 - INFO - 连接MySQL数据库...
+2026-02-13 12:42:25,361 - WARNING - 表 'Australia' 已存在
+2026-02-13 12:42:29,722 - INFO - 表 'Australia' 已删除
+2026-02-13 12:42:29,722 - INFO - 创建MySQL表...
+2026-02-13 12:42:29,722 - INFO - 建表SQL:
+CREATE TABLE Australia (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    case_class varchar(50),
+    case_name varchar(597),
+    court varchar(200),
+    jurisdiction varchar(200),
+    decision_date varchar(50),
+    primary_parties_plaintiff varchar(312),
+    primary_parties_defendant varchar(360),
+    primary_parties_prosecutor varchar(155),
+    primary_parties_accused varchar(239),
+    appellate_parties_appellant varchar(374),
+    appellate_parties_respondent_on_appeal varchar(579),
+    cause_of_action varchar(926),
+    grounds_of_appeal longtext,
+    final_orders_trial longtext,
+    outcome_of_appeal varchar(810),
+    processing_status varchar(50),
+    reason varchar(951),
+    judges varchar(210),
+    counsel longtext,
+    other_parties_if_any longtext,
+    material_facts longtext,
+    legislation_considered longtext,
+    key_cases_cited longtext,
+    appellate_parties_cross_appellant varchar(210),
+    appellate_parties_interveners varchar(443),
+    lower_court_history longtext,
+    appellant_s_submissions longtext,
+    respondent_s_submissions longtext,
+    appellate_court_reasoning longtext,
+    primary_parties_applicant varchar(458),
+    primary_parties_respondent longtext,
+    plaintiff longtext,
+    defendant longtext,
+    primary_judge_s_reasoning longtext,
+    appellant_s_submissions_1 varchar(921),
+    respondent_s_submissions_1 varchar(683),
+    final_orders_trial_1 varchar(173),
+    primary_judge_s_reasoning_1 longtext,
+    original_text varchar(200)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+2026-02-13 12:42:29,993 - INFO - 在字段 'case_class' 上创建索引
+2026-02-13 12:42:30,042 - INFO - 表 'Australia' 创建成功！
+2026-02-13 12:42:30,042 - INFO - 列映射信息已保存到 column_mapping.json
+2026-02-13 12:42:30,090 - INFO - 
+表结构:
+2026-02-13 12:42:30,090 - INFO - ==========================================================================================
+2026-02-13 12:42:30,090 - INFO - 字段名                            类型                        允许空       
+2026-02-13 12:42:30,090 - INFO - ==========================================================================================
+2026-02-13 12:42:30,090 - INFO - id                             int                       NO        
+2026-02-13 12:42:30,090 - INFO - case_class                     varchar(50)               YES       
+2026-02-13 12:42:30,090 - INFO - case_name                      varchar(597)              YES       
+2026-02-13 12:42:30,090 - INFO - court                          varchar(200)              YES       
+2026-02-13 12:42:30,090 - INFO - jurisdiction                   varchar(200)              YES       
+2026-02-13 12:42:30,090 - INFO - decision_date                  varchar(50)               YES       
+2026-02-13 12:42:30,090 - INFO - primary_parties_plaintiff      varchar(312)              YES       
+2026-02-13 12:42:30,090 - INFO - primary_parties_defendant      varchar(360)              YES       
+2026-02-13 12:42:30,090 - INFO - primary_parties_prosecutor     varchar(155)              YES       
+2026-02-13 12:42:30,090 - INFO - primary_parties_accused        varchar(239)              YES       
+2026-02-13 12:42:30,106 - INFO - appellate_parties_appellant    varchar(374)              YES       
+2026-02-13 12:42:30,106 - INFO - appellate_parties_respondent_on_appeal varchar(579)              YES       
+2026-02-13 12:42:30,106 - INFO - cause_of_action                varchar(926)              YES       
+2026-02-13 12:42:30,106 - INFO - grounds_of_appeal              longtext                  YES       
+2026-02-13 12:42:30,106 - INFO - final_orders_trial             longtext                  YES       
+2026-02-13 12:42:30,106 - INFO - outcome_of_appeal              varchar(810)              YES       
+2026-02-13 12:42:30,106 - INFO - processing_status              varchar(50)               YES       
+2026-02-13 12:42:30,106 - INFO - reason                         varchar(951)              YES       
+2026-02-13 12:42:30,106 - INFO - judges                         varchar(210)              YES       
+2026-02-13 12:42:30,106 - INFO - counsel                        longtext                  YES       
+2026-02-13 12:42:30,106 - INFO - other_parties_if_any           longtext                  YES       
+2026-02-13 12:42:30,106 - INFO - material_facts                 longtext                  YES       
+2026-02-13 12:42:30,106 - INFO - legislation_considered         longtext                  YES       
+2026-02-13 12:42:30,106 - INFO - key_cases_cited                longtext                  YES       
+2026-02-13 12:42:30,106 - INFO - appellate_parties_cross_appellant varchar(210)              YES       
+2026-02-13 12:42:30,106 - INFO - appellate_parties_interveners  varchar(443)              YES       
+2026-02-13 12:42:30,106 - INFO - lower_court_history            longtext                  YES       
+2026-02-13 12:42:30,106 - INFO - appellant_s_submissions        longtext                  YES       
+2026-02-13 12:42:30,106 - INFO - respondent_s_submissions       longtext                  YES       
+2026-02-13 12:42:30,106 - INFO - appellate_court_reasoning      longtext                  YES       
+2026-02-13 12:42:30,106 - INFO - primary_parties_applicant      varchar(458)              YES       
+2026-02-13 12:42:30,106 - INFO - primary_parties_respondent     longtext                  YES       
+2026-02-13 12:42:30,106 - INFO - plaintiff                      longtext                  YES       
+2026-02-13 12:42:30,106 - INFO - defendant                      longtext                  YES       
+2026-02-13 12:42:30,106 - INFO - primary_judge_s_reasoning      longtext                  YES       
+2026-02-13 12:42:30,106 - INFO - appellant_s_submissions_1      varchar(921)              YES       
+2026-02-13 12:42:30,106 - INFO - respondent_s_submissions_1     varchar(683)              YES       
+2026-02-13 12:42:30,106 - INFO - final_orders_trial_1           varchar(173)              YES       
+2026-02-13 12:42:30,106 - INFO - primary_judge_s_reasoning_1    longtext                  YES       
+2026-02-13 12:42:30,106 - INFO - original_text                  varchar(200)              YES       
+2026-02-13 12:42:30,122 - INFO - 
+字段统计:
+2026-02-13 12:42:30,122 - INFO - ======================================================================
+2026-02-13 12:42:30,122 - INFO - 字段名                            最大长度       字段类型           
+2026-02-13 12:42:30,122 - INFO - ======================================================================
+2026-02-13 12:42:30,122 - INFO - case_class                     14         varchar        
+2026-02-13 12:42:30,122 - INFO - case_name                      398        varchar        
+2026-02-13 12:42:30,122 - INFO - court                          97         varchar        
+2026-02-13 12:42:30,122 - INFO - jurisdiction                   38         varchar        
+2026-02-13 12:42:30,122 - INFO - decision_date                  10         varchar        
+2026-02-13 12:42:30,122 - INFO - primary_parties_plaintiff      208        varchar        
+2026-02-13 12:42:30,122 - INFO - primary_parties_defendant      240        varchar        
+2026-02-13 12:42:30,122 - INFO - primary_parties_prosecutor     103        varchar        
+2026-02-13 12:42:30,122 - INFO - primary_parties_accused        159        varchar        
+2026-02-13 12:42:30,122 - INFO - appellate_parties_appellant    249        varchar        
+2026-02-13 12:42:30,122 - INFO - appellate_parties_respondent_on_appeal 386        varchar        
+2026-02-13 12:42:30,122 - INFO - cause_of_action                617        varchar        
+2026-02-13 12:42:30,122 - INFO - grounds_of_appeal              1446       longtext       
+2026-02-13 12:42:30,122 - INFO - final_orders_trial             1869       longtext       
+2026-02-13 12:42:30,122 - INFO - outcome_of_appeal              540        varchar        
+2026-02-13 12:42:30,122 - INFO - processing_status              17         varchar        
+2026-02-13 12:42:30,122 - INFO - reason                         634        varchar        
+2026-02-13 12:42:30,122 - INFO - judges                         140        varchar        
+2026-02-13 12:42:30,122 - INFO - counsel                        1247       longtext       
+2026-02-13 12:42:30,122 - INFO - other_parties_if_any           1078       longtext       
+2026-02-13 12:42:30,122 - INFO - material_facts                 1994       longtext       
+2026-02-13 12:42:30,122 - INFO - legislation_considered         696        longtext       
+2026-02-13 12:42:30,122 - INFO - key_cases_cited                3017       longtext       
+2026-02-13 12:42:30,122 - INFO - appellate_parties_cross_appellant 140        varchar        
+2026-02-13 12:42:30,122 - INFO - appellate_parties_interveners  295        varchar        
+2026-02-13 12:42:30,122 - INFO - lower_court_history            1148       longtext       
+2026-02-13 12:42:30,122 - INFO - appellant_s_submissions        951        longtext       
+2026-02-13 12:42:30,137 - INFO - respondent_s_submissions       884        longtext       
+2026-02-13 12:42:30,137 - INFO - appellate_court_reasoning      1273       longtext       
+2026-02-13 12:42:30,137 - INFO - primary_parties_applicant      305        varchar        
+2026-02-13 12:42:30,137 - INFO - primary_parties_respondent     877        longtext       
+2026-02-13 12:42:30,137 - INFO - plaintiff                      1013       longtext       
+2026-02-13 12:42:30,137 - INFO - defendant                      944        longtext       
+2026-02-13 12:42:30,137 - INFO - primary_judge_s_reasoning      1240       longtext       
+2026-02-13 12:42:30,137 - INFO - appellant_s_submissions_1      614        varchar        
+2026-02-13 12:42:30,137 - INFO - respondent_s_submissions_1     455        varchar        
+2026-02-13 12:42:30,137 - INFO - final_orders_trial_1           115        varchar        
+2026-02-13 12:42:30,137 - INFO - primary_judge_s_reasoning_1    834        longtext       
+2026-02-13 12:42:30,137 - INFO - original_text                  33         varchar        
+2026-02-13 12:42:30,137 - INFO - 
+字段类型统计: varchar=23, longtext=16
+2026-02-13 12:42:41,601 - INFO - 开始数据录入流程，读取Excel文件: D:\这里有法_资料\澳洲\已完成\Result_anli_part_1.xlsx
+2026-02-13 12:42:41,601 - INFO - 使用已有的列映射信息，共39个字段
+2026-02-13 12:42:41,601 - INFO - 连接MySQL数据库...
+2026-02-13 12:42:41,977 - INFO - 开始分批次读取Excel文件...
+2026-02-13 12:42:41,977 - INFO - 读取Excel文件: D:\这里有法_资料\澳洲\已完成\Result_anli_part_1.xlsx
+2026-02-13 12:42:49,874 - INFO - Excel文件总行数: 19590
+2026-02-13 12:42:49,881 - INFO - 读取第 1 到 19590 行，共 19590 行
+2026-02-13 12:42:49,881 - INFO - 处理第 1 批数据，共 19590 行
+2026-02-13 12:43:21,279 - INFO - 数据录入完成，成功插入 19585 行，跳过 5 行
+2026-02-13 12:43:21,343 - INFO - 表 'Australia' 现在共有 19585 行数据

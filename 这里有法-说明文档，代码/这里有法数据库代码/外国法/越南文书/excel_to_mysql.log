@@ -1,0 +1,1044 @@
+2026-02-15 18:31:23,967 - INFO - 开始建表流程，读取Excel文件: C:\Users\29944\Desktop\Result_V3_vietnam_law_part_1 (1).xlsx
+2026-02-15 18:31:27,730 - INFO - Excel文件读取成功，共17765行，27列
+2026-02-15 18:31:27,730 - INFO - 需要处理的Excel列数: 26
+2026-02-15 18:31:27,730 - INFO - Excel列 1: 'Tiêu đề bản án' -> MySQL字段 'Tiêu_đề_bản_án'
+2026-02-15 18:31:27,730 - INFO - Excel列 2: 'Số hiệu bản án' -> MySQL字段 'Số_hiệu_bản_án'
+2026-02-15 18:31:27,730 - INFO - Excel列 3: 'Loại vụ án' -> MySQL字段 'Loại_vụ_án'
+2026-02-15 18:31:27,730 - INFO - Excel列 4: 'Cấp xét xử' -> MySQL字段 'Cấp_xét_xử'
+2026-02-15 18:31:27,730 - INFO - Excel列 5: 'Ngày xét xử' -> MySQL字段 'Ngày_xét_xử'
+2026-02-15 18:31:27,730 - INFO - Excel列 6: 'Tòa án xét xử' -> MySQL字段 'Tòa_án_xét_xử'
+2026-02-15 18:31:27,746 - INFO - Excel列 7: 'Nguyên đơn' -> MySQL字段 'Nguyên_đơn'
+2026-02-15 18:31:27,746 - INFO - Excel列 8: 'Bị đơn' -> MySQL字段 'Bị_đơn'
+2026-02-15 18:31:27,746 - INFO - Excel列 9: 'Người kháng cáo' -> MySQL字段 'Người_kháng_cáo'
+2026-02-15 18:31:27,746 - INFO - Excel列 10: 'Người bị kháng cáo' -> MySQL字段 'Người_bị_kháng_cáo'
+2026-02-15 18:31:27,746 - INFO - Excel列 11: 'Thẩm phán' -> MySQL字段 'Thẩm_phán'
+2026-02-15 18:31:27,746 - INFO - Excel列 12: 'Tình tiết vụ án（facts）' -> MySQL字段 'Tình_tiết_vụ_án_facts'
+2026-02-15 18:31:27,746 - INFO - Excel列 13: 'Yêu cầu của nguyên đơn' -> MySQL字段 'Yêu_cầu_của_nguyên_đơn'
+2026-02-15 18:31:27,746 - INFO - Excel列 14: 'Yêu cầu của bị đơn' -> MySQL字段 'Yêu_cầu_của_bị_đơn'
+2026-02-15 18:31:27,746 - INFO - Excel列 15: 'Vấn đề pháp lý cần giải quyết（issue）' -> MySQL字段 'Vấn_đề_pháp_lý_cần_giải_quyết_issue'
+2026-02-15 18:31:27,746 - INFO - Excel列 16: 'Lập luận của Tòa án（reasoning）' -> MySQL字段 'Lập_luận_của_Tòa_án_reasoning'
+2026-02-15 18:31:27,746 - INFO - Excel列 17: 'Đánh giá chứng cứ' -> MySQL字段 'Đánh_giá_chứng_cứ'
+2026-02-15 18:31:27,746 - INFO - Excel列 18: 'Áp dụng pháp luật' -> MySQL字段 'Áp_dụng_pháp_luật'
+2026-02-15 18:31:27,746 - INFO - Excel列 19: 'Phán quyết sơ thẩm' -> MySQL字段 'Phán_quyết_sơ_thẩm'
+2026-02-15 18:31:27,746 - INFO - Excel列 20: 'Nội dung kháng cáo' -> MySQL字段 'Nội_dung_kháng_cáo'
+2026-02-15 18:31:27,746 - INFO - Excel列 21: 'Nhận định của phúc thẩm' -> MySQL字段 'Nhận_định_của_phúc_thẩm'
+2026-02-15 18:31:27,746 - INFO - Excel列 22: 'Quyết định phúc thẩm' -> MySQL字段 'Quyết_định_phúc_thẩm'
+2026-02-15 18:31:27,746 - INFO - Excel列 23: 'Status' -> MySQL字段 'Status'
+2026-02-15 18:31:27,746 - INFO - Excel列 24: 'Quyết định giám đốc thẩm' -> MySQL字段 'Quyết_định_giám_đốc_thẩm'
+2026-02-15 18:31:27,746 - INFO - Excel列 25: 'Nhận định của giám đốc thẩm' -> MySQL字段 'Nhận_định_của_giám_đốc_thẩm'
+2026-02-15 18:31:27,746 - INFO - Excel列 26: 'Đòi tài sản' -> MySQL字段 'Đòi_tài_sản'
+2026-02-15 18:31:27,782 - INFO - 字段 'Tiêu_đề_bản_án' 最大长度（清理后）: 266
+2026-02-15 18:31:27,806 - INFO - 字段 'Số_hiệu_bản_án' 最大长度（清理后）: 17
+2026-02-15 18:31:27,825 - INFO - 字段 'Loại_vụ_án' 最大长度（清理后）: 51
+2026-02-15 18:31:27,841 - INFO - 字段 'Cấp_xét_xử' 最大长度（清理后）: 13
+2026-02-15 18:31:27,841 - INFO - 字段 'Ngày_xét_xử' 最大长度（清理后）: 10
+2026-02-15 18:31:27,874 - INFO - 字段 'Tòa_án_xét_xử' 最大长度（清理后）: 110
+2026-02-15 18:31:27,874 - INFO - 字段 'Nguyên_đơn' 最大长度（清理后）: 675
+2026-02-15 18:31:27,889 - INFO - 字段 'Bị_đơn' 最大长度（清理后）: 268
+2026-02-15 18:31:27,906 - INFO - 字段 'Người_kháng_cáo' 最大长度（清理后）: 349
+2026-02-15 18:31:27,921 - INFO - 字段 'Người_bị_kháng_cáo' 最大长度（清理后）: 675
+2026-02-15 18:31:27,921 - INFO - 字段 'Thẩm_phán' 最大长度（清理后）: 50
+2026-02-15 18:31:28,008 - INFO - 字段 'Tình_tiết_vụ_án_facts' 最大长度（清理后）: 6483
+2026-02-15 18:31:28,033 - INFO - 字段 'Yêu_cầu_của_nguyên_đơn' 最大长度（清理后）: 1542
+2026-02-15 18:31:28,048 - INFO - 字段 'Yêu_cầu_của_bị_đơn' 最大长度（清理后）: 1099
+2026-02-15 18:31:28,092 - INFO - 字段 'Vấn_đề_pháp_lý_cần_giải_quyết_issue' 最大长度（清理后）: 537
+2026-02-15 18:31:28,152 - INFO - 字段 'Lập_luận_của_Tòa_án_reasoning' 最大长度（清理后）: 1925
+2026-02-15 18:31:28,175 - INFO - 字段 'Đánh_giá_chứng_cứ' 最大长度（清理后）: 774
+2026-02-15 18:31:28,234 - INFO - 字段 'Áp_dụng_pháp_luật' 最大长度（清理后）: 1415
+2026-02-15 18:31:28,290 - INFO - 字段 'Phán_quyết_sơ_thẩm' 最大长度（清理后）: 1977
+2026-02-15 18:31:28,306 - INFO - 字段 'Nội_dung_kháng_cáo' 最大长度（清理后）: 1105
+2026-02-15 18:31:28,334 - INFO - 字段 'Nhận_định_của_phúc_thẩm' 最大长度（清理后）: 1969
+2026-02-15 18:31:28,365 - INFO - 字段 'Quyết_định_phúc_thẩm' 最大长度（清理后）: 2314
+2026-02-15 18:31:28,403 - INFO - 字段 'Status' 最大长度（清理后）: 9
+2026-02-15 18:31:28,407 - INFO - 字段 'Quyết_định_giám_đốc_thẩm' 最大长度（清理后）: 478
+2026-02-15 18:31:28,413 - INFO - 字段 'Nhận_định_của_giám_đốc_thẩm' 最大长度（清理后）: 253
+2026-02-15 18:31:28,413 - INFO - 字段 'Đòi_tài_sản' 最大长度（清理后）: 185
+2026-02-15 18:31:28,429 - INFO - 连接MySQL数据库...
+2026-02-15 18:31:28,716 - WARNING - 表 'Vietnam_document' 已存在
+2026-02-15 18:31:31,361 - INFO - 表 'Vietnam_document' 已删除
+2026-02-15 18:31:31,361 - INFO - 创建MySQL表...
+2026-02-15 18:31:31,361 - INFO - 建表SQL:
+CREATE TABLE Vietnam_document (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    Tiêu_đề_bản_án varchar(399),
+    Số_hiệu_bản_án varchar(50),
+    Loại_vụ_án varchar(200),
+    Cấp_xét_xử varchar(50),
+    Ngày_xét_xử varchar(50),
+    Tòa_án_xét_xử varchar(165),
+    Nguyên_đơn longtext,
+    Bị_đơn varchar(402),
+    Người_kháng_cáo varchar(524),
+    Người_bị_kháng_cáo longtext,
+    Thẩm_phán varchar(200),
+    Tình_tiết_vụ_án_facts longtext,
+    Yêu_cầu_của_nguyên_đơn longtext,
+    Yêu_cầu_của_bị_đơn longtext,
+    Vấn_đề_pháp_lý_cần_giải_quyết_issue varchar(806),
+    Lập_luận_của_Tòa_án_reasoning longtext,
+    Đánh_giá_chứng_cứ longtext,
+    Áp_dụng_pháp_luật longtext,
+    Phán_quyết_sơ_thẩm longtext,
+    Nội_dung_kháng_cáo longtext,
+    Nhận_định_của_phúc_thẩm longtext,
+    Quyết_định_phúc_thẩm longtext,
+    Status varchar(50),
+    Quyết_định_giám_đốc_thẩm varchar(717),
+    Nhận_định_của_giám_đốc_thẩm varchar(380),
+    Đòi_tài_sản varchar(278)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+2026-02-15 18:31:31,569 - INFO - 在字段 'Tiêu_đề_bản_án' 上创建索引
+2026-02-15 18:31:31,615 - INFO - 表 'Vietnam_document' 创建成功！
+2026-02-15 18:31:31,615 - INFO - 列映射信息已保存到 column_mapping.json
+2026-02-15 18:31:31,678 - INFO - 
+表结构:
+2026-02-15 18:31:31,678 - INFO - ==========================================================================================
+2026-02-15 18:31:31,678 - INFO - 字段名                            类型                        允许空       
+2026-02-15 18:31:31,678 - INFO - ==========================================================================================
+2026-02-15 18:31:31,678 - INFO - id                             int                       NO        
+2026-02-15 18:31:31,678 - INFO - Tiêu_đề_bản_án                 varchar(399)              YES       
+2026-02-15 18:31:31,683 - INFO - Số_hiệu_bản_án                 varchar(50)               YES       
+2026-02-15 18:31:31,683 - INFO - Loại_vụ_án                     varchar(200)              YES       
+2026-02-15 18:31:31,685 - INFO - Cấp_xét_xử                     varchar(50)               YES       
+2026-02-15 18:31:31,685 - INFO - Ngày_xét_xử                    varchar(50)               YES       
+2026-02-15 18:31:31,686 - INFO - Tòa_án_xét_xử                  varchar(165)              YES       
+2026-02-15 18:31:31,687 - INFO - Nguyên_đơn                     longtext                  YES       
+2026-02-15 18:31:31,687 - INFO - Bị_đơn                         varchar(402)              YES       
+2026-02-15 18:31:31,688 - INFO - Người_kháng_cáo                varchar(524)              YES       
+2026-02-15 18:31:31,688 - INFO - Người_bị_kháng_cáo             longtext                  YES       
+2026-02-15 18:31:31,689 - INFO - Thẩm_phán                      varchar(200)              YES       
+2026-02-15 18:31:31,690 - INFO - Tình_tiết_vụ_án_facts          longtext                  YES       
+2026-02-15 18:31:31,690 - INFO - Yêu_cầu_của_nguyên_đơn         longtext                  YES       
+2026-02-15 18:31:31,690 - INFO - Yêu_cầu_của_bị_đơn             longtext                  YES       
+2026-02-15 18:31:31,690 - INFO - Vấn_đề_pháp_lý_cần_giải_quyết_issue varchar(806)              YES       
+2026-02-15 18:31:31,690 - INFO - Lập_luận_của_Tòa_án_reasoning  longtext                  YES       
+2026-02-15 18:31:31,690 - INFO - Đánh_giá_chứng_cứ              longtext                  YES       
+2026-02-15 18:31:31,690 - INFO - Áp_dụng_pháp_luật              longtext                  YES       
+2026-02-15 18:31:31,694 - INFO - Phán_quyết_sơ_thẩm             longtext                  YES       
+2026-02-15 18:31:31,694 - INFO - Nội_dung_kháng_cáo             longtext                  YES       
+2026-02-15 18:31:31,694 - INFO - Nhận_định_của_phúc_thẩm        longtext                  YES       
+2026-02-15 18:31:31,694 - INFO - Quyết_định_phúc_thẩm           longtext                  YES       
+2026-02-15 18:31:31,694 - INFO - Status                         varchar(50)               YES       
+2026-02-15 18:31:31,694 - INFO - Quyết_định_giám_đốc_thẩm       varchar(717)              YES       
+2026-02-15 18:31:31,694 - INFO - Nhận_định_của_giám_đốc_thẩm    varchar(380)              YES       
+2026-02-15 18:31:31,694 - INFO - Đòi_tài_sản                    varchar(278)              YES       
+2026-02-15 18:31:31,694 - INFO - 
+字段统计:
+2026-02-15 18:31:31,694 - INFO - ======================================================================
+2026-02-15 18:31:31,694 - INFO - 字段名                            最大长度       字段类型           
+2026-02-15 18:31:31,694 - INFO - ======================================================================
+2026-02-15 18:31:31,694 - INFO - Tiêu_đề_bản_án                 266        varchar        
+2026-02-15 18:31:31,694 - INFO - Số_hiệu_bản_án                 17         varchar        
+2026-02-15 18:31:31,694 - INFO - Loại_vụ_án                     51         varchar        
+2026-02-15 18:31:31,694 - INFO - Cấp_xét_xử                     13         varchar        
+2026-02-15 18:31:31,694 - INFO - Ngày_xét_xử                    10         varchar        
+2026-02-15 18:31:31,694 - INFO - Tòa_án_xét_xử                  110        varchar        
+2026-02-15 18:31:31,694 - INFO - Nguyên_đơn                     675        longtext       
+2026-02-15 18:31:31,694 - INFO - Bị_đơn                         268        varchar        
+2026-02-15 18:31:31,694 - INFO - Người_kháng_cáo                349        varchar        
+2026-02-15 18:31:31,708 - INFO - Người_bị_kháng_cáo             675        longtext       
+2026-02-15 18:31:31,708 - INFO - Thẩm_phán                      50         varchar        
+2026-02-15 18:31:31,710 - INFO - Tình_tiết_vụ_án_facts          6483       longtext       
+2026-02-15 18:31:31,710 - INFO - Yêu_cầu_của_nguyên_đơn         1542       longtext       
+2026-02-15 18:31:31,710 - INFO - Yêu_cầu_của_bị_đơn             1099       longtext       
+2026-02-15 18:31:31,710 - INFO - Vấn_đề_pháp_lý_cần_giải_quyết_issue 537        varchar        
+2026-02-15 18:31:31,713 - INFO - Lập_luận_của_Tòa_án_reasoning  1925       longtext       
+2026-02-15 18:31:31,713 - INFO - Đánh_giá_chứng_cứ              774        longtext       
+2026-02-15 18:31:31,713 - INFO - Áp_dụng_pháp_luật              1415       longtext       
+2026-02-15 18:31:31,713 - INFO - Phán_quyết_sơ_thẩm             1977       longtext       
+2026-02-15 18:31:31,713 - INFO - Nội_dung_kháng_cáo             1105       longtext       
+2026-02-15 18:31:31,713 - INFO - Nhận_định_của_phúc_thẩm        1969       longtext       
+2026-02-15 18:31:31,713 - INFO - Quyết_định_phúc_thẩm           2314       longtext       
+2026-02-15 18:31:31,713 - INFO - Status                         9          varchar        
+2026-02-15 18:31:31,713 - INFO - Quyết_định_giám_đốc_thẩm       478        varchar        
+2026-02-15 18:31:31,713 - INFO - Nhận_định_của_giám_đốc_thẩm    253        varchar        
+2026-02-15 18:31:31,713 - INFO - Đòi_tài_sản                    185        varchar        
+2026-02-15 18:31:31,713 - INFO - 
+字段类型统计: varchar=14, longtext=12
+2026-02-15 18:31:40,002 - INFO - 开始数据录入流程，读取Excel文件: C:\Users\29944\Desktop\Result_V3_vietnam_law_part_1 (1).xlsx
+2026-02-15 18:31:40,002 - INFO - 使用已有的列映射信息，共26个字段
+2026-02-15 18:31:40,002 - INFO - 连接MySQL数据库...
+2026-02-15 18:31:40,307 - INFO - 开始分批次读取Excel文件...
+2026-02-15 18:31:40,307 - INFO - 读取Excel文件: C:\Users\29944\Desktop\Result_V3_vietnam_law_part_1 (1).xlsx
+2026-02-15 18:31:43,461 - INFO - Excel文件总行数: 17765
+2026-02-15 18:31:43,461 - INFO - 读取第 1 到 17765 行，共 17765 行
+2026-02-15 18:31:43,461 - INFO - 处理第 1 批数据，共 17765 行
+2026-02-15 18:31:50,183 - INFO - 数据录入完成，成功插入 5118 行，跳过 12647 行
+2026-02-15 18:31:50,215 - INFO - 表 'Vietnam_document' 现在共有 5118 行数据
+2026-02-15 18:34:38,134 - INFO - 开始数据录入流程，读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_2.xlsx
+2026-02-15 18:34:38,134 - INFO - 使用已有的列映射信息，共39个字段
+2026-02-15 18:34:38,134 - INFO - 连接MySQL数据库...
+2026-02-15 18:34:38,469 - INFO - 开始分批次读取Excel文件...
+2026-02-15 18:34:38,469 - INFO - 读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_2.xlsx
+2026-02-15 18:34:43,001 - INFO - Excel文件总行数: 18346
+2026-02-15 18:34:43,001 - INFO - 读取第 1 到 18346 行，共 18346 行
+2026-02-15 18:34:43,001 - INFO - 处理第 1 批数据，共 18346 行
+2026-02-15 18:34:44,388 - ERROR - 数据录入过程中出错: not enough arguments for format string
+Traceback (most recent call last):
+  File "c:\users\29944\desktop\spyder\law_relevant\外国法\澳洲\澳洲(建表,数据录入).py", line 399, in insert_data_from_excel
+    cursor.executemany(insert_sql, chunk)
+  File "C:\Users\29944\anaconda3\lib\site-packages\pymysql\cursors.py", line 182, in executemany
+    return self._do_execute_many(
+  File "C:\Users\29944\anaconda3\lib\site-packages\pymysql\cursors.py", line 205, in _do_execute_many
+    v = values % escape(next(args), conn)
+TypeError: not enough arguments for format string
+2026-02-15 18:37:47,362 - INFO - 开始数据录入流程，读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_2.xlsx
+2026-02-15 18:37:47,362 - INFO - 使用已有的列映射信息，共39个字段
+2026-02-15 18:37:47,362 - INFO - 连接MySQL数据库...
+2026-02-15 18:37:47,696 - INFO - MySQL表字段: ['case_class', 'case_name', 'court', 'jurisdiction', 'decision_date', 'primary_parties_plaintiff', 'primary_parties_defendant', 'primary_parties_prosecutor', 'primary_parties_accused', 'appellate_parties_appellant', 'appellate_parties_respondent_on_appeal', 'cause_of_action', 'grounds_of_appeal', 'final_orders_trial', 'outcome_of_appeal', 'processing_status', 'reason', 'judges', 'counsel', 'other_parties_if_any', 'material_facts', 'legislation_considered', 'key_cases_cited', 'appellate_parties_cross_appellant', 'appellate_parties_interveners', 'lower_court_history', 'appellant_s_submissions', 'respondent_s_submissions', 'appellate_court_reasoning', 'primary_parties_applicant', 'primary_parties_respondent', 'plaintiff', 'defendant', 'primary_judge_s_reasoning', 'appellant_s_submissions_1', 'respondent_s_submissions_1', 'final_orders_trial_1', 'primary_judge_s_reasoning_1', 'original_text']
+2026-02-15 18:37:47,696 - INFO - 期望的字段数量: 39
+2026-02-15 18:37:47,696 - INFO - 开始分批次读取Excel文件...
+2026-02-15 18:37:47,696 - INFO - 读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_2.xlsx
+2026-02-15 18:37:52,683 - INFO - Excel文件总行数: 18346
+2026-02-15 18:37:52,683 - INFO - 读取第 1 到 18346 行，共 18346 行
+2026-02-15 18:37:52,683 - INFO - 处理第 1 批数据，共 18346 行
+2026-02-15 18:37:52,683 - WARNING - Excel数据列数 (38) 与MySQL字段数 (39) 不匹配
+2026-02-15 18:37:52,683 - WARNING - 将尝试按位置对应，但可能会导致数据错位
+2026-02-15 18:37:54,266 - INFO - 准备插入 4384 行数据
+2026-02-15 18:38:00,823 - INFO - 数据录入完成，成功插入 4384 行，跳过 13962 行
+2026-02-15 18:38:00,886 - INFO - 表 'Australia' 现在共有 23969 行数据
+2026-02-15 18:40:17,873 - INFO - 开始数据录入流程，读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_2.xlsx
+2026-02-15 18:40:17,873 - INFO - 使用已有的列映射信息，共39个字段
+2026-02-15 18:40:17,873 - INFO - 连接MySQL数据库...
+2026-02-15 18:40:18,255 - INFO - MySQL表字段: ['case_class', 'case_name', 'court', 'jurisdiction', 'decision_date', 'primary_parties_plaintiff', 'primary_parties_defendant', 'primary_parties_prosecutor', 'primary_parties_accused', 'appellate_parties_appellant', 'appellate_parties_respondent_on_appeal', 'cause_of_action', 'grounds_of_appeal', 'final_orders_trial', 'outcome_of_appeal', 'processing_status', 'reason', 'judges', 'counsel', 'other_parties_if_any', 'material_facts', 'legislation_considered', 'key_cases_cited', 'appellate_parties_cross_appellant', 'appellate_parties_interveners', 'lower_court_history', 'appellant_s_submissions', 'respondent_s_submissions', 'appellate_court_reasoning', 'primary_parties_applicant', 'primary_parties_respondent', 'plaintiff', 'defendant', 'primary_judge_s_reasoning', 'appellant_s_submissions_1', 'respondent_s_submissions_1', 'final_orders_trial_1', 'primary_judge_s_reasoning_1', 'original_text']
+2026-02-15 18:40:18,255 - INFO - 期望的字段数量: 39
+2026-02-15 18:40:18,271 - INFO - 开始分批次读取Excel文件...
+2026-02-15 18:40:18,271 - INFO - 读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_2.xlsx
+2026-02-15 18:40:22,424 - INFO - Excel文件总行数: 18346
+2026-02-15 18:40:22,424 - INFO - 读取第 1 到 18346 行，共 18346 行
+2026-02-15 18:40:22,440 - INFO - 处理第 1 批数据，共 18346 行
+2026-02-15 18:40:22,440 - WARNING - Excel数据列数 (38) 与MySQL字段数 (39) 不匹配
+2026-02-15 18:40:22,440 - WARNING - 将尝试按位置对应，但可能会导致数据错位
+2026-02-15 18:40:25,618 - INFO - 准备插入 18346 行数据（本批次处理失败 0 行）
+2026-02-15 18:40:35,786 - INFO - 数据录入完成，成功插入 18346 行，处理失败 0 行
+2026-02-15 18:40:35,848 - INFO - 表 'Australia' 现在共有 42315 行数据
+2026-02-15 18:40:53,294 - INFO - 开始数据录入流程，读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_3.xlsx
+2026-02-15 18:40:53,296 - INFO - 使用已有的列映射信息，共39个字段
+2026-02-15 18:40:53,296 - INFO - 连接MySQL数据库...
+2026-02-15 18:40:53,723 - INFO - MySQL表字段: ['case_class', 'case_name', 'court', 'jurisdiction', 'decision_date', 'primary_parties_plaintiff', 'primary_parties_defendant', 'primary_parties_prosecutor', 'primary_parties_accused', 'appellate_parties_appellant', 'appellate_parties_respondent_on_appeal', 'cause_of_action', 'grounds_of_appeal', 'final_orders_trial', 'outcome_of_appeal', 'processing_status', 'reason', 'judges', 'counsel', 'other_parties_if_any', 'material_facts', 'legislation_considered', 'key_cases_cited', 'appellate_parties_cross_appellant', 'appellate_parties_interveners', 'lower_court_history', 'appellant_s_submissions', 'respondent_s_submissions', 'appellate_court_reasoning', 'primary_parties_applicant', 'primary_parties_respondent', 'plaintiff', 'defendant', 'primary_judge_s_reasoning', 'appellant_s_submissions_1', 'respondent_s_submissions_1', 'final_orders_trial_1', 'primary_judge_s_reasoning_1', 'original_text']
+2026-02-15 18:40:53,725 - INFO - 期望的字段数量: 39
+2026-02-15 18:40:53,725 - INFO - 开始分批次读取Excel文件...
+2026-02-15 18:40:53,725 - INFO - 读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_3.xlsx
+2026-02-15 18:41:01,588 - INFO - Excel文件总行数: 19433
+2026-02-15 18:41:01,604 - INFO - 读取第 1 到 19433 行，共 19433 行
+2026-02-15 18:41:01,604 - INFO - 处理第 1 批数据，共 19433 行
+2026-02-15 18:41:01,604 - WARNING - Excel数据列数 (38) 与MySQL字段数 (39) 不匹配
+2026-02-15 18:41:01,604 - WARNING - 将尝试按位置对应，但可能会导致数据错位
+2026-02-15 18:41:06,251 - INFO - 准备插入 19433 行数据（本批次处理失败 0 行）
+2026-02-15 18:41:07,605 - ERROR - 批量插入失败: (1406, "Data too long for column 'appellate_parties_cross_appellant' at row 250")
+2026-02-15 18:41:07,605 - INFO - 尝试逐行插入...
+2026-02-15 18:41:13,757 - INFO - 已逐行插入 100 行
+2026-02-15 18:41:19,530 - INFO - 已逐行插入 200 行
+2026-02-15 18:41:25,063 - INFO - 已逐行插入 300 行
+2026-02-15 18:41:30,257 - INFO - 已逐行插入 400 行
+2026-02-15 18:41:35,627 - INFO - 已逐行插入 500 行
+2026-02-15 18:41:40,716 - INFO - 已逐行插入 600 行
+2026-02-15 18:41:45,863 - INFO - 已逐行插入 700 行
+2026-02-15 18:41:50,846 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_cross_appellant' at row 1")
+2026-02-15 18:41:51,259 - INFO - 已逐行插入 800 行
+2026-02-15 18:41:57,031 - INFO - 已逐行插入 900 行
+2026-02-15 18:42:02,555 - INFO - 已逐行插入 1000 行
+2026-02-15 18:42:07,776 - INFO - 已逐行插入 1100 行
+2026-02-15 18:42:12,986 - INFO - 已逐行插入 1200 行
+2026-02-15 18:42:18,228 - INFO - 已逐行插入 1300 行
+2026-02-15 18:42:23,502 - INFO - 已逐行插入 1400 行
+2026-02-15 18:42:28,755 - INFO - 已逐行插入 1500 行
+2026-02-15 18:42:34,020 - INFO - 已逐行插入 1600 行
+2026-02-15 18:42:39,291 - INFO - 已逐行插入 1700 行
+2026-02-15 18:42:44,513 - INFO - 已逐行插入 1800 行
+2026-02-15 18:42:49,767 - INFO - 已逐行插入 1900 行
+2026-02-15 18:42:55,046 - INFO - 已逐行插入 2000 行
+2026-02-15 18:43:00,301 - INFO - 已逐行插入 2100 行
+2026-02-15 18:43:05,530 - INFO - 已逐行插入 2200 行
+2026-02-15 18:43:10,872 - INFO - 已逐行插入 2300 行
+2026-02-15 18:43:16,076 - INFO - 已逐行插入 2400 行
+2026-02-15 18:43:21,877 - ERROR - 批量插入失败: (1406, "Data too long for column 'appellate_parties_cross_appellant' at row 58")
+2026-02-15 18:43:21,878 - INFO - 尝试逐行插入...
+2026-02-15 18:43:21,997 - INFO - 已逐行插入 2500 行
+2026-02-15 18:43:27,233 - INFO - 已逐行插入 2600 行
+2026-02-15 18:43:32,862 - INFO - 已逐行插入 2700 行
+2026-02-15 18:43:38,039 - INFO - 已逐行插入 2800 行
+2026-02-15 18:43:39,568 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_cross_appellant' at row 1")
+2026-02-15 18:43:43,312 - INFO - 已逐行插入 2900 行
+2026-02-15 18:43:43,791 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 18:43:48,664 - INFO - 已逐行插入 3000 行
+2026-02-15 18:43:53,889 - INFO - 已逐行插入 3100 行
+2026-02-15 18:46:02,992 - INFO - 开始数据录入流程，读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_2.xlsx
+2026-02-15 18:46:02,992 - INFO - 使用已有的列映射信息，共39个字段
+2026-02-15 18:46:02,992 - INFO - 连接MySQL数据库...
+2026-02-15 18:46:03,358 - INFO - MySQL表字段: ['case_class', 'case_name', 'court', 'jurisdiction', 'decision_date', 'primary_parties_plaintiff', 'primary_parties_defendant', 'primary_parties_prosecutor', 'primary_parties_accused', 'appellate_parties_appellant', 'appellate_parties_respondent_on_appeal', 'cause_of_action', 'grounds_of_appeal', 'final_orders_trial', 'outcome_of_appeal', 'processing_status', 'reason', 'judges', 'counsel', 'other_parties_if_any', 'material_facts', 'legislation_considered', 'key_cases_cited', 'appellate_parties_cross_appellant', 'appellate_parties_interveners', 'lower_court_history', 'appellant_s_submissions', 'respondent_s_submissions', 'appellate_court_reasoning', 'primary_parties_applicant', 'primary_parties_respondent', 'plaintiff', 'defendant', 'primary_judge_s_reasoning', 'appellant_s_submissions_1', 'respondent_s_submissions_1', 'final_orders_trial_1', 'primary_judge_s_reasoning_1', 'original_text']
+2026-02-15 18:46:03,374 - INFO - 期望的字段数量: 39
+2026-02-15 18:46:03,374 - INFO - 开始分批次读取Excel文件...
+2026-02-15 18:46:03,374 - INFO - 读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_2.xlsx
+2026-02-15 18:46:07,542 - INFO - Excel文件总行数: 18346
+2026-02-15 18:46:07,542 - INFO - 读取第 1 到 18346 行，共 18346 行
+2026-02-15 18:46:07,550 - INFO - 处理第 1 批数据，共 18346 行
+2026-02-15 18:46:07,550 - WARNING - Excel数据列数 (38) 与MySQL字段数 (39) 不匹配
+2026-02-15 18:46:07,550 - WARNING - 将尝试按位置对应，但可能会导致数据错位
+2026-02-15 18:46:10,810 - INFO - 准备插入 18346 行数据（本批次处理失败 0 行）
+2026-02-15 18:46:20,134 - INFO - 数据录入完成，成功插入 18346 行，处理失败 0 行
+2026-02-15 18:46:20,198 - INFO - 表 'Australia' 现在共有 37931 行数据
+2026-02-15 18:46:40,616 - INFO - 开始数据录入流程，读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_3.xlsx
+2026-02-15 18:46:40,616 - INFO - 使用已有的列映射信息，共39个字段
+2026-02-15 18:46:40,616 - INFO - 连接MySQL数据库...
+2026-02-15 18:46:41,000 - INFO - MySQL表字段: ['case_class', 'case_name', 'court', 'jurisdiction', 'decision_date', 'primary_parties_plaintiff', 'primary_parties_defendant', 'primary_parties_prosecutor', 'primary_parties_accused', 'appellate_parties_appellant', 'appellate_parties_respondent_on_appeal', 'cause_of_action', 'grounds_of_appeal', 'final_orders_trial', 'outcome_of_appeal', 'processing_status', 'reason', 'judges', 'counsel', 'other_parties_if_any', 'material_facts', 'legislation_considered', 'key_cases_cited', 'appellate_parties_cross_appellant', 'appellate_parties_interveners', 'lower_court_history', 'appellant_s_submissions', 'respondent_s_submissions', 'appellate_court_reasoning', 'primary_parties_applicant', 'primary_parties_respondent', 'plaintiff', 'defendant', 'primary_judge_s_reasoning', 'appellant_s_submissions_1', 'respondent_s_submissions_1', 'final_orders_trial_1', 'primary_judge_s_reasoning_1', 'original_text']
+2026-02-15 18:46:41,000 - INFO - 期望的字段数量: 39
+2026-02-15 18:46:41,000 - INFO - 开始分批次读取Excel文件...
+2026-02-15 18:46:41,000 - INFO - 读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_3.xlsx
+2026-02-15 18:46:49,025 - INFO - Excel文件总行数: 19433
+2026-02-15 18:46:49,047 - INFO - 读取第 1 到 19433 行，共 19433 行
+2026-02-15 18:46:49,047 - INFO - 处理第 1 批数据，共 19433 行
+2026-02-15 18:46:49,047 - WARNING - Excel数据列数 (38) 与MySQL字段数 (39) 不匹配
+2026-02-15 18:46:49,047 - WARNING - 将尝试按位置对应，但可能会导致数据错位
+2026-02-15 18:46:53,700 - INFO - 准备插入 19433 行数据（本批次处理失败 0 行）
+2026-02-15 18:46:59,568 - ERROR - 批量插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 110")
+2026-02-15 18:46:59,568 - INFO - 尝试逐行插入...
+2026-02-15 18:47:04,761 - INFO - 已逐行插入 2600 行
+2026-02-15 18:47:09,890 - INFO - 已逐行插入 2700 行
+2026-02-15 18:47:15,073 - INFO - 已逐行插入 2800 行
+2026-02-15 18:47:20,209 - INFO - 已逐行插入 2900 行
+2026-02-15 18:47:25,403 - INFO - 已逐行插入 3000 行
+2026-02-15 18:47:30,587 - INFO - 已逐行插入 3100 行
+2026-02-15 18:47:35,776 - INFO - 已逐行插入 3200 行
+2026-02-15 18:47:41,059 - INFO - 已逐行插入 3300 行
+2026-02-15 18:47:46,232 - INFO - 已逐行插入 3400 行
+2026-02-15 18:47:51,345 - INFO - 已逐行插入 3500 行
+2026-02-15 18:47:56,552 - INFO - 已逐行插入 3600 行
+2026-02-15 18:48:02,369 - INFO - 已逐行插入 3700 行
+2026-02-15 18:48:07,545 - INFO - 已逐行插入 3800 行
+2026-02-15 18:48:12,750 - INFO - 已逐行插入 3900 行
+2026-02-15 18:48:17,894 - INFO - 已逐行插入 4000 行
+2026-02-15 18:48:23,055 - INFO - 已逐行插入 4100 行
+2026-02-15 18:48:28,240 - INFO - 已逐行插入 4200 行
+2026-02-15 18:48:33,365 - INFO - 已逐行插入 4300 行
+2026-02-15 18:48:38,495 - INFO - 已逐行插入 4400 行
+2026-02-15 18:48:43,643 - INFO - 已逐行插入 4500 行
+2026-02-15 18:48:48,772 - INFO - 已逐行插入 4600 行
+2026-02-15 18:48:53,933 - INFO - 已逐行插入 4700 行
+2026-02-15 18:48:56,594 - ERROR - 单行插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 1")
+2026-02-15 18:48:59,114 - INFO - 已逐行插入 4800 行
+2026-02-15 18:49:01,709 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 18:49:04,406 - INFO - 已逐行插入 4900 行
+2026-02-15 18:49:09,727 - ERROR - 批量插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 206")
+2026-02-15 18:49:09,729 - INFO - 尝试逐行插入...
+2026-02-15 18:49:09,884 - INFO - 已逐行插入 5000 行
+2026-02-15 18:49:15,030 - INFO - 已逐行插入 5100 行
+2026-02-15 18:49:20,168 - INFO - 已逐行插入 5200 行
+2026-02-15 18:49:20,376 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 18:49:25,406 - INFO - 已逐行插入 5300 行
+2026-02-15 18:49:30,550 - INFO - 已逐行插入 5400 行
+2026-02-15 18:49:35,388 - ERROR - 单行插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 1")
+2026-02-15 18:49:35,771 - INFO - 已逐行插入 5500 行
+2026-02-15 18:49:40,942 - INFO - 已逐行插入 5600 行
+2026-02-15 18:49:46,116 - INFO - 已逐行插入 5700 行
+2026-02-15 18:49:51,363 - INFO - 已逐行插入 5800 行
+2026-02-15 18:49:53,502 - ERROR - 单行插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 1")
+2026-02-15 18:49:54,471 - ERROR - 单行插入失败: (1406, "Data too long for column 'case_name' at row 1")
+2026-02-15 18:49:56,712 - INFO - 已逐行插入 5900 行
+2026-02-15 18:50:00,859 - ERROR - 单行插入失败: (1406, "Data too long for column 'case_name' at row 1")
+2026-02-15 18:50:03,640 - INFO - 已逐行插入 6000 行
+2026-02-15 18:50:06,500 - ERROR - 单行插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 1")
+2026-02-15 18:50:08,908 - INFO - 已逐行插入 6100 行
+2026-02-15 18:50:10,419 - ERROR - 单行插入失败: (1406, "Data too long for column 'case_name' at row 1")
+2026-02-15 18:50:14,113 - INFO - 已逐行插入 6200 行
+2026-02-15 18:50:19,685 - INFO - 已逐行插入 6300 行
+2026-02-15 18:50:21,487 - ERROR - 单行插入失败: (1406, "Data too long for column 'case_name' at row 1")
+2026-02-15 18:50:25,058 - INFO - 已逐行插入 6400 行
+2026-02-15 18:50:30,221 - INFO - 已逐行插入 6500 行
+2026-02-15 18:50:34,745 - ERROR - 单行插入失败: (1406, "Data too long for column 'case_name' at row 1")
+2026-02-15 18:50:35,511 - INFO - 已逐行插入 6600 行
+2026-02-15 18:50:36,179 - ERROR - 单行插入失败: (1406, "Data too long for column 'case_name' at row 1")
+2026-02-15 18:50:38,023 - ERROR - 单行插入失败: (1406, "Data too long for column 'case_name' at row 1")
+2026-02-15 18:50:40,366 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_accused' at row 1")
+2026-02-15 18:50:40,989 - INFO - 已逐行插入 6700 行
+2026-02-15 18:50:43,499 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_accused' at row 1")
+2026-02-15 18:50:44,155 - ERROR - 单行插入失败: (1406, "Data too long for column 'case_name' at row 1")
+2026-02-15 18:50:46,291 - INFO - 已逐行插入 6800 行
+2026-02-15 18:50:51,438 - INFO - 已逐行插入 6900 行
+2026-02-15 18:50:56,581 - INFO - 已逐行插入 7000 行
+2026-02-15 18:51:00,399 - ERROR - 单行插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 1")
+2026-02-15 18:51:01,817 - INFO - 已逐行插入 7100 行
+2026-02-15 18:51:06,944 - INFO - 已逐行插入 7200 行
+2026-02-15 18:51:12,265 - INFO - 已逐行插入 7300 行
+2026-02-15 18:51:17,386 - INFO - 已逐行插入 7400 行
+2026-02-15 18:51:21,932 - ERROR - 批量插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 218")
+2026-02-15 18:51:21,932 - INFO - 尝试逐行插入...
+2026-02-15 18:51:22,856 - INFO - 已逐行插入 7500 行
+2026-02-15 18:51:27,989 - INFO - 已逐行插入 7600 行
+2026-02-15 18:51:33,246 - INFO - 已逐行插入 7700 行
+2026-02-15 18:51:33,298 - ERROR - 单行插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 1")
+2026-02-15 18:51:38,535 - INFO - 已逐行插入 7800 行
+2026-02-15 18:51:44,000 - INFO - 已逐行插入 7900 行
+2026-02-15 18:51:49,128 - INFO - 已逐行插入 8000 行
+2026-02-15 18:51:54,321 - INFO - 已逐行插入 8100 行
+2026-02-15 18:51:55,119 - ERROR - 单行插入失败: (1406, "Data too long for column 'case_name' at row 1")
+2026-02-15 18:51:59,573 - INFO - 已逐行插入 8200 行
+2026-02-15 18:52:04,908 - INFO - 已逐行插入 8300 行
+2026-02-15 18:52:10,084 - INFO - 已逐行插入 8400 行
+2026-02-15 18:52:14,989 - ERROR - 单行插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 1")
+2026-02-15 18:52:15,354 - INFO - 已逐行插入 8500 行
+2026-02-15 18:52:20,476 - INFO - 已逐行插入 8600 行
+2026-02-15 18:52:25,647 - INFO - 已逐行插入 8700 行
+2026-02-15 18:52:30,870 - INFO - 已逐行插入 8800 行
+2026-02-15 18:52:36,004 - INFO - 已逐行插入 8900 行
+2026-02-15 18:52:37,415 - ERROR - 单行插入失败: (1406, "Data too long for column 'case_name' at row 1")
+2026-02-15 18:52:41,324 - INFO - 已逐行插入 9000 行
+2026-02-15 18:52:46,541 - ERROR - 单行插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 1")
+2026-02-15 18:52:47,051 - INFO - 已逐行插入 9100 行
+2026-02-15 18:52:52,418 - INFO - 已逐行插入 9200 行
+2026-02-15 18:52:57,705 - INFO - 已逐行插入 9300 行
+2026-02-15 18:52:59,157 - ERROR - 单行插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 1")
+2026-02-15 18:53:02,890 - INFO - 已逐行插入 9400 行
+2026-02-15 18:53:08,095 - INFO - 已逐行插入 9500 行
+2026-02-15 18:53:13,213 - INFO - 已逐行插入 9600 行
+2026-02-15 18:53:14,453 - ERROR - 单行插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 1")
+2026-02-15 18:53:18,486 - INFO - 已逐行插入 9700 行
+2026-02-15 18:53:23,666 - INFO - 已逐行插入 9800 行
+2026-02-15 18:53:26,719 - ERROR - 单行插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 1")
+2026-02-15 18:53:28,906 - INFO - 已逐行插入 9900 行
+2026-02-15 18:53:29,207 - ERROR - 单行插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 1")
+2026-02-15 18:53:33,518 - ERROR - 批量插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 263")
+2026-02-15 18:53:33,518 - INFO - 尝试逐行插入...
+2026-02-15 18:53:35,006 - INFO - 已逐行插入 10000 行
+2026-02-15 18:53:40,179 - INFO - 已逐行插入 10100 行
+2026-02-15 18:53:45,298 - INFO - 已逐行插入 10200 行
+2026-02-15 18:53:50,490 - INFO - 已逐行插入 10300 行
+2026-02-15 18:53:55,685 - INFO - 已逐行插入 10400 行
+2026-02-15 18:54:00,842 - INFO - 已逐行插入 10500 行
+2026-02-15 18:54:01,146 - ERROR - 单行插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 1")
+2026-02-15 18:54:06,075 - INFO - 已逐行插入 10600 行
+2026-02-15 18:54:11,272 - INFO - 已逐行插入 10700 行
+2026-02-15 18:54:16,452 - ERROR - 单行插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 1")
+2026-02-15 18:54:16,977 - INFO - 已逐行插入 10800 行
+2026-02-15 18:54:23,366 - INFO - 已逐行插入 10900 行
+2026-02-15 18:54:28,754 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 18:54:29,310 - INFO - 已逐行插入 11000 行
+2026-02-15 18:54:34,992 - INFO - 已逐行插入 11100 行
+2026-02-15 18:54:40,413 - INFO - 已逐行插入 11200 行
+2026-02-15 18:54:45,631 - INFO - 已逐行插入 11300 行
+2026-02-15 18:54:52,725 - INFO - 已逐行插入 11400 行
+2026-02-15 18:54:56,367 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_appellant' at row 1")
+2026-02-15 18:54:58,177 - INFO - 已逐行插入 11500 行
+2026-02-15 18:55:03,970 - ERROR - 单行插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 1")
+2026-02-15 18:55:06,114 - INFO - 已逐行插入 11600 行
+2026-02-15 18:55:12,648 - INFO - 已逐行插入 11700 行
+2026-02-15 18:55:18,276 - INFO - 已逐行插入 11800 行
+2026-02-15 18:55:23,950 - INFO - 已逐行插入 11900 行
+2026-02-15 18:55:27,542 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_accused' at row 1")
+2026-02-15 18:55:29,181 - INFO - 已逐行插入 12000 行
+2026-02-15 18:55:34,308 - INFO - 已逐行插入 12100 行
+2026-02-15 18:55:39,440 - INFO - 已逐行插入 12200 行
+2026-02-15 18:55:44,540 - INFO - 已逐行插入 12300 行
+2026-02-15 18:55:49,720 - INFO - 已逐行插入 12400 行
+2026-02-15 18:55:52,740 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 18:55:53,870 - ERROR - 批量插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 90")
+2026-02-15 18:55:53,870 - INFO - 尝试逐行插入...
+2026-02-15 18:55:55,605 - INFO - 已逐行插入 12500 行
+2026-02-15 18:56:00,733 - INFO - 已逐行插入 12600 行
+2026-02-15 18:56:05,894 - INFO - 已逐行插入 12700 行
+2026-02-15 18:56:11,184 - INFO - 已逐行插入 12800 行
+2026-02-15 18:56:12,792 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 18:56:16,419 - INFO - 已逐行插入 12900 行
+2026-02-15 18:56:21,622 - INFO - 已逐行插入 13000 行
+2026-02-15 18:56:22,701 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 18:56:26,902 - INFO - 已逐行插入 13100 行
+2026-02-15 18:56:32,053 - INFO - 已逐行插入 13200 行
+2026-02-15 18:56:33,583 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_appellant' at row 1")
+2026-02-15 18:56:37,327 - INFO - 已逐行插入 13300 行
+2026-02-15 18:56:42,506 - INFO - 已逐行插入 13400 行
+2026-02-15 18:56:47,693 - INFO - 已逐行插入 13500 行
+2026-02-15 18:56:52,888 - INFO - 已逐行插入 13600 行
+2026-02-15 18:56:58,082 - INFO - 已逐行插入 13700 行
+2026-02-15 18:57:03,291 - INFO - 已逐行插入 13800 行
+2026-02-15 18:57:04,965 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 18:57:08,555 - INFO - 已逐行插入 13900 行
+2026-02-15 18:57:11,471 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_respondent_on_appeal' at row 1")
+2026-02-15 18:57:13,844 - INFO - 已逐行插入 14000 行
+2026-02-15 18:57:18,016 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 18:57:18,128 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 18:57:19,196 - INFO - 已逐行插入 14100 行
+2026-02-15 18:57:24,315 - INFO - 已逐行插入 14200 行
+2026-02-15 18:57:29,449 - INFO - 已逐行插入 14300 行
+2026-02-15 18:57:31,592 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 18:57:35,133 - INFO - 已逐行插入 14400 行
+2026-02-15 18:57:36,563 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 18:57:40,375 - INFO - 已逐行插入 14500 行
+2026-02-15 18:57:43,596 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 18:57:45,375 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 18:57:45,689 - INFO - 已逐行插入 14600 行
+2026-02-15 18:57:50,916 - INFO - 已逐行插入 14700 行
+2026-02-15 18:57:56,080 - INFO - 已逐行插入 14800 行
+2026-02-15 18:58:01,212 - INFO - 已逐行插入 14900 行
+2026-02-15 18:58:04,704 - ERROR - 批量插入失败: (1406, "Data too long for column 'primary_parties_accused' at row 150")
+2026-02-15 18:58:04,704 - INFO - 尝试逐行插入...
+2026-02-15 18:58:06,992 - INFO - 已逐行插入 15000 行
+2026-02-15 18:58:12,126 - INFO - 已逐行插入 15100 行
+2026-02-15 18:58:17,253 - INFO - 已逐行插入 15200 行
+2026-02-15 18:58:22,323 - INFO - 已逐行插入 15300 行
+2026-02-15 18:58:26,868 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_accused' at row 1")
+2026-02-15 18:58:27,535 - INFO - 已逐行插入 15400 行
+2026-02-15 18:58:32,951 - INFO - 已逐行插入 15500 行
+2026-02-15 18:58:38,066 - INFO - 已逐行插入 15600 行
+2026-02-15 18:58:43,141 - INFO - 已逐行插入 15700 行
+2026-02-15 18:58:48,255 - INFO - 已逐行插入 15800 行
+2026-02-15 18:58:53,400 - INFO - 已逐行插入 15900 行
+2026-02-15 18:58:58,500 - INFO - 已逐行插入 16000 行
+2026-02-15 18:59:03,584 - INFO - 已逐行插入 16100 行
+2026-02-15 18:59:08,885 - INFO - 已逐行插入 16200 行
+2026-02-15 18:59:12,510 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_accused' at row 1")
+2026-02-15 18:59:14,182 - INFO - 已逐行插入 16300 行
+2026-02-15 18:59:19,258 - INFO - 已逐行插入 16400 行
+2026-02-15 18:59:22,087 - ERROR - 单行插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 1")
+2026-02-15 18:59:24,460 - INFO - 已逐行插入 16500 行
+2026-02-15 18:59:29,538 - INFO - 已逐行插入 16600 行
+2026-02-15 18:59:33,886 - ERROR - 单行插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 1")
+2026-02-15 18:59:34,744 - INFO - 已逐行插入 16700 行
+2026-02-15 18:59:39,857 - INFO - 已逐行插入 16800 行
+2026-02-15 18:59:44,970 - INFO - 已逐行插入 16900 行
+2026-02-15 18:59:46,092 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_applicant' at row 1")
+2026-02-15 18:59:50,253 - INFO - 已逐行插入 17000 行
+2026-02-15 18:59:55,408 - INFO - 已逐行插入 17100 行
+2026-02-15 19:00:00,511 - INFO - 已逐行插入 17200 行
+2026-02-15 19:00:05,563 - INFO - 已逐行插入 17300 行
+2026-02-15 19:00:09,490 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 19:00:10,761 - INFO - 已逐行插入 17400 行
+2026-02-15 19:00:13,697 - ERROR - 批量插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 112")
+2026-02-15 19:00:13,697 - INFO - 尝试逐行插入...
+2026-02-15 19:00:16,271 - INFO - 已逐行插入 17500 行
+2026-02-15 19:00:19,371 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 19:00:19,880 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 19:00:21,551 - INFO - 已逐行插入 17600 行
+2026-02-15 19:00:26,634 - INFO - 已逐行插入 17700 行
+2026-02-15 19:00:31,722 - INFO - 已逐行插入 17800 行
+2026-02-15 19:00:36,863 - INFO - 已逐行插入 17900 行
+2026-02-15 19:00:40,790 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 19:00:42,055 - INFO - 已逐行插入 18000 行
+2026-02-15 19:00:44,462 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 19:00:47,375 - INFO - 已逐行插入 18100 行
+2026-02-15 19:00:52,568 - INFO - 已逐行插入 18200 行
+2026-02-15 19:00:58,150 - INFO - 已逐行插入 18300 行
+2026-02-15 19:01:03,279 - INFO - 已逐行插入 18400 行
+2026-02-15 19:01:08,437 - INFO - 已逐行插入 18500 行
+2026-02-15 19:01:08,884 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:01:13,805 - INFO - 已逐行插入 18600 行
+2026-02-15 19:01:18,952 - INFO - 已逐行插入 18700 行
+2026-02-15 19:01:24,083 - INFO - 已逐行插入 18800 行
+2026-02-15 19:01:29,219 - INFO - 已逐行插入 18900 行
+2026-02-15 19:01:34,350 - INFO - 已逐行插入 19000 行
+2026-02-15 19:01:36,175 - ERROR - 单行插入失败: (1406, "Data too long for column 'final_orders_trial_1' at row 1")
+2026-02-15 19:01:39,612 - INFO - 已逐行插入 19100 行
+2026-02-15 19:01:44,721 - INFO - 已逐行插入 19200 行
+2026-02-15 19:01:49,995 - INFO - 已逐行插入 19300 行
+2026-02-15 19:01:51,511 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_cross_appellant' at row 1")
+2026-02-15 19:01:56,636 - INFO - 数据录入完成，成功插入 19376 行，处理失败 64 行
+2026-02-15 19:01:56,699 - INFO - 表 'Australia' 现在共有 51799 行数据
+2026-02-15 19:01:56,699 - WARNING - 共有 64 个错误
+2026-02-15 19:14:24,163 - INFO - 开始数据录入流程，读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_4.xlsx
+2026-02-15 19:14:24,163 - INFO - 使用已有的列映射信息，共39个字段
+2026-02-15 19:14:24,163 - INFO - 连接MySQL数据库...
+2026-02-15 19:14:24,546 - INFO - MySQL表字段: ['case_class', 'case_name', 'court', 'jurisdiction', 'decision_date', 'primary_parties_plaintiff', 'primary_parties_defendant', 'primary_parties_prosecutor', 'primary_parties_accused', 'appellate_parties_appellant', 'appellate_parties_respondent_on_appeal', 'cause_of_action', 'grounds_of_appeal', 'final_orders_trial', 'outcome_of_appeal', 'processing_status', 'reason', 'judges', 'counsel', 'other_parties_if_any', 'material_facts', 'legislation_considered', 'key_cases_cited', 'appellate_parties_cross_appellant', 'appellate_parties_interveners', 'lower_court_history', 'appellant_s_submissions', 'respondent_s_submissions', 'appellate_court_reasoning', 'primary_parties_applicant', 'primary_parties_respondent', 'plaintiff', 'defendant', 'primary_judge_s_reasoning', 'appellant_s_submissions_1', 'respondent_s_submissions_1', 'final_orders_trial_1', 'primary_judge_s_reasoning_1', 'original_text']
+2026-02-15 19:14:24,546 - INFO - 期望的字段数量: 39
+2026-02-15 19:14:24,546 - INFO - 开始分批次读取Excel文件...
+2026-02-15 19:14:24,546 - INFO - 读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_4.xlsx
+2026-02-15 19:14:33,269 - INFO - Excel文件总行数: 19952
+2026-02-15 19:14:33,280 - INFO - 读取第 1 到 19952 行，共 19952 行
+2026-02-15 19:14:33,280 - INFO - 处理第 1 批数据，共 19952 行
+2026-02-15 19:14:33,280 - WARNING - Excel数据列数 (38) 与MySQL字段数 (39) 不匹配
+2026-02-15 19:14:33,280 - WARNING - 将尝试按位置对应，但可能会导致数据错位
+2026-02-15 19:14:38,005 - INFO - 准备插入 19952 行数据（本批次处理失败 0 行）
+2026-02-15 19:14:38,747 - ERROR - 批量插入失败: (1406, "Data too long for column 'appellate_parties_cross_appellant' at row 28")
+2026-02-15 19:14:38,747 - INFO - 尝试逐行插入...
+2026-02-15 19:14:40,199 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_cross_appellant' at row 1")
+2026-02-15 19:14:44,024 - INFO - 已逐行插入 100 行
+2026-02-15 19:14:49,153 - INFO - 已逐行插入 200 行
+2026-02-15 19:14:50,934 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:14:54,413 - INFO - 已逐行插入 300 行
+2026-02-15 19:14:59,641 - INFO - 已逐行插入 400 行
+2026-02-15 19:15:04,787 - INFO - 已逐行插入 500 行
+2026-02-15 19:15:09,926 - INFO - 已逐行插入 600 行
+2026-02-15 19:15:12,367 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_cross_appellant' at row 1")
+2026-02-15 19:15:15,184 - INFO - 已逐行插入 700 行
+2026-02-15 19:15:16,913 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_cross_appellant' at row 1")
+2026-02-15 19:15:20,429 - INFO - 已逐行插入 800 行
+2026-02-15 19:15:21,464 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 19:15:25,712 - INFO - 已逐行插入 900 行
+2026-02-15 19:15:30,852 - INFO - 已逐行插入 1000 行
+2026-02-15 19:15:35,977 - INFO - 已逐行插入 1100 行
+2026-02-15 19:15:41,126 - INFO - 已逐行插入 1200 行
+2026-02-15 19:15:41,385 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:15:46,737 - INFO - 已逐行插入 1300 行
+2026-02-15 19:15:51,361 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 19:15:51,975 - INFO - 已逐行插入 1400 行
+2026-02-15 19:15:57,131 - INFO - 已逐行插入 1500 行
+2026-02-15 19:16:02,306 - INFO - 已逐行插入 1600 行
+2026-02-15 19:16:07,403 - INFO - 已逐行插入 1700 行
+2026-02-15 19:16:12,571 - INFO - 已逐行插入 1800 行
+2026-02-15 19:16:14,860 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:16:16,033 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_cross_appellant' at row 1")
+2026-02-15 19:16:17,938 - INFO - 已逐行插入 1900 行
+2026-02-15 19:16:23,074 - INFO - 已逐行插入 2000 行
+2026-02-15 19:16:24,341 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 19:16:28,332 - INFO - 已逐行插入 2100 行
+2026-02-15 19:16:31,706 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 19:16:33,596 - INFO - 已逐行插入 2200 行
+2026-02-15 19:16:38,722 - INFO - 已逐行插入 2300 行
+2026-02-15 19:16:43,851 - INFO - 已逐行插入 2400 行
+2026-02-15 19:16:44,922 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_cross_appellant' at row 1")
+2026-02-15 19:16:45,033 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_cross_appellant' at row 1")
+2026-02-15 19:16:45,943 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_cross_appellant' at row 1")
+2026-02-15 19:16:50,258 - ERROR - 批量插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 190")
+2026-02-15 19:16:50,274 - INFO - 尝试逐行插入...
+2026-02-15 19:16:51,022 - INFO - 已逐行插入 2500 行
+2026-02-15 19:16:56,128 - INFO - 已逐行插入 2600 行
+2026-02-15 19:17:01,260 - INFO - 已逐行插入 2700 行
+2026-02-15 19:17:06,362 - INFO - 已逐行插入 2800 行
+2026-02-15 19:17:11,514 - INFO - 已逐行插入 2900 行
+2026-02-15 19:17:16,788 - INFO - 已逐行插入 3000 行
+2026-02-15 19:17:21,968 - INFO - 已逐行插入 3100 行
+2026-02-15 19:17:27,543 - INFO - 已逐行插入 3200 行
+2026-02-15 19:17:32,679 - INFO - 已逐行插入 3300 行
+2026-02-15 19:17:37,816 - INFO - 已逐行插入 3400 行
+2026-02-15 19:17:42,944 - INFO - 已逐行插入 3500 行
+2026-02-15 19:17:48,128 - INFO - 已逐行插入 3600 行
+2026-02-15 19:17:53,282 - INFO - 已逐行插入 3700 行
+2026-02-15 19:17:56,455 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 19:17:58,607 - INFO - 已逐行插入 3800 行
+2026-02-15 19:18:03,860 - INFO - 已逐行插入 3900 行
+2026-02-15 19:18:09,006 - INFO - 已逐行插入 4000 行
+2026-02-15 19:18:13,812 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:18:14,226 - INFO - 已逐行插入 4100 行
+2026-02-15 19:18:19,303 - INFO - 已逐行插入 4200 行
+2026-02-15 19:18:24,032 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 19:18:24,507 - INFO - 已逐行插入 4300 行
+2026-02-15 19:18:29,619 - INFO - 已逐行插入 4400 行
+2026-02-15 19:18:34,509 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 19:18:35,417 - INFO - 已逐行插入 4500 行
+2026-02-15 19:18:40,529 - INFO - 已逐行插入 4600 行
+2026-02-15 19:18:44,729 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:18:45,744 - INFO - 已逐行插入 4700 行
+2026-02-15 19:18:50,950 - INFO - 已逐行插入 4800 行
+2026-02-15 19:18:55,064 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 19:18:56,147 - INFO - 已逐行插入 4900 行
+2026-02-15 19:19:00,473 - ERROR - 批量插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 36")
+2026-02-15 19:19:00,485 - INFO - 尝试逐行插入...
+2026-02-15 19:19:01,536 - INFO - 已逐行插入 5000 行
+2026-02-15 19:19:02,341 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:19:06,762 - INFO - 已逐行插入 5100 行
+2026-02-15 19:19:11,925 - INFO - 已逐行插入 5200 行
+2026-02-15 19:19:17,203 - INFO - 已逐行插入 5300 行
+2026-02-15 19:19:18,862 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_accused' at row 1")
+2026-02-15 19:19:22,470 - INFO - 已逐行插入 5400 行
+2026-02-15 19:19:27,659 - INFO - 已逐行插入 5500 行
+2026-02-15 19:19:30,823 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_cross_appellant' at row 1")
+2026-02-15 19:19:32,887 - INFO - 已逐行插入 5600 行
+2026-02-15 19:19:37,987 - INFO - 已逐行插入 5700 行
+2026-02-15 19:19:43,103 - INFO - 已逐行插入 5800 行
+2026-02-15 19:19:47,114 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_respondent_on_appeal' at row 1")
+2026-02-15 19:19:48,303 - INFO - 已逐行插入 5900 行
+2026-02-15 19:19:53,430 - INFO - 已逐行插入 6000 行
+2026-02-15 19:19:58,561 - INFO - 已逐行插入 6100 行
+2026-02-15 19:20:03,726 - INFO - 已逐行插入 6200 行
+2026-02-15 19:20:05,992 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 19:20:06,105 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 19:20:09,054 - INFO - 已逐行插入 6300 行
+2026-02-15 19:20:13,252 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 19:20:14,274 - INFO - 已逐行插入 6400 行
+2026-02-15 19:20:19,126 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:20:19,798 - INFO - 已逐行插入 6500 行
+2026-02-15 19:20:23,605 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:20:25,025 - INFO - 已逐行插入 6600 行
+2026-02-15 19:20:30,139 - INFO - 已逐行插入 6700 行
+2026-02-15 19:20:35,251 - INFO - 已逐行插入 6800 行
+2026-02-15 19:20:35,711 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:20:36,219 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:20:40,624 - INFO - 已逐行插入 6900 行
+2026-02-15 19:20:41,935 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:20:45,944 - INFO - 已逐行插入 7000 行
+2026-02-15 19:20:49,031 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:20:51,160 - INFO - 已逐行插入 7100 行
+2026-02-15 19:20:55,440 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:20:56,441 - INFO - 已逐行插入 7200 行
+2026-02-15 19:21:00,283 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 19:21:00,396 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 19:21:01,817 - INFO - 已逐行插入 7300 行
+2026-02-15 19:21:03,185 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 19:21:07,059 - INFO - 已逐行插入 7400 行
+2026-02-15 19:21:09,117 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:21:10,619 - ERROR - 批量插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 78")
+2026-02-15 19:21:10,627 - INFO - 尝试逐行插入...
+2026-02-15 19:21:12,614 - INFO - 已逐行插入 7500 行
+2026-02-15 19:21:14,625 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:21:17,888 - INFO - 已逐行插入 7600 行
+2026-02-15 19:21:22,978 - INFO - 已逐行插入 7700 行
+2026-02-15 19:21:28,103 - INFO - 已逐行插入 7800 行
+2026-02-15 19:21:30,381 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:21:32,482 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:21:33,404 - INFO - 已逐行插入 7900 行
+2026-02-15 19:21:33,598 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:21:36,226 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:21:37,850 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:21:38,822 - INFO - 已逐行插入 8000 行
+2026-02-15 19:21:39,215 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:21:40,593 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:21:44,202 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:21:44,366 - INFO - 已逐行插入 8100 行
+2026-02-15 19:21:44,659 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:21:44,818 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:21:49,757 - INFO - 已逐行插入 8200 行
+2026-02-15 19:21:50,011 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:21:52,019 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:21:55,062 - INFO - 已逐行插入 8300 行
+2026-02-15 19:21:57,282 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 19:22:00,237 - INFO - 已逐行插入 8400 行
+2026-02-15 19:22:02,510 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 19:22:05,441 - INFO - 已逐行插入 8500 行
+2026-02-15 19:22:10,713 - INFO - 已逐行插入 8600 行
+2026-02-15 19:22:15,709 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:22:15,916 - INFO - 已逐行插入 8700 行
+2026-02-15 19:22:16,280 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:22:16,790 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:22:17,351 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:22:17,821 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:22:20,899 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:22:21,578 - INFO - 已逐行插入 8800 行
+2026-02-15 19:22:26,667 - INFO - 已逐行插入 8900 行
+2026-02-15 19:22:28,225 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 19:22:28,385 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:22:29,484 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:22:32,079 - INFO - 已逐行插入 9000 行
+2026-02-15 19:22:36,165 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:22:37,276 - INFO - 已逐行插入 9100 行
+2026-02-15 19:22:39,947 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:22:42,471 - INFO - 已逐行插入 9200 行
+2026-02-15 19:22:42,614 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:22:47,684 - INFO - 已逐行插入 9300 行
+2026-02-15 19:22:48,360 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 19:22:52,928 - INFO - 已逐行插入 9400 行
+2026-02-15 19:22:58,066 - INFO - 已逐行插入 9500 行
+2026-02-15 19:22:59,811 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:23:03,375 - INFO - 已逐行插入 9600 行
+2026-02-15 19:23:08,045 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:23:08,734 - INFO - 已逐行插入 9700 行
+2026-02-15 19:23:11,867 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 19:23:14,319 - INFO - 已逐行插入 9800 行
+2026-02-15 19:23:19,394 - INFO - 已逐行插入 9900 行
+2026-02-15 19:23:21,526 - ERROR - 批量插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 14")
+2026-02-15 19:23:21,526 - INFO - 尝试逐行插入...
+2026-02-15 19:23:25,068 - INFO - 已逐行插入 10000 行
+2026-02-15 19:23:30,142 - INFO - 已逐行插入 10100 行
+2026-02-15 19:23:35,244 - INFO - 已逐行插入 10200 行
+2026-02-15 19:23:35,341 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 19:23:40,438 - INFO - 已逐行插入 10300 行
+2026-02-15 19:23:41,343 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:23:44,663 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:23:45,916 - INFO - 已逐行插入 10400 行
+2026-02-15 19:23:48,888 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:23:49,451 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:23:50,011 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:23:51,518 - INFO - 已逐行插入 10500 行
+2026-02-15 19:23:56,704 - INFO - 已逐行插入 10600 行
+2026-02-15 19:24:01,817 - INFO - 已逐行插入 10700 行
+2026-02-15 19:24:04,437 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_cross_appellant' at row 1")
+2026-02-15 19:24:06,792 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:24:07,160 - INFO - 已逐行插入 10800 行
+2026-02-15 19:24:08,062 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 19:24:12,436 - INFO - 已逐行插入 10900 行
+2026-02-15 19:24:17,654 - INFO - 已逐行插入 11000 行
+2026-02-15 19:24:19,147 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 19:24:22,893 - INFO - 已逐行插入 11100 行
+2026-02-15 19:24:23,338 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 19:24:26,326 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 19:24:31,151 - INFO - 已逐行插入 11200 行
+2026-02-15 19:24:33,947 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 19:24:36,396 - INFO - 已逐行插入 11300 行
+2026-02-15 19:24:38,914 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:24:41,617 - INFO - 已逐行插入 11400 行
+2026-02-15 19:24:42,031 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:24:42,269 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 19:24:45,064 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:24:47,040 - INFO - 已逐行插入 11500 行
+2026-02-15 19:24:48,660 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:24:49,846 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 19:24:52,381 - INFO - 已逐行插入 11600 行
+2026-02-15 19:24:55,101 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:24:57,585 - INFO - 已逐行插入 11700 行
+2026-02-15 19:24:58,034 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:25:02,863 - INFO - 已逐行插入 11800 行
+2026-02-15 19:25:08,501 - INFO - 已逐行插入 11900 行
+2026-02-15 19:25:12,427 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:25:13,752 - INFO - 已逐行插入 12000 行
+2026-02-15 19:25:18,936 - INFO - 已逐行插入 12100 行
+2026-02-15 19:25:19,696 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:25:20,876 - ERROR - 单行插入失败: (1406, "Data too long for column 'respondent_s_submissions_1' at row 1")
+2026-02-15 19:25:24,309 - INFO - 已逐行插入 12200 行
+2026-02-15 19:25:29,504 - INFO - 已逐行插入 12300 行
+2026-02-15 19:25:31,436 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_cross_appellant' at row 1")
+2026-02-15 19:25:36,845 - INFO - 已逐行插入 12400 行
+2026-02-15 19:25:40,327 - ERROR - 批量插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 79")
+2026-02-15 19:25:40,327 - INFO - 尝试逐行插入...
+2026-02-15 19:25:45,198 - INFO - 已逐行插入 12500 行
+2026-02-15 19:25:50,408 - INFO - 已逐行插入 12600 行
+2026-02-15 19:25:55,736 - INFO - 已逐行插入 12700 行
+2026-02-15 19:26:01,212 - INFO - 已逐行插入 12800 行
+2026-02-15 19:26:06,395 - INFO - 已逐行插入 12900 行
+2026-02-15 19:26:11,143 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:26:11,671 - INFO - 已逐行插入 13000 行
+2026-02-15 19:26:16,862 - INFO - 已逐行插入 13100 行
+2026-02-15 19:26:22,023 - INFO - 已逐行插入 13200 行
+2026-02-15 19:26:27,292 - INFO - 已逐行插入 13300 行
+2026-02-15 19:26:32,463 - INFO - 已逐行插入 13400 行
+2026-02-15 19:26:37,740 - INFO - 已逐行插入 13500 行
+2026-02-15 19:26:38,601 - ERROR - 单行插入失败: (1406, "Data too long for column 'appellate_parties_interveners' at row 1")
+2026-02-15 19:26:42,993 - INFO - 已逐行插入 13600 行
+2026-02-15 19:26:48,172 - INFO - 已逐行插入 13700 行
+2026-02-15 19:26:53,363 - INFO - 已逐行插入 13800 行
+2026-02-15 19:26:58,680 - INFO - 已逐行插入 13900 行
+2026-02-15 19:27:03,842 - INFO - 已逐行插入 14000 行
+2026-02-15 19:27:09,020 - INFO - 已逐行插入 14100 行
+2026-02-15 19:27:09,163 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:27:14,283 - INFO - 已逐行插入 14200 行
+2026-02-15 19:27:19,589 - INFO - 已逐行插入 14300 行
+2026-02-15 19:27:24,742 - INFO - 已逐行插入 14400 行
+2026-02-15 19:27:29,033 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:27:31,489 - INFO - 已逐行插入 14500 行
+2026-02-15 19:27:36,666 - INFO - 已逐行插入 14600 行
+2026-02-15 19:27:41,862 - INFO - 已逐行插入 14700 行
+2026-02-15 19:27:42,374 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:27:47,163 - INFO - 已逐行插入 14800 行
+2026-02-15 19:27:52,341 - INFO - 已逐行插入 14900 行
+2026-02-15 19:27:52,688 - ERROR - 批量插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 78")
+2026-02-15 19:27:52,688 - INFO - 尝试逐行插入...
+2026-02-15 19:27:56,640 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:27:57,859 - INFO - 已逐行插入 15000 行
+2026-02-15 19:27:59,281 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:28:03,050 - INFO - 已逐行插入 15100 行
+2026-02-15 19:28:08,142 - INFO - 已逐行插入 15200 行
+2026-02-15 19:28:13,251 - INFO - 已逐行插入 15300 行
+2026-02-15 19:28:18,341 - INFO - 已逐行插入 15400 行
+2026-02-15 19:28:23,467 - INFO - 已逐行插入 15500 行
+2026-02-15 19:28:28,569 - INFO - 已逐行插入 15600 行
+2026-02-15 19:28:33,952 - INFO - 已逐行插入 15700 行
+2026-02-15 19:28:39,074 - INFO - 已逐行插入 15800 行
+2026-02-15 19:28:44,166 - INFO - 已逐行插入 15900 行
+2026-02-15 19:28:49,262 - INFO - 已逐行插入 16000 行
+2026-02-15 19:28:54,346 - INFO - 已逐行插入 16100 行
+2026-02-15 19:28:55,423 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:28:59,563 - INFO - 已逐行插入 16200 行
+2026-02-15 19:29:04,700 - INFO - 已逐行插入 16300 行
+2026-02-15 19:29:10,043 - INFO - 已逐行插入 16400 行
+2026-02-15 19:29:13,571 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:29:15,260 - INFO - 已逐行插入 16500 行
+2026-02-15 19:29:20,456 - INFO - 已逐行插入 16600 行
+2026-02-15 19:29:25,584 - INFO - 已逐行插入 16700 行
+2026-02-15 19:29:30,675 - INFO - 已逐行插入 16800 行
+2026-02-15 19:29:35,913 - INFO - 已逐行插入 16900 行
+2026-02-15 19:29:41,004 - INFO - 已逐行插入 17000 行
+2026-02-15 19:29:46,093 - INFO - 已逐行插入 17100 行
+2026-02-15 19:29:51,230 - INFO - 已逐行插入 17200 行
+2026-02-15 19:29:56,341 - INFO - 已逐行插入 17300 行
+2026-02-15 19:30:02,491 - ERROR - 批量插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 230")
+2026-02-15 19:30:02,491 - INFO - 尝试逐行插入...
+2026-02-15 19:30:02,698 - INFO - 已逐行插入 17400 行
+2026-02-15 19:30:07,848 - INFO - 已逐行插入 17500 行
+2026-02-15 19:30:13,003 - INFO - 已逐行插入 17600 行
+2026-02-15 19:30:18,639 - INFO - 已逐行插入 17700 行
+2026-02-15 19:30:23,692 - INFO - 已逐行插入 17800 行
+2026-02-15 19:30:28,783 - INFO - 已逐行插入 17900 行
+2026-02-15 19:30:33,901 - INFO - 已逐行插入 18000 行
+2026-02-15 19:30:41,400 - INFO - 已逐行插入 18100 行
+2026-02-15 19:30:41,954 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:30:46,578 - INFO - 已逐行插入 18200 行
+2026-02-15 19:30:51,726 - INFO - 已逐行插入 18300 行
+2026-02-15 19:30:52,925 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:30:56,960 - INFO - 已逐行插入 18400 行
+2026-02-15 19:31:02,052 - INFO - 已逐行插入 18500 行
+2026-02-15 19:31:04,364 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:31:07,240 - INFO - 已逐行插入 18600 行
+2026-02-15 19:31:12,422 - INFO - 已逐行插入 18700 行
+2026-02-15 19:31:12,721 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 19:31:17,668 - INFO - 已逐行插入 18800 行
+2026-02-15 19:31:22,768 - INFO - 已逐行插入 18900 行
+2026-02-15 19:31:27,876 - INFO - 已逐行插入 19000 行
+2026-02-15 19:31:32,019 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_defendant' at row 1")
+2026-02-15 19:31:33,198 - INFO - 已逐行插入 19100 行
+2026-02-15 19:31:34,819 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:31:36,381 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:31:38,514 - INFO - 已逐行插入 19200 行
+2026-02-15 19:31:43,592 - INFO - 已逐行插入 19300 行
+2026-02-15 19:31:48,743 - INFO - 已逐行插入 19400 行
+2026-02-15 19:31:53,913 - INFO - 已逐行插入 19500 行
+2026-02-15 19:31:58,225 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_plaintiff' at row 1")
+2026-02-15 19:31:59,098 - INFO - 已逐行插入 19600 行
+2026-02-15 19:32:02,589 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_accused' at row 1")
+2026-02-15 19:32:04,332 - INFO - 已逐行插入 19700 行
+2026-02-15 19:32:06,607 - ERROR - 单行插入失败: (1406, "Data too long for column 'primary_parties_accused' at row 1")
+2026-02-15 19:32:09,527 - INFO - 已逐行插入 19800 行
+2026-02-15 19:32:11,567 - INFO - 数据录入完成，成功插入 19839 行，处理失败 102 行
+2026-02-15 19:32:11,638 - INFO - 表 'Australia' 现在共有 67046 行数据
+2026-02-15 19:32:11,638 - WARNING - 共有 102 个错误
+2026-02-15 19:38:16,225 - INFO - 开始数据录入流程，读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_5.xlsx
+2026-02-15 19:38:16,225 - INFO - 使用已有的列映射信息，共39个字段
+2026-02-15 19:38:16,225 - INFO - 连接MySQL数据库...
+2026-02-15 19:38:16,622 - INFO - MySQL表字段: ['case_class', 'case_name', 'court', 'jurisdiction', 'decision_date', 'primary_parties_plaintiff', 'primary_parties_defendant', 'primary_parties_prosecutor', 'primary_parties_accused', 'appellate_parties_appellant', 'appellate_parties_respondent_on_appeal', 'cause_of_action', 'grounds_of_appeal', 'final_orders_trial', 'outcome_of_appeal', 'processing_status', 'reason', 'judges', 'counsel', 'other_parties_if_any', 'material_facts', 'legislation_considered', 'key_cases_cited', 'appellate_parties_cross_appellant', 'appellate_parties_interveners', 'lower_court_history', 'appellant_s_submissions', 'respondent_s_submissions', 'appellate_court_reasoning', 'primary_parties_applicant', 'primary_parties_respondent', 'plaintiff', 'defendant', 'primary_judge_s_reasoning', 'appellant_s_submissions_1', 'respondent_s_submissions_1', 'final_orders_trial_1', 'primary_judge_s_reasoning_1', 'original_text']
+2026-02-15 19:38:16,622 - INFO - 期望的字段数量: 39
+2026-02-15 19:38:16,625 - INFO - 开始分批次读取Excel文件...
+2026-02-15 19:38:16,625 - INFO - 读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_5.xlsx
+2026-02-15 19:38:16,625 - ERROR - 数据录入过程中出错: File is not a zip file
+Traceback (most recent call last):
+  File "c:\users\29944\desktop\spyder\law_relevant\外国法\澳洲\澳洲(建表,数据录入).py", line 347, in insert_data_from_excel
+    for df in read_excel_in_batches(cleaned_path, BATCH_SIZE):
+  File "c:\users\29944\desktop\spyder\law_relevant\外国法\澳洲\澳洲(建表,数据录入).py", line 489, in read_excel_in_batches
+    df_all = pd.read_excel(file_path, dtype=str)
+  File "C:\Users\29944\anaconda3\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "C:\Users\29944\anaconda3\lib\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+  File "C:\Users\29944\anaconda3\lib\site-packages\pandas\io\excel\_base.py", line 1419, in inspect_excel_format
+    with zipfile.ZipFile(stream) as zf:
+  File "C:\Users\29944\anaconda3\lib\zipfile.py", line 1266, in __init__
+    self._RealGetContents()
+  File "C:\Users\29944\anaconda3\lib\zipfile.py", line 1333, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-02-15 19:39:48,218 - INFO - 开始数据录入流程，读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_5.xlsx
+2026-02-15 19:39:48,218 - INFO - 使用已有的列映射信息，共39个字段
+2026-02-15 19:39:48,218 - INFO - 连接MySQL数据库...
+2026-02-15 19:39:48,543 - INFO - MySQL表字段: ['case_class', 'case_name', 'court', 'jurisdiction', 'decision_date', 'primary_parties_plaintiff', 'primary_parties_defendant', 'primary_parties_prosecutor', 'primary_parties_accused', 'appellate_parties_appellant', 'appellate_parties_respondent_on_appeal', 'cause_of_action', 'grounds_of_appeal', 'final_orders_trial', 'outcome_of_appeal', 'processing_status', 'reason', 'judges', 'counsel', 'other_parties_if_any', 'material_facts', 'legislation_considered', 'key_cases_cited', 'appellate_parties_cross_appellant', 'appellate_parties_interveners', 'lower_court_history', 'appellant_s_submissions', 'respondent_s_submissions', 'appellate_court_reasoning', 'primary_parties_applicant', 'primary_parties_respondent', 'plaintiff', 'defendant', 'primary_judge_s_reasoning', 'appellant_s_submissions_1', 'respondent_s_submissions_1', 'final_orders_trial_1', 'primary_judge_s_reasoning_1', 'original_text']
+2026-02-15 19:39:48,543 - INFO - 期望的字段数量: 39
+2026-02-15 19:39:48,545 - INFO - 开始分批次读取Excel文件...
+2026-02-15 19:39:48,545 - INFO - 读取Excel文件: D:\这里有法_资料\澳洲\Result_anli_part_5.xlsx
+2026-02-15 19:39:48,545 - ERROR - 数据录入过程中出错: File is not a zip file
+Traceback (most recent call last):
+  File "c:\users\29944\desktop\spyder\law_relevant\外国法\澳洲\澳洲(建表,数据录入).py", line 347, in insert_data_from_excel
+    for df in read_excel_in_batches(cleaned_path, BATCH_SIZE):
+  File "c:\users\29944\desktop\spyder\law_relevant\外国法\澳洲\澳洲(建表,数据录入).py", line 489, in read_excel_in_batches
+    df_all = pd.read_excel(file_path, dtype=str)
+  File "C:\Users\29944\anaconda3\lib\site-packages\pandas\io\excel\_base.py", line 495, in read_excel
+    io = ExcelFile(
+  File "C:\Users\29944\anaconda3\lib\site-packages\pandas\io\excel\_base.py", line 1550, in __init__
+    ext = inspect_excel_format(
+  File "C:\Users\29944\anaconda3\lib\site-packages\pandas\io\excel\_base.py", line 1419, in inspect_excel_format
+    with zipfile.ZipFile(stream) as zf:
+  File "C:\Users\29944\anaconda3\lib\zipfile.py", line 1266, in __init__
+    self._RealGetContents()
+  File "C:\Users\29944\anaconda3\lib\zipfile.py", line 1333, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+2026-02-15 19:55:45,306 - INFO - 开始建表流程，读取CSV文件: D:\这里有法_资料\文书分段\民事文书分段\2021年01月裁判文书数据_分段结果.csv
+2026-02-15 19:55:51,229 - INFO - CSV文件读取成功，共54723行，19列
+2026-02-15 19:55:51,229 - INFO - 需要处理的CSV列数: 19
+2026-02-15 19:55:51,229 - INFO - CSV列 1: '原始链接' -> MySQL字段 '原始链接'
+2026-02-15 19:55:51,229 - INFO - CSV列 2: '案号' -> MySQL字段 '案号'
+2026-02-15 19:55:51,229 - INFO - CSV列 3: '审级' -> MySQL字段 '审级'
+2026-02-15 19:55:51,229 - INFO - CSV列 4: '文书类型' -> MySQL字段 '文书类型'
+2026-02-15 19:55:51,229 - INFO - CSV列 5: '全文' -> MySQL字段 '全文'
+2026-02-15 19:55:51,229 - INFO - CSV列 6: '清洗后原文' -> MySQL字段 '清洗后原文'
+2026-02-15 19:55:51,229 - INFO - CSV列 7: '分块_1_案号段' -> MySQL字段 '分块_1_案号段'
+2026-02-15 19:55:51,229 - INFO - CSV列 8: '分块_2_当事人基本信息段' -> MySQL字段 '分块_2_当事人基本信息段'
+2026-02-15 19:55:51,229 - INFO - CSV列 9: '分块_3_诉讼经过段' -> MySQL字段 '分块_3_诉讼经过段'
+2026-02-15 19:55:51,229 - INFO - CSV列 10: '分块_4_诉讼请求段' -> MySQL字段 '分块_4_诉讼请求段'
+2026-02-15 19:55:51,229 - INFO - CSV列 11: '分块_5_原告证据段' -> MySQL字段 '分块_5_原告证据段'
+2026-02-15 19:55:51,229 - INFO - CSV列 12: '分块_6_答辩意见段' -> MySQL字段 '分块_6_答辩意见段'
+2026-02-15 19:55:51,229 - INFO - CSV列 13: '分块_7_被告证据段' -> MySQL字段 '分块_7_被告证据段'
+2026-02-15 19:55:51,244 - INFO - CSV列 14: '分块_8_被告质证段' -> MySQL字段 '分块_8_被告质证段'
+2026-02-15 19:55:51,245 - INFO - CSV列 15: '分块_9_法院认定事实段' -> MySQL字段 '分块_9_法院认定事实段'
+2026-02-15 19:55:51,245 - INFO - CSV列 16: '分块_10_分点说理段' -> MySQL字段 '分块_10_分点说理段'
+2026-02-15 19:55:51,245 - INFO - CSV列 17: '分块_11_总结说理段' -> MySQL字段 '分块_11_总结说理段'
+2026-02-15 19:55:51,245 - INFO - CSV列 18: '分块_12_判决主文段' -> MySQL字段 '分块_12_判决主文段'
+2026-02-15 19:55:51,245 - INFO - CSV列 19: '分块_13_落款段' -> MySQL字段 '分块_13_落款段'
+2026-02-15 19:55:51,499 - INFO - 字段 '原始链接' 最大长度（清理后）: 109
+2026-02-15 19:55:51,656 - INFO - 字段 '案号' 最大长度（清理后）: 91
+2026-02-15 19:55:51,778 - INFO - 字段 '审级' 最大长度（清理后）: 2
+2026-02-15 19:55:51,909 - INFO - 字段 '文书类型' 最大长度（清理后）: 11
+2026-02-15 19:55:55,453 - INFO - 字段 '全文' 最大长度（清理后）: 40524
+2026-02-15 19:55:58,831 - INFO - 字段 '清洗后原文' 最大长度（清理后）: 40509
+2026-02-15 19:55:59,020 - INFO - 字段 '分块_1_案号段' 最大长度（清理后）: 3341
+2026-02-15 19:55:59,315 - INFO - 字段 '分块_2_当事人基本信息段' 最大长度（清理后）: 5364
+2026-02-15 19:55:59,616 - INFO - 字段 '分块_3_诉讼经过段' 最大长度（清理后）: 1830
+2026-02-15 19:55:59,924 - INFO - 字段 '分块_4_诉讼请求段' 最大长度（清理后）: 6774
+2026-02-15 19:55:59,971 - INFO - 字段 '分块_5_原告证据段' 最大长度（清理后）: 4537
+2026-02-15 19:56:00,099 - INFO - 字段 '分块_6_答辩意见段' 最大长度（清理后）: 5230
+2026-02-15 19:56:00,130 - INFO - 字段 '分块_7_被告证据段' 最大长度（清理后）: 3160
+2026-02-15 19:56:00,146 - INFO - 字段 '分块_8_被告质证段' 最大长度（清理后）: 3475
+2026-02-15 19:56:00,814 - INFO - 字段 '分块_9_法院认定事实段' 最大长度（清理后）: 33268
+2026-02-15 19:56:01,211 - INFO - 字段 '分块_10_分点说理段' 最大长度（清理后）: 5811
+2026-02-15 19:56:01,395 - INFO - 字段 '分块_11_总结说理段' 最大长度（清理后）: 3513
+2026-02-15 19:56:01,742 - INFO - 字段 '分块_12_判决主文段' 最大长度（清理后）: 5196
+2026-02-15 19:56:03,084 - INFO - 字段 '分块_13_落款段' 最大长度（清理后）: 18616
+2026-02-15 19:56:03,084 - INFO - 连接MySQL数据库...
+2026-02-15 19:56:03,571 - INFO - 创建MySQL表...
+2026-02-15 19:56:03,572 - INFO - 建表SQL:
+CREATE TABLE Vietnam_document (
+    原始链接 varchar(164),
+    案号 varchar(200),
+    审级 varchar(50),
+    文书类型 varchar(50),
+    全文 longtext,
+    清洗后原文 longtext,
+    分块_1_案号段 longtext,
+    分块_2_当事人基本信息段 longtext,
+    分块_3_诉讼经过段 longtext,
+    分块_4_诉讼请求段 longtext,
+    分块_5_原告证据段 longtext,
+    分块_6_答辩意见段 longtext,
+    分块_7_被告证据段 longtext,
+    分块_8_被告质证段 longtext,
+    分块_9_法院认定事实段 longtext,
+    分块_10_分点说理段 longtext,
+    分块_11_总结说理段 longtext,
+    分块_12_判决主文段 longtext,
+    分块_13_落款段 longtext
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+2026-02-15 19:56:04,105 - INFO - 在字段 '原始链接' 上创建索引
+2026-02-15 19:56:04,153 - INFO - 表 'Vietnam_document' 创建成功！
+2026-02-15 19:56:04,169 - INFO - 列映射信息已保存到 column_mapping.json
+2026-02-15 19:56:04,232 - INFO - 
+表结构:
+2026-02-15 19:56:04,232 - INFO - ==========================================================================================
+2026-02-15 19:56:04,232 - INFO - 字段名                            类型                        允许空       
+2026-02-15 19:56:04,232 - INFO - ==========================================================================================
+2026-02-15 19:56:04,232 - INFO - 原始链接                           varchar(164)              YES       
+2026-02-15 19:56:04,232 - INFO - 案号                             varchar(200)              YES       
+2026-02-15 19:56:04,232 - INFO - 审级                             varchar(50)               YES       
+2026-02-15 19:56:04,232 - INFO - 文书类型                           varchar(50)               YES       
+2026-02-15 19:56:04,232 - INFO - 全文                             longtext                  YES       
+2026-02-15 19:56:04,232 - INFO - 清洗后原文                          longtext                  YES       
+2026-02-15 19:56:04,232 - INFO - 分块_1_案号段                       longtext                  YES       
+2026-02-15 19:56:04,232 - INFO - 分块_2_当事人基本信息段                  longtext                  YES       
+2026-02-15 19:56:04,232 - INFO - 分块_3_诉讼经过段                     longtext                  YES       
+2026-02-15 19:56:04,232 - INFO - 分块_4_诉讼请求段                     longtext                  YES       
+2026-02-15 19:56:04,232 - INFO - 分块_5_原告证据段                     longtext                  YES       
+2026-02-15 19:56:04,232 - INFO - 分块_6_答辩意见段                     longtext                  YES       
+2026-02-15 19:56:04,232 - INFO - 分块_7_被告证据段                     longtext                  YES       
+2026-02-15 19:56:04,232 - INFO - 分块_8_被告质证段                     longtext                  YES       
+2026-02-15 19:56:04,232 - INFO - 分块_9_法院认定事实段                   longtext                  YES       
+2026-02-15 19:56:04,232 - INFO - 分块_10_分点说理段                    longtext                  YES       
+2026-02-15 19:56:04,232 - INFO - 分块_11_总结说理段                    longtext                  YES       
+2026-02-15 19:56:04,232 - INFO - 分块_12_判决主文段                    longtext                  YES       
+2026-02-15 19:56:04,232 - INFO - 分块_13_落款段                      longtext                  YES       
+2026-02-15 19:56:04,248 - INFO - 
+字段统计:
+2026-02-15 19:56:04,248 - INFO - ======================================================================
+2026-02-15 19:56:04,248 - INFO - 字段名                            最大长度       字段类型           
+2026-02-15 19:56:04,248 - INFO - ======================================================================
+2026-02-15 19:56:04,248 - INFO - 原始链接                           109        varchar        
+2026-02-15 19:56:04,248 - INFO - 案号                             91         varchar        
+2026-02-15 19:56:04,248 - INFO - 审级                             2          varchar        
+2026-02-15 19:56:04,248 - INFO - 文书类型                           11         varchar        
+2026-02-15 19:56:04,248 - INFO - 全文                             40524      longtext       
+2026-02-15 19:56:04,248 - INFO - 清洗后原文                          40509      longtext       
+2026-02-15 19:56:04,248 - INFO - 分块_1_案号段                       3341       longtext       
+2026-02-15 19:56:04,248 - INFO - 分块_2_当事人基本信息段                  5364       longtext       
+2026-02-15 19:56:04,248 - INFO - 分块_3_诉讼经过段                     1830       longtext       
+2026-02-15 19:56:04,248 - INFO - 分块_4_诉讼请求段                     6774       longtext       
+2026-02-15 19:56:04,248 - INFO - 分块_5_原告证据段                     4537       longtext       
+2026-02-15 19:56:04,248 - INFO - 分块_6_答辩意见段                     5230       longtext       
+2026-02-15 19:56:04,248 - INFO - 分块_7_被告证据段                     3160       longtext       
+2026-02-15 19:56:04,248 - INFO - 分块_8_被告质证段                     3475       longtext       
+2026-02-15 19:56:04,248 - INFO - 分块_9_法院认定事实段                   33268      longtext       
+2026-02-15 19:56:04,248 - INFO - 分块_10_分点说理段                    5811       longtext       
+2026-02-15 19:56:04,248 - INFO - 分块_11_总结说理段                    3513       longtext       
+2026-02-15 19:56:04,248 - INFO - 分块_12_判决主文段                    5196       longtext       
+2026-02-15 19:56:04,248 - INFO - 分块_13_落款段                      18616      longtext       
+2026-02-15 19:56:04,248 - INFO - 
+字段类型统计: varchar=4, longtext=15

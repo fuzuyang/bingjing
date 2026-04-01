@@ -1,0 +1,49 @@
+CREATE TABLE kb_document (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT COMMENT '主键ID',
+    title VARCHAR(255) NOT NULL COMMENT '文档标题',
+    doc_type VARCHAR(50) COMMENT '文档类型（制度/办法/细则等）',
+    status VARCHAR(20) DEFAULT '有效' COMMENT '状态（有效/废止）',
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+
+    INDEX idx_title (title),
+    INDEX idx_status (status)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='知识库文档表';
+
+CREATE TABLE kb_chunk (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT COMMENT '主键ID',
+    document_id BIGINT NOT NULL COMMENT '所属文档ID',
+
+    chunk_no INT NOT NULL COMMENT '文档内顺序号',
+
+    section_no VARCHAR(50) COMMENT '章节编号（如1.2、1.3.1）',
+    section_title VARCHAR(255) COMMENT '章节标题',
+
+    content TEXT NOT NULL COMMENT '正文内容（可为空）',
+
+    page_no INT COMMENT '页码',
+
+    vector_id VARCHAR(100) COMMENT '向量库ID（已删除）',
+
+    parent_section VARCHAR(50) COMMENT '父章节编号（如1.3.1的父是1.3）',
+
+    is_title TINYINT DEFAULT 0 COMMENT '是否为标题（1=是，0=否）',
+
+    level_no INT COMMENT '层级（1=章，2=节，3=条，4=子条）',
+
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+
+    -- 索引（非常关键，影响检索性能）
+    INDEX idx_doc_id (document_id),
+    INDEX idx_doc_chunkno (document_id, chunk_no),
+    INDEX idx_section_no (section_no),
+    INDEX idx_parent_section (parent_section),
+    INDEX idx_doc_section (document_id, section_no),
+
+    -- 外键
+    CONSTRAINT fk_kb_chunk_document
+        FOREIGN KEY (document_id) REFERENCES kb_document(id)
+        ON DELETE CASCADE
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='知识库分段表';

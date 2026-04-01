@@ -1,0 +1,76 @@
+当前项目里“用户提问后”的完整链路是这样的（未改代码）：
+1.
+前端发起请求
+用户在页面输入文本/上传文件，点击按钮后由 executeAssessment() 调 POST /api/v1/risk/evaluate，成功后把返回的 markdown 渲染到页面，并刷新历史记录。入口在 index.html#L236、index.html#L155、index.html#L171。
+2.
+后端接入与入参处理
+Flask 路由 app.py#L262 接收请求，先做 request-id/计时，再解析输入：
+•
+JSON：取 message
+•
+multipart：可解析 txt/md/csv/pdf/docx，并截断长度
+核心在 app.py#L164、app.py#L122、app.py#L214、app.py#L221。
+3.
+核心评估流水线（Coordinator）
+AssessmentCoordinator.run_full_assessment() 串行执行：
+IntentRecognizer -> PolicyRetriever -> PolicySpiritAnalyzer -> GroundedAnswerGenerator -> RiskEvaluator -> ReportGenerator -> (可选)落库
+见 modules/evaluator/coordinator.py#L59。
+4.
+各阶段具体逻辑
+•
+意图识别：本地规则优先（默认），可切 LLM；会做关键词纠偏、业务类型补全、query_mode 判定（standard/knowledge_explain）。intent_recognizer.py#L637
+•
+检索：先查结构化关系表（业务类型->条款/流程/材料），同时总是跑向量召回；若都弱命中再走 legacy/keyword/rescue fallback。返回 retrieval_path 等追踪信息。retriever.py#L2043、vector_kb_retriever.py#L1014
+•
+分析：流程/材料逐项命中检查，构造 gaps（审查类意图更严格），并组装 LLM 可用上下文与摘要。analyzer.py#L350
+•
+生成答案：优先 LLM（受证据约束+引用ID），失败则抽取式 fallback。answer_generator.py#L316
+•
+风险评估：算完整度分、缺项、状态（通过/需补充/不通过等），并给申请方/审核方建议。risk_evaluator.py#L73
+•
+报告生成：拼装最终 Markdown（结论、证据、流程、材料、缺漏、建议）。reporter.py#L527
+5.
+落库与响应
+•
+协调器初始化时会检查/补齐合规模型表结构（一次性）。coordinator.py#L38、core/database.py#L68
+•
+结果保存到 biz_risk_assessments，并尝试扩展写入 biz_compliance_task / biz_task_type_hit / biz_task_gap。coordinator.py#L96、core/models.py
+•
+API 最终返回 markdown + metrics + input + structured(latest_result)，前端渲染并通过 /api/v1/risk/history 拉历史。app.py#L262、app.py#L301。
+
+===========================================================================
+完整流程（当前项目实际执行链路）
+1.
+前端点击“开始评估”触发 executeAssessment()，读取文本 userInput 和可选文件 userFile；两者都空则直接拦截。
+2.
+前端发起 POST /api/v1/risk/evaluate：
+◦
+有文件时走 multipart/form-data（message + file）
+◦
+无文件时走 application/json（{"message": "..."}）
+3.
+后端 before_request 先打请求上下文（g.start_time、g.request_id），请求结束后 teardown_appcontext 回收 DB session。
+4.
+run_evaluation() 调 _build_case_description_from_request() 解析输入：支持 .txt/.md/.pdf/.docx/.csv，做大小限制、文本截断，并把“文本+文件抽取内容”合并成 case_description。
+5.
+输入合法后创建 AssessmentCoordinator，执行 run_full_assessment(case_description, input_meta=...)。
+6.
+协调器内按固定顺序跑主链路：
+◦
+IntentRecognizer.recognize：意图识别，产出 intent_type/query_mode/must_keywords/business_types
+◦
+PolicyRetriever.retrieve：检索（结构化表 + 向量召回 + 多级兜底），产出 clauses/procedures/materials/fallback_knowledge/summary
+◦
+PolicySpiritAnalyzer.analyze_compliance：做流程/材料命中与缺口分析，构建 llm_context
+◦
+GroundedAnswerGenerator.generate：基于 llm_context 生成回答与引用；证据不足会走“未在已命中原文中找到...”的兜底策略
+◦
+RiskEvaluator.evaluate：算完整度、合规状态、风险等级和建议
+◦
+ReportGenerator.generate：组装最终 Markdown 报告
+7.
+协调器把结构化结果写入 latest_result，并默认 persist=True：先写 biz_risk_assessments，再尝试扩展写 biz_compliance_task / biz_task_type_hit / biz_task_gap。
+8.
+接口返回统一响应体：data.markdown、data.metrics.duration、data.input、data.structured(=latest_result)。
+9.
+前端拿到成功响应后渲染 Markdown、展示耗时，并再调 /api/v1/risk/history 刷新历史记录。
