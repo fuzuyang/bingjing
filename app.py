@@ -287,7 +287,7 @@ def _parse_document_elements_with_llm(document_text: str, prompt_template: str):
             {"role": "user", "content": f"请基于以下文档内容提取要素，仅返回JSON：\n{safe_text}"},
         ],
         response_format={"type": "json_object"},
-        temperature=0.1,
+        temperature=0.2,
         max_tokens=1800,
     )
 
@@ -1330,6 +1330,7 @@ def upload():
             )
             for column in db_record.__table__.columns
             for value in [getattr(db_record, column.name)]
+            if column.name != "content"
         }
     finally:
         generation_session.close()
