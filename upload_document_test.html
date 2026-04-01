@@ -143,12 +143,12 @@
   <div class="wrap">
     <div class="card">
       <h1>/upload/document 路由测试页</h1>
-      <p class="desc">仅用于本地调试：上传 PDF，选择 file_type 和 expected_template，查看后端 JSON 响应。</p>
+      <p class="desc">仅用于本地调试：上传 PDF/Word(.docx)/TXT，选择 file_type 和 expected_template，查看后端响应。</p>
 
       <form id="upload-form">
         <div>
-          <label for="file">PDF 文件</label>
-          <input id="file" name="file" type="file" accept=".pdf,application/pdf" required />
+          <label for="file">PDF / Word(.docx) / TXT 文件</label>
+          <input id="file" name="file" type="file" accept=".pdf,.docx,.txt,application/pdf,text/plain" required />
         </div>
 
         <div class="row">

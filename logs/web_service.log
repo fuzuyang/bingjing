@@ -1293,3 +1293,258 @@ openai.NotFoundError: Error code: 404
 2026-04-01 15:10:40,351 [INFO] [app] - [4a94a84d937a6245] 评估完成，耗时: 22.33s
 2026-04-01 15:10:50,503 [INFO] [app] - [ff5eb9c34ef34205] 启动深度评估：如果合规管理不到位引发违规行为，中金黄金可以采取哪些措施？...
 2026-04-01 15:11:17,602 [INFO] [app] - [ff5eb9c34ef34205] 评估完成，耗时: 27.10s
+2026-04-01 16:24:34,395 [INFO] [app] - [5c0fd359014a9103] 启动深度评估：如果合规管理不到位引发违规行为，中金黄金可以采取哪些措施？
+...
+2026-04-01 16:25:06,265 [INFO] [app] - [5c0fd359014a9103] 评估完成，耗时: 32.13s
+2026-04-01 16:25:36,506 [INFO] [app] - [675be04abb86a0e5] 启动深度评估：【上传文件解析文本 - 董事会的职责是什么.pdf】
+董事会...
+2026-04-01 16:25:59,901 [INFO] [app] - [675be04abb86a0e5] 评估完成，耗时: 23.42s
+2026-04-01 16:32:38,770 [ERROR] [app] - [a0e1aeeea18dcdbb] 文档要素解析失败: 缺少 python-docx 依赖，无法解析 Word 文件
+Traceback (most recent call last):
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\app.py", line 702, in upload
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\app.py", line 704, in upload
+    raise ValueError("缺少 python-docx 依赖，无法解析 Word 文件")
+ValueError: 缺少 python-docx 依赖，无法解析 Word 文件
+
+2026-04-01 16:34:40,128 [ERROR] [app] - [df806f6825f77b11] 文档要素解析失败: 缺少 python-docx 依赖，无法解析 Word 文件
+Traceback (most recent call last):
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\app.py", line 702, in upload
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\app.py", line 704, in upload
+    raise ValueError("缺少 python-docx 依赖，无法解析 Word 文件")
+ValueError: 缺少 python-docx 依赖，无法解析 Word 文件
+
+2026-04-01 16:34:41,556 [ERROR] [app] - [0388ae83d37f83b9] 文档要素解析失败: 缺少 python-docx 依赖，无法解析 Word 文件
+Traceback (most recent call last):
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\app.py", line 702, in upload
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\app.py", line 704, in upload
+    raise ValueError("缺少 python-docx 依赖，无法解析 Word 文件")
+ValueError: 缺少 python-docx 依赖，无法解析 Word 文件
+
+2026-04-01 16:36:17,027 [ERROR] [app] - [9cede9f77b2d42f8] 文档要素解析失败: 缺少 python-docx 依赖，无法解析 Word 文件
+Traceback (most recent call last):
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\app.py", line 702, in upload
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\app.py", line 704, in upload
+    raise ValueError("缺少 python-docx 依赖，无法解析 Word 文件")
+ValueError: 缺少 python-docx 依赖，无法解析 Word 文件
+
+2026-04-01 16:36:18,027 [ERROR] [app] - [d25905b0bc8aea3f] 文档要素解析失败: 缺少 python-docx 依赖，无法解析 Word 文件
+Traceback (most recent call last):
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\app.py", line 702, in upload
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\app.py", line 704, in upload
+    raise ValueError("缺少 python-docx 依赖，无法解析 Word 文件")
+ValueError: 缺少 python-docx 依赖，无法解析 Word 文件
+
+2026-04-01 16:36:50,917 [ERROR] [app] - [a937591393f8b5df] 文档要素解析失败: (pymysql.err.DataError) (1406, "Data too long for column 'content' at row 1")
+[SQL: INSERT INTO complaints (content, created_at, document_name, document_type, case_cause, court_name, filing_date, plaintiff_names, plaintiff_addresses, plaintiff_legal_representatives, plaintiff_attorneys, defendant_names, defendant_addresses, defendant_legal_representatives, defendant_attorneys, third_party_entities, claims_full_text, claims_items, principal_amount, interest_amount, penalty_interest_amount, compound_interest_amount, attorney_fees, other_costs, non_monetary_claims, facts_and_reasons, related_contracts_or_documents, plaintiff_performance_claims, plaintiff_breach_or_tort_claims, plaintiff_pre_actions, joint_liability_basis, legal_basis, attachments) VALUES (%(content)s, %(created_at)s, %(document_name)s, %(document_type)s, %(case_cause)s, %(court_name)s, %(filing_date)s, %(plaintiff_names)s, %(plaintiff_addresses)s, %(plaintiff_legal_representatives)s, %(plaintiff_attorneys)s, %(defendant_names)s, %(defendant_addresses)s, %(defendant_legal_representatives)s, %(defendant_attorneys)s, %(third_party_entities)s, %(claims_full_text)s, %(claims_items)s, %(principal_amount)s, %(interest_amount)s, %(penalty_interest_amount)s, %(compound_interest_amount)s, %(attorney_fees)s, %(other_costs)s, %(non_monetary_claims)s, %(facts_and_reasons)s, %(related_contracts_or_documents)s, %(plaintiff_performance_claims)s, %(plaintiff_breach_or_tort_claims)s, %(plaintiff_pre_actions)s, %(joint_liability_basis)s, %(legal_basis)s, %(attachments)s)]
+[parameters: {'content': '写在前面\n公司选择\n简历投递\n面试策略\n面试总结\n技术部分\n语言特性篇\n谈谈 Python 和其他语言的区别\nPython 2和3的区别\n闭包\n装饰器\n谈谈GC\nGIL的理解\nPython传参\n深拷贝和浅拷贝\n鸭子类型\n猴子补丁\nPython中的作用域\n函数式编 ... (65867 characters truncated) ... 协议是fcgi协议的10倍快。\nuWSGI：是一个web服务器，实现了WSGI协议、uwsgi协议、http协议等。\n正则表达式篇\n可能是最好的正则表达式的教程笔记了吧...\n其他\n优质 Python 播客推荐\nPYCON CHINA 2019\nJetBrains IDE 基本快捷键', 'created_at': datetime.datetime(2026, 4, 1, 8, 36, 50, 496931), 'document_name': '无', 'document_type': '无', 'case_cause': '无', 'court_name': '无', 'filing_date': '无', 'plaintiff_names': '无', 'plaintiff_addresses': '无', 'plaintiff_legal_representatives': '无', 'plaintiff_attorneys': '无', 'defendant_names': '无', 'defendant_addresses': '无', 'defendant_legal_representatives': '无', 'defendant_attorneys': '无', 'third_party_entities': '无', 'claims_full_text': '无', 'claims_items': '无', 'principal_amount': '无', 'interest_amount': '无', 'penalty_interest_amount': '无', 'compound_interest_amount': '无', 'attorney_fees': '无', 'other_costs': '无', 'non_monetary_claims': '无', 'facts_and_reasons': '无', 'related_contracts_or_documents': '无', 'plaintiff_performance_claims': '无', 'plaintiff_breach_or_tort_claims': '无', 'plaintiff_pre_actions': '无', 'joint_liability_basis': '无', 'legal_basis': '无', 'attachments': '无'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+Traceback (most recent call last):
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.DataError: (1406, "Data too long for column 'content' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\app.py", line 1054, in upload
+    session.commit()
+    ~~~~~~~~~~~~~~^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\pymysql\connections.py", line 575, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+                          ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\pymysql\connections.py", line 826, in _read_query_result
+    result.read()
+    ~~~~~~~~~~~^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\pymysql\connections.py", line 1203, in read
+    first_packet = self.connection._read_packet()
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\pymysql\connections.py", line 782, in _read_packet
+    packet.raise_for_error()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\pymysql\protocol.py", line 219, in raise_for_error
+    err.raise_mysql_exception(self._data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\pymysql\err.py", line 150, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.DataError: (pymysql.err.DataError) (1406, "Data too long for column 'content' at row 1")
+[SQL: INSERT INTO complaints (content, created_at, document_name, document_type, case_cause, court_name, filing_date, plaintiff_names, plaintiff_addresses, plaintiff_legal_representatives, plaintiff_attorneys, defendant_names, defendant_addresses, defendant_legal_representatives, defendant_attorneys, third_party_entities, claims_full_text, claims_items, principal_amount, interest_amount, penalty_interest_amount, compound_interest_amount, attorney_fees, other_costs, non_monetary_claims, facts_and_reasons, related_contracts_or_documents, plaintiff_performance_claims, plaintiff_breach_or_tort_claims, plaintiff_pre_actions, joint_liability_basis, legal_basis, attachments) VALUES (%(content)s, %(created_at)s, %(document_name)s, %(document_type)s, %(case_cause)s, %(court_name)s, %(filing_date)s, %(plaintiff_names)s, %(plaintiff_addresses)s, %(plaintiff_legal_representatives)s, %(plaintiff_attorneys)s, %(defendant_names)s, %(defendant_addresses)s, %(defendant_legal_representatives)s, %(defendant_attorneys)s, %(third_party_entities)s, %(claims_full_text)s, %(claims_items)s, %(principal_amount)s, %(interest_amount)s, %(penalty_interest_amount)s, %(compound_interest_amount)s, %(attorney_fees)s, %(other_costs)s, %(non_monetary_claims)s, %(facts_and_reasons)s, %(related_contracts_or_documents)s, %(plaintiff_performance_claims)s, %(plaintiff_breach_or_tort_claims)s, %(plaintiff_pre_actions)s, %(joint_liability_basis)s, %(legal_basis)s, %(attachments)s)]
+[parameters: {'content': '写在前面\n公司选择\n简历投递\n面试策略\n面试总结\n技术部分\n语言特性篇\n谈谈 Python 和其他语言的区别\nPython 2和3的区别\n闭包\n装饰器\n谈谈GC\nGIL的理解\nPython传参\n深拷贝和浅拷贝\n鸭子类型\n猴子补丁\nPython中的作用域\n函数式编 ... (65867 characters truncated) ... 协议是fcgi协议的10倍快。\nuWSGI：是一个web服务器，实现了WSGI协议、uwsgi协议、http协议等。\n正则表达式篇\n可能是最好的正则表达式的教程笔记了吧...\n其他\n优质 Python 播客推荐\nPYCON CHINA 2019\nJetBrains IDE 基本快捷键', 'created_at': datetime.datetime(2026, 4, 1, 8, 36, 50, 496931), 'document_name': '无', 'document_type': '无', 'case_cause': '无', 'court_name': '无', 'filing_date': '无', 'plaintiff_names': '无', 'plaintiff_addresses': '无', 'plaintiff_legal_representatives': '无', 'plaintiff_attorneys': '无', 'defendant_names': '无', 'defendant_addresses': '无', 'defendant_legal_representatives': '无', 'defendant_attorneys': '无', 'third_party_entities': '无', 'claims_full_text': '无', 'claims_items': '无', 'principal_amount': '无', 'interest_amount': '无', 'penalty_interest_amount': '无', 'compound_interest_amount': '无', 'attorney_fees': '无', 'other_costs': '无', 'non_monetary_claims': '无', 'facts_and_reasons': '无', 'related_contracts_or_documents': '无', 'plaintiff_performance_claims': '无', 'plaintiff_breach_or_tort_claims': '无', 'plaintiff_pre_actions': '无', 'joint_liability_basis': '无', 'legal_basis': '无', 'attachments': '无'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+
+2026-04-01 16:43:50,529 [ERROR] [app] - [60250c292a86ed13] 文档要素解析失败: 缺少 python-docx 依赖，无法解析 Word 文件
+Traceback (most recent call last):
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\app.py", line 702, in upload
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\app.py", line 704, in upload
+    raise ValueError("缺少 python-docx 依赖，无法解析 Word 文件")
+ValueError: 缺少 python-docx 依赖，无法解析 Word 文件
+

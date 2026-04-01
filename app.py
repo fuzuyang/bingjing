@@ -673,10 +673,12 @@ def upload():
             "message": "未选择文件",
         }
 
-    if not file.filename.lower().endswith(".pdf"):
+    allowed_upload_exts = (".pdf", ".docx", ".txt")
+    filename_lower = file.filename.lower()
+    if not any(filename_lower.endswith(ext) for ext in allowed_upload_exts):
         return {
             "status": False,
-            "message": "仅支持PDF文件",
+            "message": "仅支持 PDF/Word(.docx)/TXT 文件",
         }
 
     try:
@@ -686,10 +688,32 @@ def upload():
 
         print("文件上传成功，开始识别内容。。。")
 
-        with pdfplumber.open(saved_path) as pdf:
-            text = ""
-            for page in pdf.pages:
-                text += page.extract_text() or ""
+        file_ext = os.path.splitext(saved_path)[1].lower()
+        text = ""
+        if file_ext == ".pdf":
+            with pdfplumber.open(saved_path) as pdf:
+                for page in pdf.pages:
+                    text += page.extract_text() or ""
+        elif file_ext == ".txt":
+            with open(saved_path, "rb") as f:
+                text = _decode_text_bytes(f.read())
+        elif file_ext == ".docx":
+            try:
+                from docx import Document
+            except Exception:
+                raise ValueError("缺少 python-docx 依赖，无法解析 Word 文件")
+
+            doc = Document(saved_path)
+            text = "\n".join(
+                (p.text or "").strip()
+                for p in doc.paragraphs
+                if (p.text or "").strip()
+            )
+        else:
+            raise ValueError("不支持的文件类型")
+
+        if not text.strip():
+            raise ValueError("文件内容为空或无法解析")
 
         print("文件内容识别完毕")
 
