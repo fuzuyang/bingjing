@@ -1315,8 +1315,13 @@ def upload():
             }
 
         db_record_payload = {
-            column.name: getattr(db_record, column.name)
+            column.name: (
+                value.isoformat()
+                if hasattr(value, "isoformat") and callable(value.isoformat)
+                else value
+            )
             for column in db_record.__table__.columns
+            for value in [getattr(db_record, column.name)]
         }
     finally:
         generation_session.close()
@@ -1330,6 +1335,8 @@ def upload():
             api_key=api_key,
             base_url="https://api.siliconflow.cn/v1",
         )
+
+        #正在生成输出报告。。。
 
         db_record_json = json.dumps(db_record_payload, ensure_ascii=False)
         generation_response = client.chat.completions.create(
@@ -1353,6 +1360,8 @@ def upload():
             "status": False,
             "message": f"文档模板生成失败: {str(e)}",
         }
+
+        #模型已生成报告
 
     return {
         "status": True,

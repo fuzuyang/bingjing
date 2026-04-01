@@ -1230,3 +1230,21 @@ Traceback (most recent call last):
 TypeError: Object of type datetime is not JSON serializable
 when serializing dict item 'created_at'
 
+2026-04-01 09:41:45,399 [ERROR] [app] - Exception on /upload/document [POST]
+Traceback (most recent call last):
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ~^^^^^^^^^^^^^^^^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\zheLiYouFa\省高院demo - 复刻北京demo v5\app.py", line 1320, in upload
+    if isinstance(getattr(db_record, column.name), (datetime.datetime, datetime.date))
+                                                    ^^^^^^^^^^^^^^^^^
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
