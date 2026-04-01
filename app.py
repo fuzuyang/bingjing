@@ -1298,7 +1298,15 @@ def upload():
 - “拟请示事项”控制在 3—4 项
 
     """
-    generation_db_data_prompt = "<<UPLOAD_DOCUMENT_DB_DATA_PROMPT_PLACEHOLDER>>\n{{db_record_json}}"
+    generation_db_data_prompt = """
+以下是“起诉状统一抽取表”的单行字段数据（JSON）：
+{db_record_json}
+
+写作要求：
+1. 仅可使用以上字段作为事实来源，不得虚构。
+2. 字段缺失时按缺失值规则处理。
+3. 直接输出指定文书正文，不要附加解释。
+    """.strip()
     template_user_prompt = template_user_prompt_map[expected_template]
 
     generation_session = SessionLocal()
@@ -1336,7 +1344,7 @@ def upload():
             base_url="https://api.siliconflow.cn/v1",
         )
 
-        #正在生成输出报告。。。
+        print("正在生成输出报告。。。")
 
         db_record_json = json.dumps(db_record_payload, ensure_ascii=False)
         generation_response = client.chat.completions.create(
@@ -1344,6 +1352,7 @@ def upload():
             messages=[
                 {"role": "system", "content": generation_shared_system_prompt},
                 {"role": "user", "content": template_user_prompt},
+                {"role": "user", "content": generation_db_data_prompt.format(db_record_json=db_record_json)},
                 {"role": "user", "content": generation_missing_value_rule_prompt},
                 {"role": "user", "content": generation_output_length_control_prompt},
             ],
@@ -1361,7 +1370,7 @@ def upload():
             "message": f"文档模板生成失败: {str(e)}",
         }
 
-        #模型已生成报告
+        print("模型已生成报告")
 
     return {
         "status": True,
