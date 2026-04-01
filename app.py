@@ -648,8 +648,15 @@ def get_history():
     finally:
         db.close()
 
+#===============================================
+#功能二 内部行政文书起草
+#===============================================
+
 @app.route('/upload/document', methods=['POST'])  # 用户首次上传文档
 def upload():
+    def _sse(event: str, payload: dict) -> str:
+        return f"event: {event}\ndata: {json.dumps(payload, ensure_ascii=False)}\n\n"
+
     file = request.files.get("file")
     if not file:
         return {
@@ -1335,55 +1342,89 @@ def upload():
     finally:
         generation_session.close()
 
-    try:
-        api_key = os.getenv("SILICONFLOW_API_KEY")
-        if not api_key:
-            raise ValueError("SILICONFLOW_API_KEY is not configured")
+    db_record_json = json.dumps(db_record_payload, ensure_ascii=False)
 
-        client = OpenAI(
-            api_key=api_key,
-            base_url="https://api.deepseek.com/v1",
-        )
+    @stream_with_context
+    def generate_document_stream():
+        try:
+            api_key = os.getenv("SILICONFLOW_API_KEY")
+            if not api_key:
+                raise ValueError("SILICONFLOW_API_KEY is not configured")
 
-        print("正在生成输出报告。。。")
+            client = OpenAI(
+                api_key=api_key,
+                base_url="https://api.deepseek.com/v1",
+            )
 
-        db_record_json = json.dumps(db_record_payload, ensure_ascii=False)
-        generation_response = client.chat.completions.create(
-            model=ELEMENT_PARSER_MODEL,
-            messages=[
-                {"role": "system", "content": generation_shared_system_prompt},
-                {"role": "user", "content": template_user_prompt},
-                {"role": "user", "content": generation_db_data_prompt.format(db_record_json=db_record_json)},
-                {"role": "user", "content": generation_missing_value_rule_prompt},
-                {"role": "user", "content": generation_output_length_control_prompt},
-            ],
-            temperature=0.2,
-            max_tokens=3000,
-        )
-        generated_answer = (
-            (generation_response.choices[0].message.content if generation_response and generation_response.choices else "")
-            or ""
-        ).strip()
-    except Exception as e:
-        app.logger.error(f"[{g.get('request_id')}] 文档模板生成失败: {str(e)}\n{traceback.format_exc()}")
-        return {
-            "status": False,
-            "message": f"文档模板生成失败: {str(e)}",
-        }
+            yield _sse("status", {
+                "stage": "generate",
+                "message": "正在生成输出报告",
+                "trace_id": g.get("request_id"),
+            })
 
-    print("模型已生成报告")
+            generation_stream = client.chat.completions.create(
+                model=ELEMENT_PARSER_MODEL,
+                messages=[
+                    {"role": "system", "content": generation_shared_system_prompt},
+                    {"role": "user", "content": template_user_prompt},
+                    {"role": "user", "content": generation_db_data_prompt.format(db_record_json=db_record_json)},
+                    {"role": "user", "content": generation_missing_value_rule_prompt},
+                    {"role": "user", "content": generation_output_length_control_prompt},
+                ],
+                temperature=0.2,
+                max_tokens=3000,
+                stream=True,
+            )
 
-    return {
-        "status": True,
-        "message": "文档要素解析与模板生成完成",
-        "data": {
-            "file_type": file_type,
-            "expected_template": expected_template,
-            "row_id": row_id,
-            "parsed_elements": parsed_elements,
-            "generated_answer": generated_answer,
-        },
-    }
+            generated_parts = []
+            streamed_chars = 0
+            for chunk in generation_stream:
+                delta = ""
+                if chunk and getattr(chunk, "choices", None):
+                    first_choice = chunk.choices[0] if chunk.choices else None
+                    if first_choice and getattr(first_choice, "delta", None):
+                        delta = getattr(first_choice.delta, "content", "") or ""
+                if not delta:
+                    continue
+
+                generated_parts.append(delta)
+                for ch in delta:
+                    streamed_chars += 1
+                    yield _sse("token", {
+                        "delta": ch,
+                        "chars": streamed_chars,
+                        "trace_id": g.get("request_id"),
+                    })
+
+            generated_answer = "".join(generated_parts).strip()
+
+            result_payload = {
+                "status": True,
+                "message": "文档要素解析与模板生成完成",
+                "data": {
+                    "file_type": file_type,
+                    "expected_template": expected_template,
+                    "row_id": row_id,
+                    "parsed_elements": parsed_elements,
+                    "generated_answer": generated_answer,
+                },
+            }
+            yield _sse("result", result_payload)
+            yield _sse("done", {"success": True, "trace_id": g.get("request_id")})
+        except Exception as e:
+            app.logger.error(f"[{g.get('request_id')}] 文档模板生成失败: {str(e)}\n{traceback.format_exc()}")
+            yield _sse("error", {
+                "status": False,
+                "message": f"文档模板生成失败: {str(e)}",
+                "trace_id": g.get("request_id"),
+            })
+            yield _sse("done", {"success": False, "trace_id": g.get("request_id")})
+
+    response = Response(generate_document_stream(), mimetype="text/event-stream")
+    response.headers["Cache-Control"] = "no-cache"
+    response.headers["X-Accel-Buffering"] = "no"
+    response.headers["Connection"] = "keep-alive"
+    return response
 
 
 # =========================================================

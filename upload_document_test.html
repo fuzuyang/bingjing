@@ -190,6 +190,29 @@
     const generatedWrap = document.getElementById("generated-wrap");
     const generatedAnswerEl = document.getElementById("generated-answer");
 
+    function parseSseEvent(rawEventText) {
+      let eventName = "message";
+      const dataLines = [];
+      const lines = rawEventText.split(/\r?\n/);
+      for (const line of lines) {
+        if (line.startsWith("event:")) {
+          eventName = line.slice(6).trim();
+        } else if (line.startsWith("data:")) {
+          dataLines.push(line.slice(5).trimStart());
+        }
+      }
+      const dataText = dataLines.join("\n");
+      let payload = {};
+      if (dataText) {
+        try {
+          payload = JSON.parse(dataText);
+        } catch (_err) {
+          payload = { raw: dataText };
+        }
+      }
+      return { eventName, payload };
+    }
+
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
       statusEl.className = "status";
@@ -205,39 +228,149 @@
           method: "POST",
           body: fd
         });
-        const data = await response.json().catch(() => ({}));
-        const generatedAnswer =
-          (data &&
-            data.data &&
-            typeof data.data.generated_answer === "string" &&
-            data.data.generated_answer) ||
-          (data && typeof data.generated_answer === "string" && data.generated_answer) ||
-          "";
 
-        output.textContent = JSON.stringify(
-          {
-            http_status: response.status,
-            response: data
-          },
-          null,
-          2
-        );
+        const contentType = (response.headers.get("content-type") || "").toLowerCase();
+        const isSse = contentType.includes("text/event-stream");
 
-        if (response.ok && data && data.status !== false) {
-          statusEl.className = "status ok";
-          statusEl.textContent = "请求成功";
-          generatedWrap.style.display = "block";
-          generatedAnswerEl.textContent = generatedAnswer || "未返回 generated_answer";
-        } else {
-          statusEl.className = "status bad";
-          statusEl.textContent = "请求失败（见下方响应）";
-          if (generatedAnswer) {
+        if (!isSse || !response.body) {
+          const data = await response.json().catch(() => ({}));
+          const generatedAnswer =
+            (data &&
+              data.data &&
+              typeof data.data.generated_answer === "string" &&
+              data.data.generated_answer) ||
+            (data && typeof data.generated_answer === "string" && data.generated_answer) ||
+            "";
+
+          output.textContent = JSON.stringify(
+            {
+              http_status: response.status,
+              response: data
+            },
+            null,
+            2
+          );
+
+          if (response.ok && data && data.status !== false) {
+            statusEl.className = "status ok";
+            statusEl.textContent = "请求成功";
             generatedWrap.style.display = "block";
-            generatedAnswerEl.textContent = generatedAnswer;
+            generatedAnswerEl.textContent = generatedAnswer || "未返回 generated_answer";
           } else {
-            generatedWrap.style.display = "none";
-            generatedAnswerEl.textContent = "";
+            statusEl.className = "status bad";
+            statusEl.textContent = "请求失败（见下方响应）";
+            if (generatedAnswer) {
+              generatedWrap.style.display = "block";
+              generatedAnswerEl.textContent = generatedAnswer;
+            } else {
+              generatedWrap.style.display = "none";
+              generatedAnswerEl.textContent = "";
+            }
           }
+          return;
+        }
+
+        generatedWrap.style.display = "block";
+        generatedAnswerEl.textContent = "";
+        statusEl.className = "status";
+        statusEl.textContent = "正在流式接收...";
+
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder("utf-8");
+        let buffer = "";
+        let streamedAnswer = "";
+        let finalResult = null;
+        let hasError = false;
+
+        const handleEvent = (eventName, payload) => {
+          if (eventName === "status") {
+            statusEl.className = "status";
+            statusEl.textContent = payload && payload.message ? payload.message : "处理中...";
+            return;
+          }
+
+          if (eventName === "token") {
+            const ch = payload && typeof payload.delta === "string" ? payload.delta : "";
+            if (!ch) return;
+            streamedAnswer += ch;
+            generatedAnswerEl.textContent = streamedAnswer;
+            return;
+          }
+
+          if (eventName === "result") {
+            finalResult = payload || null;
+            const answerFromResult =
+              payload &&
+              payload.data &&
+              typeof payload.data.generated_answer === "string"
+                ? payload.data.generated_answer
+                : "";
+            if (answerFromResult) {
+              streamedAnswer = answerFromResult;
+              generatedAnswerEl.textContent = streamedAnswer;
+            }
+            statusEl.className = "status ok";
+            statusEl.textContent = "流式生成完成";
+            return;
+          }
+
+          if (eventName === "error") {
+            hasError = true;
+            statusEl.className = "status bad";
+            statusEl.textContent =
+              (payload && payload.message) ? payload.message : "请求失败（流式错误）";
+            output.textContent = JSON.stringify(
+              {
+                http_status: response.status,
+                response: payload || {}
+              },
+              null,
+              2
+            );
+            return;
+          }
+
+          if (eventName === "done") {
+            if (!hasError) {
+              statusEl.className = "status ok";
+              statusEl.textContent = "流式输出结束";
+            }
+          }
+        };
+
+        while (true) {
+          const { value, done } = await reader.read();
+          if (done) break;
+          buffer += decoder.decode(value, { stream: true });
+          const blocks = buffer.split(/\r?\n\r?\n/);
+          buffer = blocks.pop() || "";
+          for (const rawEventText of blocks) {
+            if (!rawEventText.trim()) continue;
+            const { eventName, payload } = parseSseEvent(rawEventText);
+            handleEvent(eventName, payload);
+          }
+        }
+
+        buffer += decoder.decode();
+        if (buffer.trim()) {
+          const { eventName, payload } = parseSseEvent(buffer);
+          handleEvent(eventName, payload);
+        }
+
+        if (!hasError) {
+          const payloadToShow = finalResult || {
+            status: true,
+            message: "stream finished",
+            data: { generated_answer: streamedAnswer }
+          };
+          output.textContent = JSON.stringify(
+            {
+              http_status: response.status,
+              response: payloadToShow
+            },
+            null,
+            2
+          );
         }
       } catch (error) {
         statusEl.className = "status bad";
