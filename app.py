@@ -526,6 +526,7 @@ def run_evaluation():
             })
             generation = {}
             streamed_chars = 0
+            import time
             for event in coordinator.answer_generator.generate_stream(case_description, intent_data, compliance_analysis):
                 event_type = str(event.get("type") or "")
                 if event_type == "token":
@@ -534,6 +535,8 @@ def run_evaluation():
                         continue
                     for ch in delta:
                         streamed_chars += 1
+                        # 降低流式输出速率，每发送一个字符后延迟 0.05 秒
+                        time.sleep(0.05)
                         yield _sse("token", {
                             "delta": ch,
                             "chars": streamed_chars,
@@ -1400,6 +1403,7 @@ def upload():
                 stream=True,
             )
 
+            import time
             generated_parts = []
             streamed_chars = 0
             for chunk in generation_stream:
@@ -1414,6 +1418,8 @@ def upload():
                 generated_parts.append(delta)
                 for ch in delta:
                     streamed_chars += 1
+                    # 降低流式输出速率，每发送一个字符后延迟 0.05 秒
+                    time.sleep(0.05)
                     yield _sse("token", {
                         "delta": ch,
                         "chars": streamed_chars,
